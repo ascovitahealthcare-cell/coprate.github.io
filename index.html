@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ascovita Healthcare — Effervescent & Nutraceutical Manufacturer, Anand, Gujarat</title>
-<meta name="description" content="WHO-GMP compliant, FSSAI licensed nutraceutical manufacturing in Anand, Gujarat. Effervescent tablets, capsules, softgels and powders. Private label, third-party manufacturing, franchise and export.">
+<title>Ascovita Healthcare — Effervescent & Nutraceutical Manufacturer in Anand, Gujarat</title>
+<meta name="description" content="WHO-GMP compliant, FSSAI licensed nutraceutical manufacturing in Anand, Gujarat. Effervescent tablets, capsules, softgels, powders. Private label, third-party manufacturing, franchise and export to 30+ countries.">
 <link rel="canonical" href="https://www.ascovita.com/">
 <meta name="theme-color" content="#E8EDE6">
 <link rel="icon" href="https://static.wixstatic.com/media/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png/v1/fill/w_346,h_166,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ascovita Healthcare">
-<meta property="og:title" content="Ascovita Healthcare — Effervescent & Nutraceutical Manufacturer, Anand, Gujarat">
-<meta property="og:description" content="WHO-GMP compliant, FSSAI licensed nutraceutical manufacturing in Anand, Gujarat. Effervescent tablets, capsules, softgels and powders. Private label, third-party manufacturing, franchise and export.">
+<meta property="og:title" content="Ascovita Healthcare — Effervescent & Nutraceutical Manufacturer in Anand, Gujarat">
+<meta property="og:description" content="WHO-GMP compliant, FSSAI licensed nutraceutical manufacturing in Anand, Gujarat. Effervescent tablets, capsules, softgels, powders. Private label, third-party manufacturing, franchise and export to 30+ countries.">
 <meta property="og:url" content="https://www.ascovita.com/">
 <meta property="og:image" content="https://static.wixstatic.com/media/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png/v1/fill/w_346,h_166,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png">
 
@@ -305,6 +305,114 @@ details.row > p{margin-top:16px;max-width:74ch;animation:faqIn .32s ease both}
 /* blockquote cards carry no default indent */
 blockquote{margin:0}
 
+/* ══════════════════════════════════════════════════════════════════
+   UI LAYER 2 — imagery, motion surfaces, marquee
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── scroll progress rail ───────────────────────────────────────── */
+#progress{
+  position:fixed;top:0;left:0;right:0;height:2px;z-index:80;
+  background:linear-gradient(90deg,var(--green-d),var(--green) 55%,var(--gold));
+  transform:scaleX(0);transform-origin:left;will-change:transform;
+}
+
+/* ── raymarched art panel ───────────────────────────────────────── */
+.art-shell{
+  position:relative;border-radius:clamp(24px,3.4vw,40px);overflow:hidden;
+  box-shadow:var(--nm-in);background:var(--bg-2);aspect-ratio:16/9;
+}
+@media (max-width:700px){.art-shell{aspect-ratio:1/1}}
+.art-shell canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.art-shell.fallback{background:
+  radial-gradient(46% 52% at 50% 44%, rgba(255,255,255,.95), transparent 66%),
+  radial-gradient(40% 40% at 62% 64%, rgba(201,162,39,.26), transparent 62%),
+  var(--bg-2);}
+.art-cap{
+  position:absolute;left:22px;bottom:18px;z-index:2;pointer-events:none;
+  font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);
+}
+
+/* ── tilt surfaces ──────────────────────────────────────────────── */
+[data-tilt]{transition:transform .5s cubic-bezier(.2,.8,.3,1),box-shadow .35s;transform-style:preserve-3d;will-change:transform}
+[data-tilt]:hover{box-shadow:14px 14px 34px var(--lo), -14px -14px 34px var(--hi)}
+[data-magnetic]{transition:transform .35s cubic-bezier(.2,.8,.3,1)}
+
+/* ── product / image cards ──────────────────────────────────────── */
+.pcard{display:flex;flex-direction:column;overflow:hidden}
+.pcard .shot{
+  border-radius:var(--r-sm);overflow:hidden;box-shadow:var(--nm-in-sm);
+  background:var(--bg-2);aspect-ratio:1;display:grid;place-items:center;padding:10%;
+}
+.pcard .shot img{width:100%;height:100%;object-fit:contain;
+  transition:transform .55s cubic-bezier(.2,.8,.3,1);mix-blend-mode:multiply}
+.pcard:hover .shot img{transform:scale(1.06)}
+.pcard h3{margin-top:18px}
+.pcard .meta{font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-top:8px}
+
+/* ── marquee ────────────────────────────────────────────────────── */
+.mq{overflow:hidden;position:relative;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);
+            mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.mq-track{display:flex;gap:clamp(14px,2vw,24px);width:max-content}
+.mq-run .mq-track{animation:mq linear infinite}
+.mq:hover .mq-track{animation-play-state:paused}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.mq-static .mq-track{flex-wrap:wrap;width:auto;justify-content:center}
+.mq-item{
+  flex:0 0 auto;width:clamp(148px,20vw,210px);
+  border-radius:var(--r-sm);box-shadow:var(--nm-sm);background:var(--bg);
+  padding:14px;
+}
+.mq-item .shot{border-radius:10px;overflow:hidden;box-shadow:var(--nm-in-sm);
+  background:var(--bg-2);aspect-ratio:1;display:grid;place-items:center;padding:9%}
+.mq-item img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+.mq-item p{font-size:12.5px;line-height:1.4;margin-top:11px;color:var(--ink-2);font-weight:500}
+
+/* ── numbered process rail ──────────────────────────────────────── */
+.steps{counter-reset:step;display:grid;gap:12px}
+.stepc{position:relative;padding-left:clamp(58px,7vw,84px)}
+.stepc::before{
+  counter-increment:step;content:counter(step,decimal-leading-zero);
+  position:absolute;left:0;top:0;
+  width:clamp(42px,5.4vw,58px);aspect-ratio:1;border-radius:50%;
+  display:grid;place-items:center;box-shadow:var(--nm-sm);
+  font-size:13px;font-weight:700;letter-spacing:-.02em;color:var(--green);
+}
+
+/* ── brochure / download card ───────────────────────────────────── */
+.dl{display:flex;flex-direction:column;height:100%}
+.dl .tagline{font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.dl h3{margin-top:12px}
+.dl p{margin-top:12px}
+.dl .foot{margin-top:auto;padding-top:22px;display:flex;gap:10px;flex-wrap:wrap}
+
+/* ── certification badges ───────────────────────────────────────── */
+.badges{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:clamp(12px,2vw,20px)}
+.badge{border-radius:var(--r-sm);box-shadow:var(--nm-sm);padding:20px 18px;text-align:center}
+.badge b{display:block;font-size:15px;font-weight:700;letter-spacing:-.01em}
+.badge span{display:block;font-size:12px;color:var(--ink-3);margin-top:6px}
+
+/* ── split feature with image ───────────────────────────────────── */
+.figure{border-radius:var(--r);overflow:hidden;box-shadow:var(--nm-in);background:var(--bg-2);
+        aspect-ratio:4/3;display:grid;place-items:center;padding:8%}
+.figure img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+
+/* ── table ──────────────────────────────────────────────────────── */
+.tbl{width:100%;border-collapse:collapse;font-size:14.5px}
+.tbl th,.tbl td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--line)}
+.tbl th{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.tbl tr:last-child td{border-bottom:0}
+.tbl td strong{font-weight:600}
+.tbl-wrap{overflow-x:auto;border-radius:var(--r-sm);box-shadow:var(--nm-in-sm);padding:6px 4px}
+
+/* ── skip link ──────────────────────────────────────────────────── */
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:100;
+  background:var(--ink);color:var(--bg);padding:12px 20px;border-radius:0 0 12px 0;
+  font-size:14px;font-weight:600;
+}
+.skip:focus{left:0}
+
 
 /* ── SPA pages ──────────────────────────────────────────────────── */
 .page[hidden]{display:none}
@@ -315,6 +423,9 @@ blockquote{margin:0}
 </style>
 </head>
 <body>
+
+<div id="progress"></div>
+<a href="#app" class="skip">Skip to content</a>
 
 <div class="nav">
   <div class="wrap">
@@ -327,6 +438,7 @@ blockquote{margin:0}
       <a href="#/about" data-route="#/about">About</a>
       <a href="#/brands" data-route="#/brands">Brands</a>
       <a href="#/manufacturing" data-route="#/manufacturing">Manufacturing</a>
+      <a href="#/catalogue" data-route="#/catalogue">Catalogue</a>
       <a href="#/capabilities" data-route="#/capabilities">B2B</a>
       <a href="#/faq" data-route="#/faq">FAQ</a>
       <a href="#/contact" data-route="#/contact">Contact</a>
@@ -338,15 +450,15 @@ blockquote{margin:0}
 </div>
 
 <main id="app">
-<div class="page" id="pg-home" data-route="/" data-title="Ascovita Healthcare — Effervescent & Nutraceutical Manufacturer, Anand, Gujarat" data-desc="WHO-GMP compliant, FSSAI licensed nutraceutical manufacturing in Anand, Gujarat. Effervescent tablets, capsules, softgels and powders. Private label, third-party manufacturing, franchise and export." hidden>
+<div class="page" id="pg-home" data-route="/" data-title="Ascovita Healthcare — Effervescent & Nutraceutical Manufacturer in Anand, Gujarat" data-desc="WHO-GMP compliant, FSSAI licensed nutraceutical manufacturing in Anand, Gujarat. Effervescent tablets, capsules, softgels, powders. Private label, third-party manufacturing, franchise and export to 30+ countries." hidden>
 
 <section class="phero">
   <div class="wrap">
     <p class="eyebrow rv">Anand, Gujarat &nbsp;&middot;&nbsp; WHO-GMP &nbsp;&middot;&nbsp; FSSAI Licensed</p>
     <h1 class="t-hero rv s1" style="margin-top:18px">Rooted in nature,<br><span class="grad">powered by science</span>.</h1>
-    <p class="lede rv s2">Ascovita Healthcare formulates and manufactures premium nutraceuticals from our own GMP-certified plant in Anand &mdash; effervescent tablets, capsules, softgels, powders and sachets &mdash; for our own brands, for private-label clients, and for export.</p>
+    <p class="lede rv s2">Ascovita Healthcare formulates and manufactures premium nutraceuticals from our own GMP-certified plant in Anand &mdash; effervescent tablets, capsules, softgels, powders and sachets &mdash; for our own brands, for private-label clients, and for export to 30+ countries.</p>
     <div class="actions rv s3">
-      <a class="btn" href="#/contact">Start an enquiry <i>&rarr;</i></a>
+      <a class="btn" href="#/contact" data-magnetic>Start an enquiry <i>&rarr;</i></a>
       <a class="btn soft" href="#/capabilities">B2B &amp; private label</a>
     </div>
   </div>
@@ -359,28 +471,56 @@ blockquote{margin:0}
       <div class="veil"></div>
       <p class="note">Move your cursor &mdash; live fluid</p>
     </div>
-    <p class="xs center rv" style="margin-top:18px">A tablet meeting water, simulated in real time. Every swirl is solved on the fly, never the same twice.</p>
+    <p class="xs center rv" style="margin-top:18px">A tablet meeting water, solved in real time. Every swirl is computed on the fly, never the same twice.</p>
   </div>
 </section>
 
 <section class="tight">
   <div class="wrap">
     <div class="grid-4">
-      <div class="card flat stat rv"><b>10<u>k+</u></b><span>Customers served</span></div>
-      <div class="card flat stat rv s1"><b>50<u>+</u></b><span>B2B partners</span></div>
-      <div class="card flat stat rv s2"><b>40<u>+</u></b><span>Product SKUs</span></div>
-      <div class="card flat stat rv s3"><b>4.8<u>&#9733;</u></b><span>Average rating</span></div>
+      <div class="card flat stat rv" data-tilt><b data-count="10000" data-suffix="+">0</b><span>Customers served</span></div>
+      <div class="card flat stat rv s1" data-tilt><b data-count="50" data-suffix="+">0</b><span>B2B partners</span></div>
+      <div class="card flat stat rv s2" data-tilt><b data-count="40" data-suffix="+">0</b><span>Product SKUs</span></div>
+      <div class="card flat stat rv s3" data-tilt><b data-count="30" data-suffix="+">0</b><span>Countries exported</span></div>
     </div>
   </div>
 </section>
 
 <section class="tight" style="padding-top:0">
   <div class="wrap">
-    <div class="pills rv" style="justify-content:center">
-      <span>&#10003; FSSAI Licensed</span><span>&#10003; WHO-GMP Compliant</span>
-      <span>&#10003; 3rd Party Lab Tested</span><span>&#10003; Made in India</span>
-      <span>&#10003; Low MOQ</span><span>&#10003; Own manufacturing plant</span>
+    <div class="badges rv">
+      <div class="badge"><b>FSSAI</b><span>Licensed plant</span></div>
+      <div class="badge"><b>WHO-GMP</b><span>Compliant</span></div>
+      <div class="badge"><b>3rd Party</b><span>Lab tested</span></div>
+      <div class="badge"><b>Made in India</b><span>Anand, Gujarat</span></div>
+      <div class="badge"><b>MOQ 500</b><span>Units per SKU</span></div>
+      <div class="badge"><b>48 hours</b><span>Quote turnaround</span></div>
     </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="narrow center rv">
+      <p class="eyebrow">What we make</p>
+      <h2 class="t-1" style="margin-top:14px">Our own shelf,<br><span class="grad">and yours</span></h2>
+      <p class="lede" style="margin-top:20px;margin-inline:auto">A selection of SKUs currently in production. The same lines are available for private label under your brand.</p>
+    </div>
+  </div>
+  <div class="mq rv" data-marquee="46" style="margin-top:clamp(30px,4vw,46px)">
+    <div class="mq-track">
+        <div class="mq-item"><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_0632dc96f8db425a9211154fc0a7ab6f~mv2.jpg/v1/fill/w_600,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_0632dc96f8db425a9211154fc0a7ab6f~mv2.jpg" alt="L-Glutathione Effervescent" loading="lazy" decoding="async" width="600" height="600"></div><p>L-Glutathione Effervescent</p></div>
+        <div class="mq-item"><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_1d97e722692a46cbb7e6701d688bdcda~mv2.jpg/v1/fill/w_600,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_1d97e722692a46cbb7e6701d688bdcda~mv2.jpg" alt="Apple Cider Vinegar + Moringa" loading="lazy" decoding="async" width="600" height="600"></div><p>Apple Cider Vinegar + Moringa</p></div>
+        <div class="mq-item"><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_f75bd00063ef46e58a1efdea01d18789~mv2.png/v1/fill/w_1100,h_1100,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_f75bd00063ef46e58a1efdea01d18789~mv2.png" alt="L-Carnitine Effervescent" loading="lazy" decoding="async" width="600" height="600"></div><p>L-Carnitine Effervescent</p></div>
+        <div class="mq-item"><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_ff7808219dc64cfab2102ea067910a6a~mv2.png/v1/fill/w_1100,h_1100,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_ff7808219dc64cfab2102ea067910a6a~mv2.png" alt="B12 + Biotin Effervescent" loading="lazy" decoding="async" width="600" height="600"></div><p>B12 + Biotin Effervescent</p></div>
+        <div class="mq-item"><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_adf1de2910e24be895072712f8965914~mv2.png/v1/fill/w_1100,h_1100,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_adf1de2910e24be895072712f8965914~mv2.png" alt="Vitamin C Effervescent" loading="lazy" decoding="async" width="600" height="600"></div><p>Vitamin C Effervescent</p></div>
+        <div class="mq-item"><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_389d6b29ad5446bb81ad305de9756f17~mv2.jpg/v1/fill/w_600,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_389d6b29ad5446bb81ad305de9756f17~mv2.jpg" alt="Multidiata Multivitamin" loading="lazy" decoding="async" width="600" height="600"></div><p>Multidiata Multivitamin</p></div>
+        <div class="mq-item"><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_110567acf3b045e0a0998a68f50e4aae~mv2.jpg/v1/fill/w_1100,h_1100,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_110567acf3b045e0a0998a68f50e4aae~mv2.jpg" alt="MG+++ Magnesium" loading="lazy" decoding="async" width="600" height="600"></div><p>MG+++ Magnesium</p></div>
+        <div class="mq-item"><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_fb4f54451eb94ce38d361b1e0186522d~mv2.png/v1/fill/w_1100,h_1100,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_fb4f54451eb94ce38d361b1e0186522d~mv2.png" alt="CS++ + Iron++" loading="lazy" decoding="async" width="600" height="600"></div><p>CS++ + Iron++</p></div>
+    </div>
+  </div>
+  <div class="wrap center" style="margin-top:30px">
+    <a class="btn soft rv" href="#/catalogue">See the full catalogue <i>&rarr;</i></a>
   </div>
 </section>
 
@@ -393,7 +533,7 @@ blockquote{margin:0}
     </div>
 
     <div class="grid-3" style="margin-top:clamp(36px,5vw,60px)">
-      <article class="card dvc rv" style="--dot:#2E7D32">
+      <article class="card dvc rv" data-tilt style="--dot:#2E7D32">
         <span class="chip">Division 01</span>
         <h3 class="t-2">Ascovita</h3>
         <p class="where">Offline retail &middot; India</p>
@@ -401,7 +541,7 @@ blockquote{margin:0}
         <div class="foot"><a class="btn soft small" href="#/brands/retail">Distribution <i>&rarr;</i></a></div>
       </article>
 
-      <article class="card dvc rv s1" style="--dot:#00A6C0">
+      <article class="card dvc rv s1" data-tilt style="--dot:#00A6C0">
         <span class="chip">Division 02</span>
         <h3 class="t-2">Ascofizz</h3>
         <p class="where">Online D2C &middot; India</p>
@@ -409,11 +549,11 @@ blockquote{margin:0}
         <div class="foot"><a class="btn soft small" href="https://www.ascofizz.com/">Visit store <i>&rarr;</i></a></div>
       </article>
 
-      <article class="card dvc rv s2" style="--dot:#C9A227">
+      <article class="card dvc rv s2" data-tilt style="--dot:#C9A227">
         <span class="chip">Division 03</span>
         <h3 class="t-2">Jayraf Export</h3>
-        <p class="where">International trade &middot; 30+ countries</p>
-        <p class="sm">Our dedicated export-import arm &mdash; organic and inorganic chemicals, herbal products and nutraceuticals for buyers worldwide.</p>
+        <p class="where">International &middot; 30+ countries</p>
+        <p class="sm">Our export-import arm &mdash; organic and inorganic chemicals, herbal products and nutraceuticals for buyers worldwide.</p>
         <div class="foot"><a class="btn soft small" href="#/brands/export">Export <i>&rarr;</i></a></div>
       </article>
     </div>
@@ -422,41 +562,17 @@ blockquote{margin:0}
 
 <section style="padding-top:0">
   <div class="wrap">
-    <div class="center narrow rv">
-      <p class="eyebrow">Product range</p>
-      <h2 class="t-1" style="margin-top:14px">Eight categories,<br>manufactured in-house</h2>
-    </div>
-    <div class="grid-4 rv" style="margin-top:clamp(30px,4vw,48px)">
-      <div class="card sunk"><h3 class="t-3">Effervescent tablets</h3><p class="sm" style="margin-top:8px">Vitamin C, Glutathione, Biotin, Multivitamins</p></div>
-      <div class="card sunk"><h3 class="t-3">Herbal capsules</h3><p class="sm" style="margin-top:8px">Spirulina, Moringa, Ashwagandha, Turmeric</p></div>
-      <div class="card sunk"><h3 class="t-3">Softgel capsules</h3><p class="sm" style="margin-top:8px">Omega-3, Vitamin D3, CoQ10, Fish Oil</p></div>
-      <div class="card sunk"><h3 class="t-3">Protein powders</h3><p class="sm" style="margin-top:8px">Whey, plant protein, mass gainer</p></div>
-      <div class="card sunk"><h3 class="t-3">ACV &amp; vinegar tablets</h3><p class="sm" style="margin-top:8px">Apple cider vinegar, digestive support</p></div>
-      <div class="card sunk"><h3 class="t-3">Beauty supplements</h3><p class="sm" style="margin-top:8px">Biotin, collagen, glutathione, hair-skin-nail</p></div>
-      <div class="card sunk"><h3 class="t-3">Immunity boosters</h3><p class="sm" style="margin-top:8px">Zinc, Vitamin C, elderberry, turmeric blends</p></div>
-      <div class="card sunk"><h3 class="t-3">Cognitive health</h3><p class="sm" style="margin-top:8px">B-complex, brahmi, ginkgo, multivitamins</p></div>
-    </div>
-  </div>
-</section>
-
-<section style="padding-top:0">
-  <div class="wrap">
-    <div class="card rv">
-      <div class="split">
-        <div>
-          <p class="eyebrow">B2B &amp; wholesale</p>
-          <h2 class="t-1" style="margin-top:14px">Your brand.<br>Our quality.</h2>
-          <p class="lede" style="margin-top:18px">Private label, third-party manufacturing, franchise and export &mdash; from a single SKU to an entire portfolio. MOQ from 500 units.</p>
-          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
-            <a class="btn" href="#/capabilities">See all B2B solutions <i>&rarr;</i></a>
-            <a class="btn soft" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20%E2%80%94%20B2B%20manufacturing%20enquiry">WhatsApp B2B</a>
-          </div>
-        </div>
-        <div class="pills">
-          <span>Private label</span><span>Third-party manufacturing</span><span>Franchise programme</span>
-          <span>Export partnerships</span><span>Bulk &amp; wholesale</span><span>Custom artwork</span>
-          <span>Alu-Alu &middot; Blister &middot; Strip</span><span>Effervescent tubes</span>
-        </div>
+    <div class="split">
+      <div class="rv">
+        <p class="eyebrow">The speciality</p>
+        <h2 class="t-1" style="margin-top:14px">Effervescence is<br>a <span class="grad">humidity problem</span>.</h2>
+        <p class="lede" style="margin-top:20px">An effervescent tablet is an acid and a base held apart by nothing but dryness. Let moisture in and the reaction starts early &mdash; weeks later, in a warehouse, someone opens a tube of powder.</p>
+        <p class="lede" style="margin-top:16px">Our rooms are held under 25% RH from granulation through to pack. It is the one variable everything else follows from.</p>
+        <a class="btn soft" style="margin-top:26px" href="#/manufacturing">Inside the facility <i>&rarr;</i></a>
+      </div>
+      <div class="art-shell rv" data-parallax="26">
+        <canvas class="art-canvas"></canvas>
+        <p class="art-cap">Raymarched in real time</p>
       </div>
     </div>
   </div>
@@ -464,20 +580,44 @@ blockquote{margin:0}
 
 <section>
   <div class="wrap">
+    <div class="card rv">
+      <div class="split">
+        <div>
+          <p class="eyebrow">B2B &amp; wholesale</p>
+          <h2 class="t-1" style="margin-top:14px">Your brand.<br>Our quality.</h2>
+          <p class="lede" style="margin-top:18px">Private label, third-party manufacturing, specialised packaging, franchise, export and bulk wholesale &mdash; from a single SKU to an entire portfolio. MOQ from 500 units, quote in 48 hours.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
+            <a class="btn" href="#/capabilities" data-magnetic>All B2B services <i>&rarr;</i></a>
+            <a class="btn soft" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20B2B%20manufacturing%20enquiry">WhatsApp B2B</a>
+          </div>
+        </div>
+        <div class="pills">
+          <span>Private label</span><span>Third-party manufacturing</span><span>Franchise programme</span>
+          <span>Export partnerships</span><span>Bulk &amp; wholesale</span><span>Custom artwork</span>
+          <span>Alu-Alu &middot; Blister &middot; Strip</span><span>Effervescent tubes</span>
+          <span>Formulation R&amp;D</span><span>Flavour systems</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
     <div class="center narrow rv">
       <p class="eyebrow">What partners say</p>
-      <h2 class="t-1" style="margin-top:14px">Trusted by brands across India</h2>
+      <h2 class="t-1" style="margin-top:14px">Trusted by brands<br>across India</h2>
     </div>
     <div class="grid-3" style="margin-top:clamp(30px,4vw,48px)">
-      <blockquote class="card flat rv">
+      <blockquote class="card flat rv" data-tilt>
         <p class="sm" style="font-size:16px">&ldquo;Ascovita's private label service is exceptional. We launched our entire supplement line in under 5 weeks with zero quality issues.&rdquo;</p>
         <p class="xs" style="margin-top:18px"><strong>Rajesh Kumar</strong><br>Director, RK Health Products, Delhi</p>
       </blockquote>
-      <blockquote class="card flat rv s1">
+      <blockquote class="card flat rv s1" data-tilt>
         <p class="sm" style="font-size:16px">&ldquo;Consistent quality, on-time delivery, and their effervescent formulations are genuinely world-class.&rdquo;</p>
         <p class="xs" style="margin-top:18px"><strong>Priya Mehta</strong><br>Founder, Vitacare Wellness, Mumbai</p>
       </blockquote>
-      <blockquote class="card flat rv s2">
+      <blockquote class="card flat rv s2" data-tilt>
         <p class="sm" style="font-size:16px">&ldquo;We export Ascovita-manufactured products to 3 countries. Their FSSAI and export documentation support is excellent.&rdquo;</p>
         <p class="xs" style="margin-top:18px"><strong>Anil Sharma</strong><br>CEO, GlobalNutri India, Ahmedabad</p>
       </blockquote>
@@ -488,16 +628,16 @@ blockquote{margin:0}
 <section style="padding-top:0">
   <div class="wrap center narrow rv">
     <h2 class="t-1">Tell us what you need made.</h2>
-    <p class="lede" style="margin-top:18px;margin-inline:auto">Every B2B enquiry reaches our founders directly &mdash; no sales reps, no delays. Formulation proposal and pricing within 48 hours.</p>
+    <p class="lede" style="margin-top:18px;margin-inline:auto">Every B2B enquiry reaches our founders directly &mdash; no sales reps, no delays.</p>
     <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px">
-      <a class="btn" href="#/contact">Enquire <i>&rarr;</i></a>
+      <a class="btn" href="#/contact" data-magnetic>Enquire <i>&rarr;</i></a>
       <a class="btn soft" href="https://wa.me/919898582650">WhatsApp us</a>
     </div>
   </div>
 </section>
 
 </div>
-<div class="page" id="pg-about" data-route="/about" data-title="About & founders — our story, values and facility | Ascovita Healthcare" data-desc="Founded in Anand, Gujarat to make premium nutrition accessible. Our mission, timeline, core values and the three founders you work with directly." hidden>
+<div class="page" id="pg-about" data-route="/about" data-title="About & founders — our story, values and facility | Ascovita Healthcare" data-desc="Founded in Anand, Gujarat to make premium nutrition accessible. Our mission, timeline, six core values and the three founders you work with directly on every B2B enquiry." hidden>
 
 <section class="phero">
   <div class="wrap">
@@ -514,7 +654,8 @@ blockquote{margin:0}
         <div>
           <h2 class="t-2">The problem we started with</h2>
           <p class="sm" style="margin-top:16px">India has the world's highest rate of micronutrient deficiency &mdash; yet most supplement brands charge a premium that keeps quality nutrition out of reach for millions. We founded Ascovita to break that cycle.</p>
-          <p class="sm" style="margin-top:14px">From our GMP-certified facility in Anand, we formulate, manufacture and deliver premium nutraceuticals &mdash; effervescent tablets, spirulina, glutathione, biotin and more &mdash; at prices that make good health genuinely accessible.</p>
+          <p class="sm" style="margin-top:14px">From our GMP-certified facility in Anand we formulate, manufacture and deliver premium nutraceuticals &mdash; effervescent tablets, spirulina, glutathione, biotin and more &mdash; at prices that make good health genuinely accessible.</p>
+          <p class="sm" style="margin-top:14px">Owning the plant is what makes that possible. There is no contract manufacturer in the middle taking a margin, and nobody else deciding what quality means on our behalf.</p>
         </div>
         <div class="card sunk">
           <p class="lede" style="font-style:italic">&ldquo;From formulation to manufacturing of nutraceutical products &mdash; one standard, no shortcuts.&rdquo;</p>
@@ -532,10 +673,10 @@ blockquote{margin:0}
       <h2 class="t-1" style="margin-top:14px">How we got here</h2>
     </div>
     <div class="grid-4" style="margin-top:clamp(30px,4vw,48px)">
-      <div class="card rv"><span class="chip">Founded</span><h3 class="t-3" style="margin-top:16px">Ascovita Healthcare established</h3><p class="sm" style="margin-top:10px">Founded in Anand &mdash; India's nutraceutical capital &mdash; with a vision to make premium health accessible to all Indians.</p></div>
-      <div class="card rv s1"><span class="chip">Plant</span><h3 class="t-3" style="margin-top:16px">Our own GMP-certified unit</h3><p class="sm" style="margin-top:10px">Near Rajshivalay Cinema, Anand. An FSSAI-licensed plant producing effervescent, capsule, tablet and strip formats in-house.</p></div>
-      <div class="card rv s2"><span class="chip">Growth</span><h3 class="t-3" style="margin-top:16px">D2C launch &amp; B2B expansion</h3><p class="sm" style="margin-top:10px">Launched direct-to-consumer across India and opened third-party manufacturing for brands, clinics and distributors.</p></div>
-      <div class="card rv s3"><span class="chip">Today</span><h3 class="t-3" style="margin-top:16px">10,000+ customers and growing</h3><p class="sm" style="margin-top:10px">Serving retail customers across India and B2B partners globally, with franchise and export opportunities open.</p></div>
+      <div class="card rv" data-tilt><span class="chip">Founded</span><h3 class="t-3" style="margin-top:16px">Ascovita Healthcare established</h3><p class="sm" style="margin-top:10px">Founded in Anand &mdash; India's nutraceutical capital &mdash; with a vision to make premium health accessible to all Indians.</p></div>
+      <div class="card rv s1" data-tilt><span class="chip">Plant</span><h3 class="t-3" style="margin-top:16px">Our own GMP-certified unit</h3><p class="sm" style="margin-top:10px">Near Rajshivalay Cinema, Anand. An FSSAI-licensed plant producing effervescent, capsule, tablet and strip formats in-house.</p></div>
+      <div class="card rv s2" data-tilt><span class="chip">Growth</span><h3 class="t-3" style="margin-top:16px">D2C launch &amp; B2B expansion</h3><p class="sm" style="margin-top:10px">Launched direct-to-consumer across India and opened third-party manufacturing for brands, clinics and distributors.</p></div>
+      <div class="card rv s3" data-tilt><span class="chip">Today</span><h3 class="t-3" style="margin-top:16px">10,000+ customers and growing</h3><p class="sm" style="margin-top:10px">Serving retail customers across India and B2B partners globally, with franchise and export opportunities open.</p></div>
     </div>
   </div>
 </section>
@@ -548,7 +689,7 @@ blockquote{margin:0}
     </div>
     <div class="rows" style="margin-top:clamp(30px,4vw,44px)">
       <div class="row rv"><h3 class="t-3">Organic first</h3><p class="sm">We source FSSAI-certified organic ingredients with full traceability from farm to capsule.</p></div>
-      <div class="row rv"><h3 class="t-3">Science-backed</h3><p class="sm">Every formulation is developed from peer-reviewed research and validated by certified nutritionists.</p></div>
+      <div class="row rv"><h3 class="t-3">Science-backed</h3><p class="sm">Every formulation is developed from peer-reviewed research and validated by certified nutritionists and food scientists.</p></div>
       <div class="row rv"><h3 class="t-3">Fair pricing</h3><p class="sm">Premium-grade supplements priced for every Indian family &mdash; no compromise, no markups for profit's sake.</p></div>
       <div class="row rv"><h3 class="t-3">Made in India</h3><p class="sm">Manufactured in Anand, Gujarat, supporting Indian agriculture, jobs and infrastructure.</p></div>
       <div class="row rv"><h3 class="t-3">Partner-first</h3><p class="sm">B2B partners and distributors get dedicated account support, flexible MOQs and co-branded packaging.</p></div>
@@ -562,24 +703,24 @@ blockquote{margin:0}
     <div class="narrow center rv">
       <p class="eyebrow">Leadership</p>
       <h2 class="t-1" style="margin-top:14px">The founders you<br><span class="grad">work directly with</span></h2>
-      <p class="lede" style="margin-top:20px;margin-inline:auto">No sales reps, no delays. Every B2B enquiry reaches our leadership team directly.</p>
+      <p class="lede" style="margin-top:20px;margin-inline:auto">No sales reps, no delays. Every B2B enquiry reaches our leadership team directly. That is the Ascovita promise.</p>
     </div>
     <div class="grid-3" style="margin-top:clamp(30px,4vw,48px)">
-      <article class="card dvc rv" style="--dot:#2E7D32">
+      <article class="card dvc rv" data-tilt style="--dot:#2E7D32">
         <span class="chip">Strategy</span>
         <h3 class="t-2" style="margin-top:16px">Amit Dantani</h3>
         <p class="where">Founder &amp; CEO</p>
-        <p class="sm">Leads strategic partnerships, enterprise accounts and overall business direction. First point of contact for bulk deals and long-term B2B agreements.</p>
+        <p class="sm">Leads strategic partnerships, enterprise accounts, supply chain and overall business direction. First point of contact for bulk deals and long-term B2B agreements.</p>
         <div class="foot"><a class="btn soft small" href="https://www.linkedin.com/in/amit-dantani-b724a3345/">LinkedIn <i>&rarr;</i></a></div>
       </article>
-      <article class="card dvc rv s1" style="--dot:#00A6C0">
+      <article class="card dvc rv s1" data-tilt style="--dot:#00A6C0">
         <span class="chip">Marketing</span>
         <h3 class="t-2" style="margin-top:16px">Aamin Ghachivahora</h3>
         <p class="where">Co-Founder &amp; CMO</p>
         <p class="sm">Drives brand partnerships, co-branding projects, marketing collateral and franchise development. Handles distributor onboarding and promotional strategy.</p>
         <div class="foot"><a class="btn soft small" href="https://www.linkedin.com/in/aamin-ghachivahora-416985332">LinkedIn <i>&rarr;</i></a></div>
       </article>
-      <article class="card dvc rv s2" style="--dot:#C9A227">
+      <article class="card dvc rv s2" data-tilt style="--dot:#C9A227">
         <span class="chip">Exports</span>
         <h3 class="t-2" style="margin-top:16px">Jaydeep Parmar</h3>
         <p class="where">Co-Founder &amp; Export Director</p>
@@ -591,7 +732,7 @@ blockquote{margin:0}
 </section>
 
 </div>
-<div class="page" id="pg-brands" data-route="/brands" data-title="Our brands — Ascovita, Ascofizz, Jayraf Export | Ascovita Healthcare" data-desc="Three divisions under Ascovita Healthcare: Ascovita for offline retail, Ascofizz for online D2C, and Jayraf Export serving 30+ countries." hidden>
+<div class="page" id="pg-brands" data-route="/brands" data-title="Our brands — Ascovita, Ascofizz & Jayraf Export | Ascovita Healthcare" data-desc="Three divisions under Ascovita Healthcare: Ascovita for offline retail and distribution, Ascofizz for online D2C, and Jayraf Export serving 30+ countries with full trade documentation." hidden>
 
 <section class="phero">
   <div class="wrap">
@@ -621,7 +762,7 @@ blockquote{margin:0}
           <h2 class="t-1" style="margin-top:18px">Ascovita</h2>
           <p class="where">Offline retail &amp; distribution &middot; India</p>
           <p class="lede" style="margin-top:18px">The original brand, and the one the trade knows. Sold through chemists, wellness stores and our stockist network across Gujarat and beyond.</p>
-          <div class="foot"><a class="btn" href="#/contact">Become a distributor <i>&rarr;</i></a></div>
+          <div class="foot"><a class="btn" href="#/contact" data-magnetic>Become a distributor <i>&rarr;</i></a></div>
         </div>
         <ul class="dvc" style="display:grid;gap:9px;list-style:none">
           <li class="sm">Distributor and stockist network</li>
@@ -645,12 +786,12 @@ blockquote{margin:0}
           <h2 class="t-1" style="margin-top:18px">Ascofizz</h2>
           <p class="where">Online direct-to-consumer &middot; India</p>
           <p class="lede" style="margin-top:18px">Our online-only brand. The same manufacturing, formulated and packed under its own identity so e-commerce pricing never competes with a retailer's shelf.</p>
-          <div class="foot"><a class="btn" href="https://www.ascofizz.com/">Visit the store <i>&rarr;</i></a></div>
+          <div class="foot"><a class="btn" href="https://www.ascofizz.com/" data-magnetic>Visit the store <i>&rarr;</i></a></div>
         </div>
         <ul class="dvc" style="display:grid;gap:9px;list-style:none">
           <li class="sm">Own D2C store and marketplaces</li>
           <li class="sm">Online-exclusive SKUs and pack sizes</li>
-          <li class="sm">Subscriptions, bundles, digital offers</li>
+          <li class="sm">Subscriptions, bundles and digital offers</li>
           <li class="sm">Ships pan-India</li>
           <li class="sm">Never sold into the retail trade</li>
         </ul>
@@ -668,13 +809,13 @@ blockquote{margin:0}
           <h2 class="t-1" style="margin-top:18px">Jayraf Export</h2>
           <p class="where">Export &amp; import division</p>
           <p class="lede" style="margin-top:18px">Our dedicated export-import company handles international shipments of organic and inorganic chemicals, herbal products and nutraceuticals &mdash; trusted by global buyers across the vitamins, food and wellness industries.</p>
-          <div class="foot"><a class="btn" href="#/contact">Trade enquiry <i>&rarr;</i></a></div>
+          <div class="foot"><a class="btn" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20export%20trade%20enquiry" data-magnetic>Trade enquiry <i>&rarr;</i></a></div>
         </div>
         <div class="grid-2">
-          <div class="card sunk stat"><b>30<u>+</u></b><span>Countries served</span></div>
-          <div class="card sunk stat"><b>500<u>+ t</u></b><span>Tons exported</span></div>
+          <div class="card sunk stat"><b data-count="30" data-suffix="+">0</b><span>Countries served</span></div>
+          <div class="card sunk stat"><b data-count="500" data-suffix="+ t">0</b><span>Tons exported</span></div>
           <div class="card sunk stat"><b>ISO</b><span>Certified quality</span></div>
-          <div class="card sunk stat"><b>24<u>h</u></b><span>Quote turnaround</span></div>
+          <div class="card sunk stat"><b data-count="24" data-suffix="h">0</b><span>Quote turnaround</span></div>
         </div>
       </div>
 
@@ -686,6 +827,8 @@ blockquote{margin:0}
             <li class="sm">Herbal extracts &amp; botanicals</li>
             <li class="sm">Nutraceutical raw materials</li>
             <li class="sm">Vitamin &amp; mineral premixes</li>
+            <li class="sm">Effervescent tablets (branded)</li>
+            <li class="sm">Private label finished goods</li>
             <li class="sm">Spirulina &amp; moringa powder</li>
             <li class="sm">Protein powders &amp; blends</li>
           </ul>
@@ -694,12 +837,12 @@ blockquote{margin:0}
           <h3 class="t-3">Documentation</h3>
           <p class="sm" style="margin-top:12px">Certificate of Analysis, MSDS, FSSAI, phytosanitary and customs documentation handled end to end.</p>
           <h3 class="t-3" style="margin-top:20px">Logistics</h3>
-          <p class="sm" style="margin-top:10px">Sea freight, air freight, FCL and LCL, coordinated with verified logistics partners.</p>
+          <p class="sm" style="margin-top:10px">Sea freight, air freight, FCL and LCL, coordinated with verified logistics partners for compliant delivery.</p>
         </div>
         <div class="card sunk">
           <h3 class="t-3">Led by Jaydeep Parmar</h3>
           <p class="sm" style="margin-top:12px">Our Export Director manages all international trade personally &mdash; direct communication, no third-party intermediaries.</p>
-          <a class="btn soft small" style="margin-top:18px" href="https://wa.me/919898582650">WhatsApp trade desk <i>&rarr;</i></a>
+          <a class="btn soft small" style="margin-top:18px" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20export%20trade%20enquiry">WhatsApp trade desk <i>&rarr;</i></a>
         </div>
       </div>
     </div>
@@ -707,7 +850,7 @@ blockquote{margin:0}
 </section>
 
 </div>
-<div class="page" id="pg-manufacturing" data-route="/manufacturing" data-title="Manufacturing — WHO-GMP effervescent facility | Ascovita Healthcare" data-desc="Humidity-controlled effervescent manufacturing in Anand, Gujarat. Six dosage formats, third-party lab testing, full traceability and batch documentation." hidden>
+<div class="page" id="pg-manufacturing" data-route="/manufacturing" data-title="Manufacturing — WHO-GMP effervescent tablet facility | Ascovita Healthcare" data-desc="Humidity-controlled effervescent manufacturing in Anand, Gujarat. Six dosage formats, third-party lab testing, full farm-to-capsule traceability and batch documentation on every release." hidden>
 
 <section class="phero">
   <div class="wrap">
@@ -719,18 +862,28 @@ blockquote{margin:0}
 
 <section class="tight" style="padding-top:0">
   <div class="wrap">
+    <div class="art-shell rv">
+      <canvas class="art-canvas"></canvas>
+      <p class="art-cap">Raymarched in real time &mdash; scroll to dissolve</p>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
     <div class="card rv">
       <div class="split">
         <div>
           <h2 class="t-2">What goes wrong when it's made badly</h2>
           <p class="sm" style="margin-top:16px">Let moisture in during granulation, compression or packing and the reaction starts early. The tablet swells, the strip bloats, and the customer opens a tube of powder. It usually happens weeks later, in a warehouse, long after anyone could catch it.</p>
           <p class="sm" style="margin-top:14px">So the facility is built around controlling one variable: dehumidified production rooms held under 25% RH from granulation through to pack, moisture-barrier packaging, and a release test no batch skips.</p>
+          <p class="sm" style="margin-top:14px">It is also why effervescent is the format most contract manufacturers quietly avoid &mdash; and why it became our speciality.</p>
         </div>
         <div class="grid-2">
           <div class="card sunk stat"><b>&lt;25<u>%</u></b><span>RH, throughout</span></div>
           <div class="card sunk stat"><b>21<u>&deg;C</u></b><span>Room temperature</span></div>
-          <div class="card sunk stat"><b>36<u>k/hr</u></b><span>Tablet output</span></div>
-          <div class="card sunk stat"><b>500</b><span>Units minimum, per SKU</span></div>
+          <div class="card sunk stat"><b data-count="36" data-suffix="k/hr">0</b><span>Tablet output</span></div>
+          <div class="card sunk stat"><b data-count="500">0</b><span>Units minimum</span></div>
         </div>
       </div>
     </div>
@@ -745,12 +898,12 @@ blockquote{margin:0}
       <p class="lede" style="margin-top:20px;margin-inline:auto">Every Ascovita product is made in our own GMP-certified facility, giving us total control over quality from raw material to finished product.</p>
     </div>
     <div class="grid-3" style="margin-top:clamp(30px,4vw,48px)">
-      <div class="card rv"><h3 class="t-3">FSSAI-licensed plant</h3><p class="sm" style="margin-top:10px">Fully licensed food-grade manufacturing with regular government audits and full regulatory compliance.</p></div>
-      <div class="card rv s1"><h3 class="t-3">All formats in-house</h3><p class="sm" style="margin-top:10px">Effervescent tablets, capsules, softgels, strips and powder &mdash; all manufactured under one roof.</p></div>
-      <div class="card rv s2"><h3 class="t-3">3rd party lab tested</h3><p class="sm" style="margin-top:10px">Every batch independently tested for purity, potency and safety, with results on file for every SKU.</p></div>
-      <div class="card rv"><h3 class="t-3">Certified nutritionists</h3><p class="sm" style="margin-top:10px">Every formulation developed and validated by qualified nutritionists and food scientists.</p></div>
-      <div class="card rv s1"><h3 class="t-3">Traceable ingredients</h3><p class="sm" style="margin-top:10px">Full farm-to-capsule traceability &mdash; we know the source of every ingredient in every product.</p></div>
-      <div class="card rv s2"><h3 class="t-3">ISO packaging</h3><p class="sm" style="margin-top:10px">Alu-Alu, blister, strip and effervescent tube formats &mdash; packaging that protects and preserves.</p></div>
+      <div class="card rv" data-tilt><h3 class="t-3">FSSAI-licensed plant</h3><p class="sm" style="margin-top:10px">Fully licensed food-grade manufacturing with regular government audits and full regulatory compliance.</p></div>
+      <div class="card rv s1" data-tilt><h3 class="t-3">All formats in-house</h3><p class="sm" style="margin-top:10px">Effervescent tablets, capsules, softgels, strips and powder &mdash; all manufactured under one roof, with no outsourced steps.</p></div>
+      <div class="card rv s2" data-tilt><h3 class="t-3">3rd party lab tested</h3><p class="sm" style="margin-top:10px">Every batch independently tested for purity, potency and safety, with results on file for every SKU.</p></div>
+      <div class="card rv" data-tilt><h3 class="t-3">Certified nutritionists</h3><p class="sm" style="margin-top:10px">Every formulation developed and validated by qualified nutritionists and food scientists.</p></div>
+      <div class="card rv s1" data-tilt><h3 class="t-3">Traceable ingredients</h3><p class="sm" style="margin-top:10px">Full farm-to-capsule traceability &mdash; we know the source of every ingredient in every product.</p></div>
+      <div class="card rv s2" data-tilt><h3 class="t-3">ISO packaging</h3><p class="sm" style="margin-top:10px">Alu-Alu, blister, strip and effervescent tube formats &mdash; packaging that protects and preserves.</p></div>
     </div>
   </div>
 </section>
@@ -759,16 +912,16 @@ blockquote{margin:0}
   <div class="wrap">
     <div class="narrow center rv">
       <p class="eyebrow">Dosage formats</p>
-      <h2 class="t-1" style="margin-top:14px">Six formats, full custom artwork</h2>
+      <h2 class="t-1" style="margin-top:14px">Six formats,<br>full custom artwork</h2>
       <p class="lede" style="margin-top:20px;margin-inline:auto">FSSAI-compliant labels, manufactured and delivered under your brand. MOQ from 500 units per SKU.</p>
     </div>
     <div class="grid-3" style="margin-top:clamp(30px,4vw,48px)">
-      <div class="card rv"><span class="chip">TAB</span><h3 class="t-3" style="margin-top:16px">Tablets</h3><p class="sm" style="margin-top:10px">Compressed or film-coated, in standard or custom shapes. Ideal for vitamins, minerals and herbal supplements needing precise dosing.</p><div class="pills" style="margin-top:16px"><span>Strip pack</span><span>Blister</span><span>Bottle</span></div></div>
-      <div class="card rv s1"><span class="chip">CAP</span><h3 class="t-3" style="margin-top:16px">Capsules</h3><p class="sm" style="margin-top:10px">Hard gelatin or vegetarian HPMC for herbal extracts, powders and nutraceutical blends. Fast-dissolve options available.</p><div class="pills" style="margin-top:16px"><span>Hard gelatin</span><span>Veg HPMC</span><span>Softgel</span></div></div>
-      <div class="card rv s2"><span class="chip">EFF</span><h3 class="t-3" style="margin-top:16px">Effervescent</h3><p class="sm" style="margin-top:10px">Our speciality. Fizzy tablets with superior bioavailability &mdash; Vitamin C, Glutathione, Biotin, B-complex and custom blends.</p><div class="pills" style="margin-top:16px"><span>Tube 10s/20s</span><span>Strip</span><span>Custom flavour</span></div></div>
-      <div class="card rv"><span class="chip">PWD</span><h3 class="t-3" style="margin-top:16px">Powder</h3><p class="sm" style="margin-top:10px">Bulk or retail-ready blends &mdash; protein, greens, vitamins and wellness mixes. Custom flavour, colour and sweetener options.</p><div class="pills" style="margin-top:16px"><span>Jar</span><span>Standup pouch</span><span>Bulk</span></div></div>
-      <div class="card rv s1"><span class="chip">SAC</span><h3 class="t-3" style="margin-top:16px">Sachet</h3><p class="sm" style="margin-top:10px">Single-serve or multi-serve &mdash; suited to on-the-go nutrition, hospital samples, travel packs and gifting sets.</p><div class="pills" style="margin-top:16px"><span>Single-serve</span><span>Trial pack</span><span>Custom print</span></div></div>
-      <div class="card rv s2"><span class="chip">CHW</span><h3 class="t-3" style="margin-top:16px">Chewable</h3><p class="sm" style="margin-top:10px">Flavoured chewables for children, elderly and taste-sensitive consumers. Multivitamins, functional gummies and mineral chews.</p><div class="pills" style="margin-top:16px"><span>Fruit flavours</span><span>Sugar-free</span><span>Bottle / strip</span></div></div>
+      <div class="card rv" data-tilt><span class="chip">TAB</span><h3 class="t-3" style="margin-top:16px">Tablets</h3><p class="sm" style="margin-top:10px">Compressed or film-coated, in standard or custom shapes. Ideal for vitamins, minerals and herbal supplements needing precise dosing.</p><div class="pills" style="margin-top:16px"><span>Strip pack</span><span>Blister</span><span>Bottle</span></div></div>
+      <div class="card rv s1" data-tilt><span class="chip">CAP</span><h3 class="t-3" style="margin-top:16px">Capsules</h3><p class="sm" style="margin-top:10px">Hard gelatin or vegetarian HPMC for herbal extracts, powders and nutraceutical blends. Fast-dissolve options available.</p><div class="pills" style="margin-top:16px"><span>Hard gelatin</span><span>Veg HPMC</span><span>Softgel</span></div></div>
+      <div class="card rv s2" data-tilt><span class="chip">EFF</span><h3 class="t-3" style="margin-top:16px">Effervescent</h3><p class="sm" style="margin-top:10px">Our speciality. Fizzy tablets with superior bioavailability &mdash; Vitamin C, Glutathione, Biotin, B-complex and custom blends.</p><div class="pills" style="margin-top:16px"><span>Tube 10s/20s</span><span>Strip</span><span>Custom flavour</span></div></div>
+      <div class="card rv" data-tilt><span class="chip">PWD</span><h3 class="t-3" style="margin-top:16px">Powder</h3><p class="sm" style="margin-top:10px">Bulk or retail-ready blends &mdash; protein, greens, vitamins and wellness mixes. Custom flavour, colour and sweetener options.</p><div class="pills" style="margin-top:16px"><span>Jar</span><span>Standup pouch</span><span>Bulk</span></div></div>
+      <div class="card rv s1" data-tilt><span class="chip">SAC</span><h3 class="t-3" style="margin-top:16px">Sachet</h3><p class="sm" style="margin-top:10px">Single-serve or multi-serve &mdash; suited to on-the-go nutrition, hospital samples, travel packs and gifting sets.</p><div class="pills" style="margin-top:16px"><span>Single-serve</span><span>Trial pack</span><span>Custom print</span></div></div>
+      <div class="card rv s2" data-tilt><span class="chip">CHW</span><h3 class="t-3" style="margin-top:16px">Chewable</h3><p class="sm" style="margin-top:10px">Flavoured chewables for children, elderly and taste-sensitive consumers. Multivitamins, functional gummies and mineral chews.</p><div class="pills" style="margin-top:16px"><span>Fruit flavours</span><span>Sugar-free</span><span>Bottle / strip</span></div></div>
     </div>
   </div>
 </section>
@@ -778,11 +931,11 @@ blockquote{margin:0}
     <div class="card rv">
       <p class="eyebrow">Quality</p>
       <h2 class="t-1" style="margin-top:14px;max-width:18ch">If it isn't written down, it didn't happen.</h2>
-      <p class="lede" style="margin-top:20px">Every batch we release carries a paper trail: which raw material lot went in, who compressed it, what the release tests said, and a retained sample on a shelf in case anyone ever needs to check.</p>
+      <p class="lede" style="margin-top:20px">Every batch we release carries a paper trail: which raw material lot went in, who compressed it, what the release tests said, and a retained sample on a shelf in case anyone ever needs to check. That record is what a distributor, a private-label client and an export buyer are all actually buying.</p>
       <div class="grid-4" style="margin-top:36px">
-        <div class="card sunk"><h3 class="t-3">WHO-GMP</h3><p class="sm" style="margin-top:9px">Certified facility and process controls.</p></div>
+        <div class="card sunk"><h3 class="t-3">WHO-GMP</h3><p class="sm" style="margin-top:9px">Compliant facility and process controls.</p></div>
         <div class="card sunk"><h3 class="t-3">FSSAI licensed</h3><p class="sm" style="margin-top:9px">Approved for food supplement manufacture, regularly audited.</p></div>
-        <div class="card sunk"><h3 class="t-3">Certificate of analysis</h3><p class="sm" style="margin-top:9px">Issued against specification, every batch.</p></div>
+        <div class="card sunk"><h3 class="t-3">Certificate of analysis</h3><p class="sm" style="margin-top:9px">Issued against specification, every batch, with retained samples.</p></div>
         <div class="card sunk"><h3 class="t-3">Traceability</h3><p class="sm" style="margin-top:9px">Raw material lot through to finished pack.</p></div>
       </div>
     </div>
@@ -790,7 +943,91 @@ blockquote{margin:0}
 </section>
 
 </div>
-<div class="page" id="pg-capabilities" data-route="/capabilities" data-title="B2B, private label & third-party manufacturing | Ascovita Healthcare" data-desc="Private label, third-party manufacturing, specialised packaging, franchise, export and bulk wholesale. MOQ from 500 units, quote in 48 hours." hidden>
+<div class="page" id="pg-catalogue" data-route="/catalogue" data-title="Product catalogue & brochures — 8 categories, 40+ SKUs | Ascovita Healthcare" data-desc="Effervescent tablets, herbal and softgel capsules, protein powders, ACV tablets, beauty supplements, immunity and cognitive health. Full catalogue and product brochures on request." hidden>
+
+<section class="phero">
+  <div class="wrap">
+    <p class="eyebrow rv">Catalogue</p>
+    <h1 class="t-hero rv s1" style="margin-top:18px">Eight categories,<br><span class="grad">forty-plus SKUs</span>.</h1>
+    <p class="lede rv s2">Everything below is manufactured in-house at Anand. Any of it can be made under your own brand &mdash; same formulation, your label, from 500 units per SKU.</p>
+    <div class="actions rv s3">
+      <a class="btn" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20please%20send%20the%20product%20catalogue" data-magnetic>Request the full catalogue <i>&rarr;</i></a>
+      <a class="btn soft" href="#/capabilities">Private label options</a>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="padding-top:0">
+  <div class="wrap">
+    <div class="narrow center rv">
+      <p class="eyebrow">Categories we manufacture</p>
+      <h2 class="t-1" style="margin-top:14px">The full range</h2>
+    </div>
+    <div class="grid-4" style="margin-top:clamp(30px,4vw,48px)">
+      <div class="card rv" data-tilt><span class="chip">EFF</span><h3 class="t-3" style="margin-top:16px">Effervescent tablets</h3><p class="sm" style="margin-top:10px">Vitamin C, Glutathione, Biotin, Multivitamins</p></div>
+      <div class="card rv" data-tilt><span class="chip">HRB</span><h3 class="t-3" style="margin-top:16px">Herbal capsules</h3><p class="sm" style="margin-top:10px">Spirulina, Moringa, Ashwagandha, Turmeric</p></div>
+      <div class="card rv" data-tilt><span class="chip">SFG</span><h3 class="t-3" style="margin-top:16px">Softgel capsules</h3><p class="sm" style="margin-top:10px">Omega-3, Vitamin D3, CoQ10, Fish Oil</p></div>
+      <div class="card rv" data-tilt><span class="chip">PRO</span><h3 class="t-3" style="margin-top:16px">Protein powders</h3><p class="sm" style="margin-top:10px">Whey, plant protein, mass gainer</p></div>
+      <div class="card rv" data-tilt><span class="chip">ACV</span><h3 class="t-3" style="margin-top:16px">ACV &amp; vinegar tablets</h3><p class="sm" style="margin-top:10px">Apple cider vinegar, digestive support</p></div>
+      <div class="card rv" data-tilt><span class="chip">BTY</span><h3 class="t-3" style="margin-top:16px">Beauty supplements</h3><p class="sm" style="margin-top:10px">Biotin, collagen, glutathione, hair-skin-nail</p></div>
+      <div class="card rv" data-tilt><span class="chip">IMM</span><h3 class="t-3" style="margin-top:16px">Immunity boosters</h3><p class="sm" style="margin-top:10px">Zinc, Vitamin C, elderberry, turmeric blends</p></div>
+      <div class="card rv" data-tilt><span class="chip">COG</span><h3 class="t-3" style="margin-top:16px">Cognitive health</h3><p class="sm" style="margin-top:10px">B-complex, brahmi, ginkgo, multivitamins</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="narrow center rv">
+      <p class="eyebrow">Currently in production</p>
+      <h2 class="t-1" style="margin-top:14px">Selected SKUs</h2>
+      <p class="lede" style="margin-top:20px;margin-inline:auto">A sample of what is running on the line right now. The complete list, with specifications and wholesale pricing, is in the catalogue.</p>
+    </div>
+    <div class="grid-4" style="margin-top:clamp(30px,4vw,48px)">
+      <article class="card pcard rv" data-tilt><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_0632dc96f8db425a9211154fc0a7ab6f~mv2.jpg/v1/fill/w_600,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_0632dc96f8db425a9211154fc0a7ab6f~mv2.jpg" alt="L-Glutathione Effervescent" loading="lazy" decoding="async" width="600" height="600"></div><h3 class="t-3">L-Glutathione Effervescent</h3><p class="meta">Orange flavour &middot; Skin &amp; antioxidant</p></article>
+      <article class="card pcard rv" data-tilt><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_1d97e722692a46cbb7e6701d688bdcda~mv2.jpg/v1/fill/w_600,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_1d97e722692a46cbb7e6701d688bdcda~mv2.jpg" alt="Apple Cider Vinegar + Moringa" loading="lazy" decoding="async" width="600" height="600"></div><h3 class="t-3">Apple Cider Vinegar + Moringa</h3><p class="meta">Green apple &middot; Metabolism</p></article>
+      <article class="card pcard rv" data-tilt><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_f75bd00063ef46e58a1efdea01d18789~mv2.png/v1/fill/w_1100,h_1100,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_f75bd00063ef46e58a1efdea01d18789~mv2.png" alt="L-Carnitine Effervescent" loading="lazy" decoding="async" width="600" height="600"></div><h3 class="t-3">L-Carnitine Effervescent</h3><p class="meta">Orange flavour &middot; Energy</p></article>
+      <article class="card pcard rv" data-tilt><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_ff7808219dc64cfab2102ea067910a6a~mv2.png/v1/fill/w_1100,h_1100,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_ff7808219dc64cfab2102ea067910a6a~mv2.png" alt="B12 + Biotin Effervescent" loading="lazy" decoding="async" width="600" height="600"></div><h3 class="t-3">B12 + Biotin Effervescent</h3><p class="meta">Guava flavour &middot; Hair &amp; nerves</p></article>
+      <article class="card pcard rv" data-tilt><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_adf1de2910e24be895072712f8965914~mv2.png/v1/fill/w_1100,h_1100,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_adf1de2910e24be895072712f8965914~mv2.png" alt="Vitamin C Effervescent" loading="lazy" decoding="async" width="600" height="600"></div><h3 class="t-3">Vitamin C Effervescent</h3><p class="meta">Orange flavour &middot; Immunity</p></article>
+      <article class="card pcard rv" data-tilt><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_389d6b29ad5446bb81ad305de9756f17~mv2.jpg/v1/fill/w_600,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_389d6b29ad5446bb81ad305de9756f17~mv2.jpg" alt="Multidiata Multivitamin" loading="lazy" decoding="async" width="600" height="600"></div><h3 class="t-3">Multidiata Multivitamin</h3><p class="meta">Premium daily multivitamin</p></article>
+      <article class="card pcard rv" data-tilt><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_110567acf3b045e0a0998a68f50e4aae~mv2.jpg/v1/fill/w_1100,h_1100,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_110567acf3b045e0a0998a68f50e4aae~mv2.jpg" alt="MG+++ Magnesium" loading="lazy" decoding="async" width="600" height="600"></div><h3 class="t-3">MG+++ Magnesium</h3><p class="meta">B12 + D3 with magnesium</p></article>
+      <article class="card pcard rv" data-tilt><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_fb4f54451eb94ce38d361b1e0186522d~mv2.png/v1/fill/w_1100,h_1100,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_fb4f54451eb94ce38d361b1e0186522d~mv2.png" alt="CS++ + Iron++" loading="lazy" decoding="async" width="600" height="600"></div><h3 class="t-3">CS++ + Iron++</h3><p class="meta">Calcium + iron with B12 &amp; D3</p></article>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="narrow center rv">
+      <p class="eyebrow">Downloads</p>
+      <h2 class="t-1" style="margin-top:14px">Brochures for your<br>procurement team</h2>
+      <p class="lede" style="margin-top:20px;margin-inline:auto">Product specifications, pricing tiers, MOQ, certifications and partnership terms &mdash; sent on WhatsApp or email, usually within the hour.</p>
+    </div>
+    <div class="grid-3" style="margin-top:clamp(30px,4vw,48px)">
+      <article class="card dl rv" data-tilt>
+        <span class="tagline">Company brochure 2026</span>
+        <h3 class="t-3">B2B distributor brochure</h3>
+        <p class="sm">Complete overview of our manufacturing capabilities, product range &mdash; Spirulina, Glutathione, Vitamin C, Biotin and more &mdash; partnership models, certifications and wholesale pricing. Written for distributors and retail chains.</p>
+        <div class="foot"><a class="btn small" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20please%20send%20the%20B2B%20distributor%20brochure">Request on WhatsApp <i>&rarr;</i></a></div>
+      </article>
+      <article class="card dl rv s1" data-tilt>
+        <span class="tagline">Product brochure</span>
+        <h3 class="t-3">Ascovita Moringa</h3>
+        <p class="sm">Specifications for our moringa line &mdash; nutritional profile, health benefits, manufacturing process, packaging options and distributor pricing. Suited to health and wellness brand partnerships.</p>
+        <div class="foot"><a class="btn small" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20please%20send%20the%20Moringa%20brochure">Request on WhatsApp <i>&rarr;</i></a></div>
+      </article>
+      <article class="card dl rv s2" data-tilt>
+        <span class="tagline">On request</span>
+        <h3 class="t-3">Any product, any category</h3>
+        <p class="sm">Need specifications for a single SKU or a whole category? Tell us which one and we will send the relevant sheet &mdash; including COA format, shelf life, pack sizes and carton dimensions.</p>
+        <div class="foot"><a class="btn small soft" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20please%20send%20the%20product%20catalogue">Ask for a brochure <i>&rarr;</i></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+</div>
+<div class="page" id="pg-capabilities" data-route="/capabilities" data-title="B2B, private label, third-party manufacturing & franchise | Ascovita Healthcare" data-desc="Private label, third-party manufacturing, specialised packaging, pan-India franchise, export partnerships and bulk wholesale. MOQ from 500 units per SKU, quotation within 48 hours." hidden>
 
 <section class="phero">
   <div class="wrap">
@@ -798,7 +1035,7 @@ blockquote{margin:0}
     <h1 class="t-hero rv s1" style="margin-top:18px">Your trusted<br><span class="grad">manufacturing partner</span>.</h1>
     <p class="lede rv s2">End-to-end nutraceutical solutions &mdash; custom formulation, third-party manufacturing, private label, franchise and export partnerships. FSSAI licensed, WHO-GMP compliant, made in Gujarat.</p>
     <div class="actions rv s3">
-      <a class="btn" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20%E2%80%94%20B2B%20manufacturing%20enquiry">WhatsApp B2B enquiry <i>&rarr;</i></a>
+      <a class="btn" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20B2B%20manufacturing%20enquiry" data-magnetic>WhatsApp B2B enquiry <i>&rarr;</i></a>
       <a class="btn soft" href="#/contact">Send enquiry form</a>
     </div>
   </div>
@@ -807,10 +1044,10 @@ blockquote{margin:0}
 <section class="tight" style="padding-top:0">
   <div class="wrap">
     <div class="grid-4">
-      <div class="card flat stat rv"><b>50<u>+</u></b><span>B2B partners</span></div>
-      <div class="card flat stat rv s1"><b>40<u>+</u></b><span>Product SKUs</span></div>
-      <div class="card flat stat rv s2"><b>GMP</b><span>Certified plant</span></div>
-      <div class="card flat stat rv s3"><b>500</b><span>Units minimum order</span></div>
+      <div class="card flat stat rv" data-tilt><b data-count="50" data-suffix="+">0</b><span>B2B partners</span></div>
+      <div class="card flat stat rv s1" data-tilt><b data-count="40" data-suffix="+">0</b><span>Product SKUs</span></div>
+      <div class="card flat stat rv s2" data-tilt><b>GMP</b><span>Certified plant</span></div>
+      <div class="card flat stat rv s3" data-tilt><b data-count="500">0</b><span>Units minimum order</span></div>
     </div>
   </div>
 </section>
@@ -819,16 +1056,61 @@ blockquote{margin:0}
   <div class="wrap">
     <div class="narrow center rv">
       <p class="eyebrow">Solutions</p>
-      <h2 class="t-1" style="margin-top:14px">Complete B2B solutions</h2>
+      <h2 class="t-1" style="margin-top:14px">Six ways to work<br>with the plant</h2>
       <p class="lede" style="margin-top:20px;margin-inline:auto">From a single SKU to an entire brand portfolio &mdash; formulation, manufacturing, packaging and logistics under one roof.</p>
     </div>
     <div class="grid-3" style="margin-top:clamp(30px,4vw,48px)">
-      <div class="card rv"><span class="chip">PL</span><h3 class="t-3" style="margin-top:16px">Private label manufacturing</h3><p class="sm" style="margin-top:10px">Launch your own nutraceutical brand on our ready-to-use formulations. We handle production, quality control, packaging and labelling &mdash; you add your brand name.</p><div class="pills" style="margin-top:16px"><span>Low MOQ</span><span>Custom branding</span></div></div>
-      <div class="card rv s1"><span class="chip">3P</span><h3 class="t-3" style="margin-top:16px">Third-party manufacturing</h3><p class="sm" style="margin-top:10px">Already have a formulation? We manufacture to your exact specification in our GMP-certified facility. Effervescent, capsule, tablet, softgel, powder &mdash; all formats.</p><div class="pills" style="margin-top:16px"><span>All formats</span><span>GMP certified</span></div></div>
-      <div class="card rv s2"><span class="chip">PKG</span><h3 class="t-3" style="margin-top:16px">Specialised packaging</h3><p class="sm" style="margin-top:10px">Alu-Alu, blister packs, strip packaging and effervescent tubes, with custom packaging design to make your product stand out on shelf.</p><div class="pills" style="margin-top:16px"><span>Alu-Alu</span><span>Blister</span><span>Strip</span></div></div>
-      <div class="card rv"><span class="chip">FR</span><h3 class="t-3" style="margin-top:16px">Franchise programme</h3><p class="sm" style="margin-top:10px">Become an Ascovita franchise partner and tap into a proven brand, established supply chain and marketing support. Suited to pharma distributors and health stores.</p><div class="pills" style="margin-top:16px"><span>Marketing support</span><span>Pan-India</span></div></div>
-      <div class="card rv s1"><span class="chip">EX</span><h3 class="t-3" style="margin-top:16px">Export &amp; international</h3><p class="sm" style="margin-top:10px">Export partnerships for brands distributing Ascovita products or manufacturing under their own label internationally. FSSAI and export compliance handled.</p><div class="pills" style="margin-top:16px"><span>Global reach</span><span>Export compliant</span></div></div>
-      <div class="card rv s2"><span class="chip">BULK</span><h3 class="t-3" style="margin-top:16px">Bulk &amp; wholesale orders</h3><p class="sm" style="margin-top:10px">Pharmacies, clinics, hospital chains and online retailers source at wholesale pricing with priority dispatch and dedicated account management.</p><div class="pills" style="margin-top:16px"><span>Wholesale pricing</span><span>Priority dispatch</span></div></div>
+      <div class="card rv" data-tilt><span class="chip">PL</span><h3 class="t-3" style="margin-top:16px">Private label manufacturing</h3><p class="sm" style="margin-top:10px">Launch your own nutraceutical brand on our ready-to-use formulations. We handle production, quality control, packaging and labelling &mdash; you add your brand name.</p><div class="pills" style="margin-top:16px"><span>Low MOQ</span><span>Custom branding</span></div></div>
+      <div class="card rv s1" data-tilt><span class="chip">3P</span><h3 class="t-3" style="margin-top:16px">Third-party manufacturing</h3><p class="sm" style="margin-top:10px">Already have a formulation? We manufacture to your exact specification in our GMP-certified facility. Effervescent, capsule, tablet, softgel, powder &mdash; all formats.</p><div class="pills" style="margin-top:16px"><span>All formats</span><span>GMP certified</span></div></div>
+      <div class="card rv s2" data-tilt><span class="chip">PKG</span><h3 class="t-3" style="margin-top:16px">Specialised packaging</h3><p class="sm" style="margin-top:10px">Alu-Alu, blister packs, strip packaging and effervescent tubes, with custom packaging design to make your product stand out on shelf.</p><div class="pills" style="margin-top:16px"><span>Alu-Alu</span><span>Blister</span><span>Strip</span></div></div>
+      <div class="card rv" data-tilt><span class="chip">FR</span><h3 class="t-3" style="margin-top:16px">Franchise programme</h3><p class="sm" style="margin-top:10px">A proven brand, an established supply chain and marketing support behind you. Built for pharma distributors and health stores. <a href="#franchise" style="border-bottom:1px solid var(--line)">Full model below</a>.</p><div class="pills" style="margin-top:16px"><span>Marketing support</span><span>Pan-India</span></div></div>
+      <div class="card rv s1" data-tilt><span class="chip">EX</span><h3 class="t-3" style="margin-top:16px">Export &amp; international</h3><p class="sm" style="margin-top:10px">Export partnerships for brands distributing Ascovita products or manufacturing under their own label internationally. FSSAI and export compliance handled.</p><div class="pills" style="margin-top:16px"><span>Global reach</span><span>Export compliant</span></div></div>
+      <div class="card rv s2" data-tilt><span class="chip">BULK</span><h3 class="t-3" style="margin-top:16px">Bulk &amp; wholesale orders</h3><p class="sm" style="margin-top:10px">Pharmacies, clinics, hospital chains and online retailers source at wholesale pricing with priority dispatch and dedicated account management.</p><div class="pills" style="margin-top:16px"><span>Wholesale pricing</span><span>Priority dispatch</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="franchise" style="padding-top:0">
+  <div class="wrap">
+    <div class="card rv">
+      <p class="eyebrow">Franchise model</p>
+      <h2 class="t-1" style="margin-top:14px">Run Ascovita in<br><span class="grad">your territory</span>.</h2>
+      <p class="lede" style="margin-top:20px;max-width:64ch">The franchise programme is open pan-India. You get an appointed territory, a brand customers already recognise, and a supply chain that already works &mdash; so you are selling from week one instead of building a brand from zero.</p>
+
+      <div class="grid-3" style="margin-top:clamp(28px,3.5vw,44px)">
+        <div class="card sunk"><h3 class="t-3">What you get</h3>
+          <ul class="dvc" style="display:grid;gap:8px;list-style:none;margin-top:12px">
+            <li class="sm">An appointed, protected territory</li>
+            <li class="sm">The full Ascovita product range</li>
+            <li class="sm">Franchise pricing with distributor margin</li>
+            <li class="sm">Marketing collateral and POS material</li>
+            <li class="sm">Co-branded packaging where relevant</li>
+            <li class="sm">Priority dispatch and stock allocation</li>
+            <li class="sm">A direct line to the founding team</li>
+          </ul>
+        </div>
+        <div class="card sunk"><h3 class="t-3">Who it suits</h3>
+          <ul class="dvc" style="display:grid;gap:8px;list-style:none;margin-top:12px">
+            <li class="sm">Pharma distributors and stockists</li>
+            <li class="sm">Health and wellness store owners</li>
+            <li class="sm">Chemist chains moving into nutraceuticals</li>
+            <li class="sm">Clinics and hospital supply businesses</li>
+            <li class="sm">Regional FMCG distributors</li>
+          </ul>
+          <p class="xs" style="margin-top:14px">Existing trade relationships matter more than capital. If you already sell into chemists, you are most of the way there.</p>
+        </div>
+        <div class="card sunk"><h3 class="t-3">How it runs</h3>
+          <div class="steps" style="margin-top:14px">
+            <div class="stepc"><h4 class="t-3" style="font-size:15px">Enquiry &amp; territory check</h4><p class="sm" style="margin-top:6px">We confirm whether your territory is open.</p></div>
+            <div class="stepc"><h4 class="t-3" style="font-size:15px">Terms &amp; agreement</h4><p class="sm" style="margin-top:6px">Pricing, margin and territory set in writing.</p></div>
+            <div class="stepc"><h4 class="t-3" style="font-size:15px">Opening stock</h4><p class="sm" style="margin-top:6px">First order, POS material and launch support.</p></div>
+            <div class="stepc"><h4 class="t-3" style="font-size:15px">Ongoing supply</h4><p class="sm" style="margin-top:6px">Replenishment, new launches, marketing pushes.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="xs" style="margin-top:26px">Investment, margin and territory terms depend on the region and the range you carry. We share exact figures on enquiry rather than publishing a number that would be wrong for most people.</p>
+      <a class="btn" style="margin-top:20px" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20franchise%20enquiry" data-magnetic>Check if my territory is open <i>&rarr;</i></a>
     </div>
   </div>
 </section>
@@ -858,10 +1140,10 @@ blockquote{margin:0}
       <p class="lede" style="margin-top:20px;margin-inline:auto">First enquiry to first delivery in as little as 3&ndash;4 weeks.</p>
     </div>
     <div class="grid-4" style="margin-top:clamp(30px,4vw,48px)">
-      <div class="card rv"><span class="chip">Step 01</span><h3 class="t-3" style="margin-top:16px">Initial enquiry</h3><p class="sm" style="margin-top:10px">Contact us on WhatsApp or the enquiry form. Share your category, target quantity and packaging preference.</p></div>
-      <div class="card rv s1"><span class="chip">Step 02</span><h3 class="t-3" style="margin-top:16px">Formulation &amp; quote</h3><p class="sm" style="margin-top:10px">We prepare a custom formulation proposal and detailed pricing sheet within 48 hours.</p></div>
-      <div class="card rv s2"><span class="chip">Step 03</span><h3 class="t-3" style="margin-top:16px">Sample approval</h3><p class="sm" style="margin-top:10px">We produce lab samples for your review. You approve formulation, taste and packaging before we proceed.</p></div>
-      <div class="card rv s3"><span class="chip">Step 04</span><h3 class="t-3" style="margin-top:16px">Production &amp; delivery</h3><p class="sm" style="margin-top:10px">Full production begins, FSSAI batch testing completed, pan-India dispatch via trusted logistics partners.</p></div>
+      <div class="card rv" data-tilt><span class="chip">Step 01</span><h3 class="t-3" style="margin-top:16px">Initial enquiry</h3><p class="sm" style="margin-top:10px">Contact us on WhatsApp or the enquiry form. Share your category, target quantity and packaging preference.</p></div>
+      <div class="card rv s1" data-tilt><span class="chip">Step 02</span><h3 class="t-3" style="margin-top:16px">Formulation &amp; quote</h3><p class="sm" style="margin-top:10px">We prepare a custom formulation proposal and detailed pricing sheet within 48 hours.</p></div>
+      <div class="card rv s2" data-tilt><span class="chip">Step 03</span><h3 class="t-3" style="margin-top:16px">Sample approval</h3><p class="sm" style="margin-top:10px">We produce lab samples for your review. You approve formulation, taste and packaging before we proceed.</p></div>
+      <div class="card rv s3" data-tilt><span class="chip">Step 04</span><h3 class="t-3" style="margin-top:16px">Production &amp; delivery</h3><p class="sm" style="margin-top:10px">Full production begins, FSSAI batch testing completed, pan-India dispatch via trusted logistics partners.</p></div>
     </div>
   </div>
 </section>
@@ -871,22 +1153,27 @@ blockquote{margin:0}
     <div class="narrow center rv">
       <p class="eyebrow">Pricing</p>
       <h2 class="t-1" style="margin-top:14px">Volume discounts<br>for every scale</h2>
-      <p class="lede" style="margin-top:20px;margin-inline:auto">Indicative tiers. Contact us for exact per-unit pricing tailored to your category and volume.</p>
+      <p class="lede" style="margin-top:20px;margin-inline:auto">Indicative tiers. Exact per-unit pricing depends on category, format and volume.</p>
     </div>
-    <div class="grid-4" style="margin-top:clamp(30px,4vw,48px)">
-      <div class="card rv"><span class="chip">Starter</span><h3 class="t-2" style="margin-top:16px">500&ndash;2K</h3><p class="xs">units per order</p><p class="sm" style="margin-top:14px"><strong>Up to 15% off MRP</strong></p></div>
-      <div class="card rv s1"><span class="chip">Growth</span><h3 class="t-2" style="margin-top:16px">2K&ndash;10K</h3><p class="xs">units per order</p><p class="sm" style="margin-top:14px"><strong>Up to 25% off MRP</strong></p></div>
-      <div class="card rv s2"><span class="chip">Partner</span><h3 class="t-2" style="margin-top:16px">10K&ndash;50K</h3><p class="xs">units per order</p><p class="sm" style="margin-top:14px"><strong>Up to 40% off MRP</strong><br>plus co-branding</p></div>
-      <div class="card rv s3"><span class="chip">Enterprise</span><h3 class="t-2" style="margin-top:16px">50K+</h3><p class="xs">units per order</p><p class="sm" style="margin-top:14px"><strong>Custom pricing</strong><br>dedicated account manager</p></div>
+    <div class="tbl-wrap rv" style="margin-top:clamp(28px,3.5vw,44px)">
+      <table class="tbl">
+        <thead><tr><th>Tier</th><th>Units per order</th><th>Discount</th><th>Included</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Starter</strong></td><td>500 &ndash; 2,000</td><td>Up to 15% off MRP</td><td>Standard artwork support</td></tr>
+          <tr><td><strong>Growth</strong></td><td>2,000 &ndash; 10,000</td><td>Up to 25% off MRP</td><td>Custom artwork, priority slots</td></tr>
+          <tr><td><strong>Partner</strong></td><td>10,000 &ndash; 50,000</td><td>Up to 40% off MRP</td><td>Co-branding, priority dispatch</td></tr>
+          <tr><td><strong>Enterprise</strong></td><td>50,000+</td><td>Custom pricing</td><td>Dedicated account manager</td></tr>
+        </tbody>
+      </table>
     </div>
     <div class="center" style="margin-top:32px">
-      <a class="btn rv" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20%E2%80%94%20B2B%20manufacturing%20enquiry">Get my custom quote <i>&rarr;</i></a>
+      <a class="btn rv" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20B2B%20manufacturing%20enquiry" data-magnetic>Get my custom quote <i>&rarr;</i></a>
     </div>
   </div>
 </section>
 
 </div>
-<div class="page" id="pg-faq" data-route="/faq" data-title="Frequently asked questions | Ascovita Healthcare" data-desc="MOQ, lead times, certifications, artwork, export documentation and franchise — answers for distributors, private-label clients and export buyers." hidden>
+<div class="page" id="pg-faq" data-route="/faq" data-title="Frequently asked questions — MOQ, lead time, certifications | Ascovita Healthcare" data-desc="MOQ, lead times, certifications, artwork, export documentation and the franchise model — answers for distributors, private-label clients and export buyers." hidden>
 
 <section class="phero">
   <div class="wrap">
@@ -899,25 +1186,27 @@ blockquote{margin:0}
 <section class="tight" style="padding-top:0">
   <div class="wrap">
     <div class="rows">
-      <details class="row rv"><summary><h3 class="t-3">What is your minimum order quantity?</h3></summary><p class="sm">MOQ starts at 500 units per SKU for private label and third-party manufacturing. Bulk and wholesale orders start at 500 units and step through volume tiers from there.</p></details>
+      <details class="row rv"><summary><h3 class="t-3">What is your minimum order quantity?</h3></summary><p class="sm">MOQ starts at 500 units per SKU for private label and third-party manufacturing. Volume tiers step up from there, with better pricing at 2,000, 10,000 and 50,000 units.</p></details>
       <details class="row rv"><summary><h3 class="t-3">How long does a B2B order take?</h3></summary><p class="sm">First enquiry to first delivery is typically 3&ndash;4 weeks. You get a formulation proposal and pricing sheet within 48 hours, then lab samples for approval before production starts.</p></details>
-      <details class="row rv"><summary><h3 class="t-3">Do you manufacture to my own formulation?</h3></summary><p class="sm">Yes. Third-party manufacturing means we produce to your exact specification in our GMP-certified facility, across effervescent, capsule, tablet, softgel, powder and sachet formats.</p></details>
+      <details class="row rv"><summary><h3 class="t-3">Do you manufacture to my own formulation?</h3></summary><p class="sm">Yes. Third-party manufacturing means we produce to your exact specification in our GMP-certified facility, across effervescent, capsule, tablet, softgel, powder, sachet and chewable formats.</p></details>
       <details class="row rv"><summary><h3 class="t-3">What certifications do you hold?</h3></summary><p class="sm">The plant is FSSAI licensed and WHO-GMP compliant, with regular government audits. Every batch is independently third-party lab tested for purity, potency and safety, with results on file for every SKU.</p></details>
       <details class="row rv"><summary><h3 class="t-3">Can you handle label design and artwork?</h3></summary><p class="sm">Yes. We provide FSSAI-compliant label printing, full custom artwork support, QR code and barcode integration, and dispatch-ready carton packing.</p></details>
-      <details class="row rv"><summary><h3 class="t-3">Do you export?</h3></summary><p class="sm">Yes, through Jayraf Export, our dedicated export-import division led by our Export Director. We have served 30+ countries and handle Certificate of Analysis, MSDS, FSSAI, phytosanitary and customs documentation end to end.</p></details>
+      <details class="row rv"><summary><h3 class="t-3">Which packaging formats do you offer?</h3></summary><p class="sm">Alu-Alu, blister packs, strip packaging, effervescent tubes in 10s and 20s, bottles, jars, standup pouches and single-serve sachets.</p></details>
+      <details class="row rv"><summary><h3 class="t-3">Do you export?</h3></summary><p class="sm">Yes, through Jayraf Export, our dedicated export-import division led by our Export Director. We have served 30+ countries and handle Certificate of Analysis, MSDS, FSSAI, phytosanitary and customs documentation end to end, plus sea and air freight, FCL and LCL.</p></details>
+      <details class="row rv"><summary><h3 class="t-3">How does the franchise programme work?</h3></summary><p class="sm">You are appointed to a territory, carry the full Ascovita range at franchise pricing, and receive marketing collateral, POS material and priority stock allocation. It suits pharma distributors, chemist chains and health store owners. Territory availability and terms are confirmed on enquiry.</p></details>
       <details class="row rv"><summary><h3 class="t-3">Why are Ascovita and Ascofizz priced differently?</h3></summary><p class="sm">They are separate brands for separate channels. Ascovita is made for the retail trade and priced to protect distributor and retailer margin. Ascofizz is our online-only brand with its own SKUs and pack sizes, so e-commerce pricing never undercuts a retailer's shelf.</p></details>
-      <details class="row rv"><summary><h3 class="t-3">What packaging formats do you offer?</h3></summary><p class="sm">Alu-Alu, blister packs, strip packaging, effervescent tubes (10s and 20s), bottles, jars, standup pouches and single-serve sachets.</p></details>
+      <details class="row rv"><summary><h3 class="t-3">Can I get a product brochure or catalogue?</h3></summary><p class="sm">Yes. Message us on WhatsApp and tell us the product or category. We send the relevant specification sheet, including COA format, shelf life, pack sizes and carton dimensions, usually within the hour during business hours.</p></details>
       <details class="row rv"><summary><h3 class="t-3">Who will I deal with?</h3></summary><p class="sm">Our founders directly. Every B2B enquiry reaches the leadership team &mdash; no sales reps and no intermediaries.</p></details>
-      <details class="row rv"><summary><h3 class="t-3">Do you offer a franchise?</h3></summary><p class="sm">Yes. The franchise programme is open pan-India and includes marketing support, an established supply chain and the Ascovita brand. It suits pharma distributors and health stores.</p></details>
+      <details class="row rv"><summary><h3 class="t-3">What are your business hours?</h3></summary><p class="sm">Monday to Saturday, 9:30 AM to 6:30 PM IST. WhatsApp messages are typically answered within the hour during business hours.</p></details>
     </div>
     <div class="center" style="margin-top:36px">
-      <a class="btn rv" href="https://wa.me/919898582650">Ask us on WhatsApp <i>&rarr;</i></a>
+      <a class="btn rv" href="https://wa.me/919898582650" data-magnetic>Ask us on WhatsApp <i>&rarr;</i></a>
     </div>
   </div>
 </section>
 
 </div>
-<div class="page" id="pg-contact" data-route="/contact" data-title="Contact — distribution, private label & export enquiries | Ascovita Healthcare" data-desc="Talk to Ascovita Healthcare about distribution, private label, contract manufacturing or export. Anand, Gujarat, India." hidden>
+<div class="page" id="pg-contact" data-route="/contact" data-title="Contact — distribution, private label & export enquiries | Ascovita Healthcare" data-desc="Talk to Ascovita Healthcare about distribution, private label, third-party manufacturing, franchise or export. Anand, Gujarat. Mon–Sat 9:30–18:30 IST." hidden>
 
 <section class="phero">
   <div class="wrap">
@@ -944,31 +1233,32 @@ blockquote{margin:0}
               <option>Franchise enquiry</option>
               <option>Export buyer</option>
               <option>Bulk / wholesale buyer</option>
+              <option>Brochure / catalogue request</option>
               <option>Something else</option>
             </select>
           </label>
           <label class="field"><span>Category &amp; quantity</span><input id="f-qty" type="text" placeholder="e.g. effervescent Vitamin C, 10,000 units"></label>
           <label class="field"><span>What you need</span><textarea id="f-msg" placeholder="Product, market, packaging preference, target price"></textarea></label>
-          <button class="btn" id="f-send" type="button">Send on WhatsApp <i>&rarr;</i></button>
+          <button class="btn" id="f-send" type="button" data-magnetic>Send on WhatsApp <i>&rarr;</i></button>
           <p class="xs" id="f-err" style="margin-top:12px;display:none;color:#B3261E">Please add your name and what you need.</p>
         </div>
       </div>
 
       <div style="display:grid;gap:clamp(14px,2vw,22px)">
-        <div class="card flat rv">
+        <div class="card flat rv" data-tilt>
           <h3 class="t-3">Phone &amp; WhatsApp</h3>
           <p class="lede" style="margin-top:8px"><a href="https://wa.me/919898582650">+91 98985 82650</a></p>
           <p class="xs" style="margin-top:8px">Mon&ndash;Sat, 9:30 AM &ndash; 6:30 PM IST. WhatsApp replies typically within the hour during business hours.</p>
         </div>
-        <div class="card flat rv s1">
+        <div class="card flat rv s1" data-tilt>
           <h3 class="t-3">Email</h3>
           <p class="sm" style="margin-top:8px"><a href="mailto:info@ascovita.com">info@ascovita.com</a><br><a href="mailto:ascovitahealthcare@gmail.com">ascovitahealthcare@gmail.com</a></p>
         </div>
-        <div class="card flat rv s2">
+        <div class="card flat rv s2" data-tilt>
           <h3 class="t-3">Factory &amp; office</h3>
           <p class="sm" style="margin-top:8px">Ascovita Healthcare<br>Near Rajshivalay Cinema<br>Anand &ndash; 388001, Gujarat, India</p>
         </div>
-        <div class="card flat rv s3">
+        <div class="card flat rv s3" data-tilt>
           <h3 class="t-3">Languages</h3>
           <p class="sm" style="margin-top:8px">English &middot; &#2361;&#2367;&#2344;&#2381;&#2342;&#2368; &middot; &#2711;&#2753;&#2716;&#2736;&#2750;&#2724;&#2752;</p>
           <h3 class="t-3" style="margin-top:20px">Follow</h3>
@@ -982,14 +1272,16 @@ blockquote{margin:0}
 <script>
 (function(){
   var btn = document.getElementById('f-send');
-  if (!btn) return;
+  if (!btn || btn.__wired) return;
+  btn.__wired = true;
   btn.addEventListener('click', function(){
     var v = function(id){ var e = document.getElementById(id); return e ? e.value.trim() : ''; };
     var name = v('f-name'), co = v('f-co'), qty = v('f-qty'), msg = v('f-msg');
-    var type = (document.getElementById('f-type') || {}).value || '';
+    var sel  = document.getElementById('f-type');
+    var type = sel ? sel.value : '';
     var err  = document.getElementById('f-err');
-    if (!name || !msg) { err.style.display = 'block'; return; }
-    err.style.display = 'none';
+    if (!name || !msg) { if (err) err.style.display = 'block'; return; }
+    if (err) err.style.display = 'none';
     var text = 'Hello Ascovita Healthcare.\n\nName: ' + name +
                (co ? '\nCompany: ' + co : '') +
                '\nEnquiry type: ' + type +
@@ -1486,6 +1778,238 @@ function initFluid(canvas){
 
 <script>
 /* ══════════════════════════════════════════════════════════════════
+   art.js — Ascovita Healthcare
+
+   A second 3D scene, raymarched entirely in a fragment shader. No
+   library, no mesh, no model file: the tablet is described as a
+   signed-distance field and the image is solved per pixel.
+
+   The subject is the moment a tablet gives way — a pressed disc with
+   a punch ring, blended (smooth-union) with droplets that pull away
+   from its rim and rise. Same idea as the hero fluid, different
+   physics, so the two never look like the same effect twice.
+
+   initArt(canvas) → { destroy() } · null if WebGL is unavailable.
+   ══════════════════════════════════════════════════════════════════ */
+
+function initArt(canvas){
+  var gl = canvas.getContext('webgl', { alpha:true, antialias:false, premultipliedAlpha:false })
+        || canvas.getContext('experimental-webgl', { alpha:true, antialias:false });
+  if (!gl) return null;
+
+  var VS = [
+    'attribute vec2 p;',
+    'void main(){ gl_Position = vec4(p, 0.0, 1.0); }'
+  ].join('\n');
+
+  var FS = [
+    'precision highp float;',
+    'uniform vec2  uRes;',
+    'uniform float uTime;',
+    'uniform vec2  uPtr;',
+    'uniform float uProg;',
+
+    /* ── palette, straight off the logo ─────────────────────────── */
+    'const vec3 GREEN = vec3(0.180, 0.490, 0.196);',
+    'const vec3 GOLD  = vec3(0.788, 0.635, 0.153);',
+    'const vec3 GROUND= vec3(0.910, 0.929, 0.902);',
+
+    /* ── SDF helpers ────────────────────────────────────────────── */
+    'float smin(float a, float b, float k){',
+    '  float h = clamp(0.5 + 0.5*(b-a)/k, 0.0, 1.0);',
+    '  return mix(b, a, h) - k*h*(1.0-h);',
+    '}',
+    'float sdRoundedCylinder(vec3 p, float ra, float rb, float h){',
+    '  vec2 d = vec2(length(p.xz) - 2.0*ra + rb, abs(p.y) - h);',
+    '  return min(max(d.x, d.y), 0.0) + length(max(d, 0.0)) - rb;',
+    '}',
+    'float sdTorus(vec3 p, vec2 t){',
+    '  vec2 q = vec2(length(p.xz) - t.x, p.y);',
+    '  return length(q) - t.y;',
+    '}',
+    'mat2 rot(float a){ float c = cos(a), s = sin(a); return mat2(c, -s, s, c); }',
+    'float hash(float n){ return fract(sin(n) * 43758.5453123); }',
+
+    /* ── the scene ──────────────────────────────────────────────── */
+    'float map(vec3 p){',
+    '  vec3 q = p;',
+    '  q.xz *= rot(uTime * 0.25);',
+    '  q.yz *= rot(0.42 + uPtr.y * 0.28);',
+    '  q.xy *= rot(uPtr.x * 0.22);',
+
+    // the tablet: a pressed disc, thinning as it gives way
+    '  float body = sdRoundedCylinder(q, 0.40, 0.11, 0.155 - uProg * 0.05);',
+    // the punch ring on its face
+    '  float ring = sdTorus(q - vec3(0.0, 0.152, 0.0), vec2(0.30, 0.016));',
+    '  float d = min(body, ring);',
+
+    // droplets pulling off the rim and rising
+    '  for (int i = 0; i < 7; i++){',
+    '    float fi = float(i);',
+    '    float a  = fi * 0.8976 + uTime * (0.22 + hash(fi) * 0.30);',
+    '    float rise = fract(uTime * (0.10 + hash(fi + 9.0) * 0.16) + hash(fi + 3.0));',
+    '    float rad  = 0.46 + rise * (0.30 + uProg * 0.40);',
+    '    vec3  c = vec3(cos(a) * rad, -0.10 + rise * (0.85 + uProg * 0.5), sin(a) * rad);',
+    '    float r = (0.085 + hash(fi + 5.0) * 0.055) * (1.0 - rise * 0.55);',
+    '    d = smin(d, length(q - c) - r, 0.16);',
+    '  }',
+    '  return d;',
+    '}',
+
+    'vec3 calcNormal(vec3 p){',
+    '  vec2 e = vec2(0.0012, 0.0);',
+    '  return normalize(vec3(',
+    '    map(p + e.xyy) - map(p - e.xyy),',
+    '    map(p + e.yxy) - map(p - e.yxy),',
+    '    map(p + e.yyx) - map(p - e.yyx)));',
+    '}',
+
+    'float softShadow(vec3 ro, vec3 rd){',
+    '  float res = 1.0, t = 0.05;',
+    '  for (int i = 0; i < 22; i++){',
+    '    float h = map(ro + rd * t);',
+    '    res = min(res, 9.0 * h / t);',
+    '    t += clamp(h, 0.02, 0.20);',
+    '    if (res < 0.005 || t > 3.0) break;',
+    '  }',
+    '  return clamp(res, 0.0, 1.0);',
+    '}',
+
+    'void main(){',
+    '  vec2 uv = (gl_FragCoord.xy - 0.5 * uRes) / min(uRes.x, uRes.y);',
+    '  vec3 ro = vec3(0.0, 0.0, 2.35);',
+    '  vec3 rd = normalize(vec3(uv, -1.55));',
+
+    '  float t = 0.0; float d = 0.0; bool hit = false;',
+    '  for (int i = 0; i < 78; i++){',
+    '    d = map(ro + rd * t);',
+    '    if (d < 0.0016) { hit = true; break; }',
+    '    t += d * 0.86;',
+    '    if (t > 5.5) break;',
+    '  }',
+
+    '  if (!hit) { gl_FragColor = vec4(0.0); return; }',
+
+    '  vec3 pos = ro + rd * t;',
+    '  vec3 n   = calcNormal(pos);',
+    '  vec3 v   = -rd;',
+
+    // studio lighting: broad key upper-front, cool rim behind, low fill
+    '  vec3 kd = normalize(vec3( 0.55, 0.82,  0.62));',
+    '  vec3 rl = normalize(vec3(-0.68, 0.24, -0.60));',
+    '  vec3 fl = normalize(vec3(-0.30,-0.72,  0.45));',
+
+    '  float key  = max(dot(n, kd), 0.0) * softShadow(pos + n * 0.02, kd);',
+    '  float rim  = pow(max(dot(n, rl), 0.0), 1.6);',
+    '  float fill = max(dot(n, fl), 0.0) * 0.30;',
+    '  float fres = pow(1.0 - max(dot(n, v), 0.0), 3.2);',
+
+    // specular
+    '  vec3 h1 = normalize(kd + v);',
+    '  float spec = pow(max(dot(n, h1), 0.0), 46.0);',
+
+    // the tablet reads pale; the gold only shows in the rim and the fresnel,
+    // so the object stays quiet against the page instead of glowing
+    '  vec3 base = mix(vec3(0.965, 0.957, 0.930), GREEN, 0.10 + uProg * 0.08);',
+    '  vec3 col  = base * (0.30 + key * 0.72);',
+    '  col += GOLD  * rim  * 0.30;',
+    '  col += GREEN * fill * 0.35;',
+    '  col += vec3(1.0) * spec * 0.55;',
+    '  col += GOLD * fres * 0.16;',
+
+    // fade into the page ground with depth so there is no hard cut-out edge
+    '  float fog = smoothstep(3.4, 1.3, t);',
+    '  col = mix(GROUND, col, fog);',
+    '  gl_FragColor = vec4(col, fog);',
+    '}'
+  ].join('\n');
+
+  function sh(type, src){
+    var s = gl.createShader(type);
+    gl.shaderSource(s, src); gl.compileShader(s);
+    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) { console.warn(gl.getShaderInfoLog(s)); return null; }
+    return s;
+  }
+  var vs = sh(gl.VERTEX_SHADER, VS), fs = sh(gl.FRAGMENT_SHADER, FS);
+  if (!vs || !fs) return null;
+
+  var prog = gl.createProgram();
+  gl.attachShader(prog, vs); gl.attachShader(prog, fs); gl.linkProgram(prog);
+  if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) return null;
+  gl.useProgram(prog);
+
+  var buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 3,-1, -1,3]), gl.STATIC_DRAW);
+  var loc = gl.getAttribLocation(prog, 'p');
+  gl.enableVertexAttribArray(loc);
+  gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+
+  var uRes  = gl.getUniformLocation(prog, 'uRes'),
+      uTime = gl.getUniformLocation(prog, 'uTime'),
+      uPtr  = gl.getUniformLocation(prog, 'uPtr'),
+      uProg = gl.getUniformLocation(prog, 'uProg');
+
+  gl.enable(gl.BLEND);
+  gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+
+  function resize(){
+    // raymarching costs per pixel, so cap the buffer hard — this scene
+    // looks identical at 1.25x and costs 40% less than at 2x
+    var dpr = Math.min(window.devicePixelRatio || 1, 1.25);
+    var w = Math.max(1, Math.floor(canvas.clientWidth  * dpr));
+    var h = Math.max(1, Math.floor(canvas.clientHeight * dpr));
+    if (canvas.width !== w || canvas.height !== h){
+      canvas.width = w; canvas.height = h;
+      gl.viewport(0, 0, w, h);
+    }
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  var px = 0, py = 0, tx = 0, ty = 0;
+  window.addEventListener('pointermove', function(e){
+    var r = canvas.getBoundingClientRect();
+    tx = (e.clientX - r.left) / r.width  - 0.5;
+    ty = (e.clientY - r.top)  / r.height - 0.5;
+  }, { passive:true });
+
+  var prog01 = 0, targetProg = 0;
+  function readScroll(){
+    var r = canvas.getBoundingClientRect();
+    var seen = 1 - (r.top + r.height * 0.5) / window.innerHeight;
+    targetProg = Math.min(1, Math.max(0, seen));
+  }
+  window.addEventListener('scroll', readScroll, { passive:true });
+  readScroll();
+
+  var alive = true, visible = true, raf = 0, t0 = performance.now();
+  document.addEventListener('visibilitychange', function(){ visible = !document.hidden; });
+
+  function frame(now){
+    if (!alive) return;
+    raf = requestAnimationFrame(frame);
+    if (!visible) return;
+    resize();
+    px += (tx - px) * 0.055;
+    py += (ty - py) * 0.055;
+    prog01 += (targetProg - prog01) * 0.06;
+
+    gl.uniform2f(uRes, canvas.width, canvas.height);
+    gl.uniform1f(uTime, (now - t0) / 1000);
+    gl.uniform2f(uPtr, px, py);
+    gl.uniform1f(uProg, prog01);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+  }
+  raf = requestAnimationFrame(frame);
+
+  return { destroy:function(){ alive = false; cancelAnimationFrame(raf); } };
+}
+
+</script>
+
+<script>
+/* ══════════════════════════════════════════════════════════════════
    site.js — Ascovita Healthcare
    Nav, scroll reveals, logo fallback, and booting the fluid hero.
    ══════════════════════════════════════════════════════════════════ */
@@ -1613,6 +2137,214 @@ function initFluid(canvas){
   } else {
     boot();
   }
+
+  /* ── raymarched art panels ─────────────────────────────────────
+     Same lazy pattern as the fluid: a per-pixel raymarch has no
+     business running for a canvas the reader has not reached. */
+  window.__ascovitaArt = function(scope){
+    if (reduced || typeof initArt !== 'function') {
+      (scope || document).querySelectorAll('.art-shell').forEach(function(sh){
+        sh.classList.add('fallback');
+        var c = sh.querySelector('canvas'); if (c) c.style.display = 'none';
+        var cap = sh.querySelector('.art-cap'); if (cap) cap.remove();
+      });
+      return;
+    }
+    (scope || document).querySelectorAll('canvas.art-canvas').forEach(function(cv){
+      if (cv.__art) return;
+      var host = cv.closest('.art-shell');
+      var start = function(){
+        if (cv.__art) return;
+        cv.__art = true;
+        var inst = null;
+        try { inst = initArt(cv); } catch (e) { inst = null; }
+        if (!inst && host) {
+          host.classList.add('fallback');
+          cv.style.display = 'none';
+          var cap = host.querySelector('.art-cap'); if (cap) cap.remove();
+        }
+      };
+      window.__ascovitaFluid = function(){
+    if (started) return;
+    if (shell.offsetParent === null) return;  // Home not on screen yet
+    boot();
+  };
+
+  if ('IntersectionObserver' in window) {
+        var io3 = new IntersectionObserver(function(en){
+          if (en[0].isIntersecting) { io3.disconnect(); start(); }
+        }, { rootMargin: '250px' });
+        io3.observe(cv);
+      } else { start(); }
+    });
+  };
+  window.__ascovitaArt(document);
+})();
+
+</script>
+
+<script>
+/* ══════════════════════════════════════════════════════════════════
+   motion.js — Ascovita Healthcare
+
+   Small, restrained motion. Everything here checks
+   prefers-reduced-motion first and everything is passive-listener
+   and rAF-batched, because a marketing page has no business
+   dropping frames on a mid-range Android.
+   ══════════════════════════════════════════════════════════════════ */
+(function(){
+  'use strict';
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var coarse  = window.matchMedia('(pointer: coarse)').matches;
+
+  /* ── 1. 3D tilt on cards ───────────────────────────────────────
+     Pointer-driven perspective rotation. Skipped entirely on touch:
+     on a phone there is no hover, so a tilt would either never fire
+     or fire on tap and feel broken. */
+  function initTilt(scope){
+    if (reduced || coarse) return;
+    (scope || document).querySelectorAll('[data-tilt]').forEach(function(el){
+      if (el.__tilt) return;
+      el.__tilt = true;
+      var raf = null, rx = 0, ry = 0;
+
+      el.addEventListener('pointermove', function(e){
+        var r = el.getBoundingClientRect();
+        var cx = (e.clientX - r.left) / r.width  - 0.5;
+        var cy = (e.clientY - r.top)  / r.height - 0.5;
+        ry =  cx * 7;
+        rx = -cy * 7;
+        if (!raf) raf = requestAnimationFrame(apply);
+      }, { passive:true });
+
+      el.addEventListener('pointerleave', function(){
+        rx = 0; ry = 0;
+        if (!raf) raf = requestAnimationFrame(apply);
+      }, { passive:true });
+
+      function apply(){
+        raf = null;
+        el.style.transform = 'perspective(900px) rotateX(' + rx.toFixed(2) +
+                             'deg) rotateY(' + ry.toFixed(2) + 'deg)';
+      }
+    });
+  }
+
+  /* ── 2. Counters ───────────────────────────────────────────────
+     Counts to the value in data-count when the element first
+     appears. Keeps the suffix (k+, %, ★) intact. */
+  function initCounters(scope){
+    var nodes = (scope || document).querySelectorAll('[data-count]');
+    if (!nodes.length) return;
+
+    function run(el){
+      if (el.__counted) return;
+      el.__counted = true;
+      var to      = parseFloat(el.getAttribute('data-count'));
+      var dec     = (el.getAttribute('data-dec') | 0);
+      var suffix  = el.getAttribute('data-suffix') || '';
+      if (reduced) { el.textContent = to.toFixed(dec) + suffix; return; }
+      var start = null, dur = 1400;
+      function tick(now){
+        if (start === null) start = now;
+        var k = Math.min(1, (now - start) / dur);
+        var e = 1 - Math.pow(1 - k, 3);              // ease-out cubic
+        el.textContent = (to * e).toFixed(dec) + suffix;
+        if (k < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+
+    if (!('IntersectionObserver' in window)) { nodes.forEach(run); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) { run(en.target); io.unobserve(en.target); }
+      });
+    }, { threshold:0.4 });
+    nodes.forEach(function(n){ io.observe(n); });
+  }
+
+  /* ── 3. Scroll parallax ────────────────────────────────────────
+     One rAF loop for every parallax element on the page, rather than
+     one listener each. data-parallax is the strength in pixels. */
+  var parallaxEls = [];
+  function initParallax(scope){
+    if (reduced) return;
+    (scope || document).querySelectorAll('[data-parallax]').forEach(function(el){
+      if (parallaxEls.indexOf(el) === -1) parallaxEls.push(el);
+    });
+  }
+  var ticking = false;
+  function onScroll(){
+    if (reduced || ticking || !parallaxEls.length) return;
+    ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false;
+      var vh = window.innerHeight;
+      for (var i = 0; i < parallaxEls.length; i++){
+        var el = parallaxEls[i];
+        if (el.offsetParent === null) continue;
+        var r = el.getBoundingClientRect();
+        if (r.bottom < -200 || r.top > vh + 200) continue;
+        var mid = (r.top + r.height / 2 - vh / 2) / vh;   // -0.5 … 0.5
+        var k = parseFloat(el.getAttribute('data-parallax')) || 20;
+        el.style.transform = 'translate3d(0,' + (mid * -k).toFixed(1) + 'px,0)';
+      }
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive:true });
+  window.addEventListener('resize', onScroll, { passive:true });
+
+  /* ── 4. Marquee ────────────────────────────────────────────────
+     Duplicates its own children once so the loop is seamless, then
+     animates on the GPU. Pauses on hover so a reader can stop it. */
+  function initMarquee(scope){
+    (scope || document).querySelectorAll('[data-marquee]').forEach(function(el){
+      if (el.__marquee) return;
+      el.__marquee = true;
+      var track = el.querySelector('.mq-track');
+      if (!track) return;
+      track.innerHTML += track.innerHTML;
+      if (reduced) { el.classList.add('mq-static'); return; }
+      var speed = parseFloat(el.getAttribute('data-marquee')) || 42;
+      track.style.animationDuration = speed + 's';
+      el.classList.add('mq-run');
+    });
+  }
+
+  /* ── 5. Magnetic buttons ───────────────────────────────────────
+     A couple of pixels of pull toward the cursor. Enough to feel
+     responsive, small enough that nobody consciously notices. */
+  function initMagnetic(scope){
+    if (reduced || coarse) return;
+    (scope || document).querySelectorAll('[data-magnetic]').forEach(function(el){
+      if (el.__mag) return;
+      el.__mag = true;
+      el.addEventListener('pointermove', function(e){
+        var r = el.getBoundingClientRect();
+        var x = (e.clientX - r.left - r.width  / 2) * 0.22;
+        var y = (e.clientY - r.top  - r.height / 2) * 0.30;
+        el.style.transform = 'translate(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px)';
+      }, { passive:true });
+      el.addEventListener('pointerleave', function(){ el.style.transform = ''; }, { passive:true });
+    });
+  }
+
+  /* ── 6. Scroll progress rail ───────────────────────────────────── */
+  var bar = document.getElementById('progress');
+  if (bar && !reduced) {
+    window.addEventListener('scroll', function(){
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.transform = 'scaleX(' + (max > 0 ? window.scrollY / max : 0) + ')';
+    }, { passive:true });
+  }
+
+  /* ── expose so the SPA router can re-run these per route ──────── */
+  window.__ascovitaMotion = function(scope){
+    initTilt(scope); initCounters(scope); initParallax(scope);
+    initMarquee(scope); initMagnetic(scope); onScroll();
+  };
+  window.__ascovitaMotion(document);
 })();
 
 </script>
@@ -1670,8 +2402,10 @@ function initFluid(canvas){
 
       // re-run reveals for whatever just became visible
       window.__ascovitaReveal && window.__ascovitaReveal(target);
-      // boot the fluid the first time the home panel appears
+      window.__ascovitaMotion && window.__ascovitaMotion(target);
+      // boot the heavy canvases only once the page holding them is visible
       window.__ascovitaFluid && window.__ascovitaFluid();
+      window.__ascovitaArt   && window.__ascovitaArt(target);
     }
 
     var menu = document.querySelector('.nav-links');
