@@ -3,610 +3,1378 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ascovita Healthcare — WHO-GMP Effervescent & Nutraceutical Manufacturer, Anand, Gujarat</title>
-<meta name="description" content="Ascovita Healthcare manufactures effervescent tablets, spirulina and multivitamin formulations at a WHO-GMP certified, FSSAI approved facility in Anand, Gujarat. Contract manufacturing, private label, retail distribution and export.">
+<title>Ascovita Healthcare — Effervescent & Nutraceutical Manufacturer, Anand, Gujarat</title>
+<meta name="description" content="WHO-GMP certified effervescent tablet and nutraceutical manufacturing in Anand, Gujarat. Contract manufacturing, private label, retail distribution and export.">
 <link rel="canonical" href="https://www.ascovita.com/">
-<meta name="theme-color" content="#0A2E2A">
+<meta name="theme-color" content="#E8EDE6">
+<link rel="icon" href="https://static.wixstatic.com/media/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png/v1/fill/w_346,h_166,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ascovita Healthcare">
-<meta property="og:title" content="Ascovita Healthcare — Effervescent & Nutraceutical Manufacturing">
-<meta property="og:description" content="WHO-GMP certified manufacturing in Anand, Gujarat. Three divisions: retail distribution, Ascofizz online, Jayraf Export.">
+<meta property="og:title" content="Ascovita Healthcare — Effervescent & Nutraceutical Manufacturer, Anand, Gujarat">
+<meta property="og:description" content="WHO-GMP certified effervescent tablet and nutraceutical manufacturing in Anand, Gujarat. Contract manufacturing, private label, retail distribution and export.">
 <meta property="og:url" content="https://www.ascovita.com/">
+<meta property="og:image" content="https://static.wixstatic.com/media/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png/v1/fill/w_346,h_166,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,400..800;1,75..125,400..700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://static.wixstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..800&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Ascovita Healthcare",
-  "url": "https://www.ascovita.com/",
-  "description": "WHO-GMP certified nutraceutical and effervescent tablet manufacturer.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Near Rajshivalay Cinema",
-    "addressLocality": "Anand",
-    "addressRegion": "Gujarat",
-    "postalCode": "388001",
-    "addressCountry": "IN"
-  },
-  "telephone": "+91-98985-82650",
-  "brand": [
-    { "@type": "Brand", "name": "Ascovita" },
-    { "@type": "Brand", "name": "Ascofizz", "url": "https://www.ascofizz.com/" },
-    { "@type": "Brand", "name": "Jayraf Export" }
-  ]
+  "@context":"https://schema.org","@type":"Organization",
+  "name":"Ascovita Healthcare","url":"https://www.ascovita.com/","logo":"https://static.wixstatic.com/media/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png/v1/fill/w_346,h_166,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png",
+  "description":"WHO-GMP certified nutraceutical and effervescent tablet manufacturer in Anand, Gujarat, India.",
+  "address":{"@type":"PostalAddress","streetAddress":"Near Rajshivalay Cinema","addressLocality":"Anand","addressRegion":"Gujarat","postalCode":"388001","addressCountry":"IN"},
+  "telephone":"+91-98985-82650",
+  "brand":[{"@type":"Brand","name":"Ascovita"},{"@type":"Brand","name":"Ascofizz","url":"https://www.ascofizz.com/"},{"@type":"Brand","name":"Jayraf Export"}]
 }
 </script>
 
 <style>
-/* ══════════════════════════════════════════════════════════════
-   ASCOVITA HEALTHCARE — corporate site
-   Design system: "Certificate of Analysis"
-   Every section carries a left spec column (mono parameters) beside
-   its content, because this is a company whose entire value is
-   documented, tested and certified. The structure is the argument.
-   ══════════════════════════════════════════════════════════════ */
+/* ══════════════════════════════════════════════════════════════════
+   ASCOVITA HEALTHCARE — shared stylesheet
+   Soft neumorphism · minimal · colour taken from the logo
+
+   Contrast note: neumorphism normally fails accessibility because
+   people put low-contrast text on low-contrast surfaces. Here the
+   soft treatment is applied ONLY to surfaces and controls. All text
+   stays dark ink on a light ground, so every reading size clears
+   WCAG AA.
+   ══════════════════════════════════════════════════════════════════ */
 
 :root{
-  --ink:#0A2E2A;          /* deep green-black — Ascovita green pushed dark */
-  --ink-2:#123F39;
-  --ground:#E9EDEA;       /* cool bone with a green cast */
-  --paper:#FFFFFF;
-  --signal:#E4A11B;       /* regulatory amber — the certified marker */
-  --steel:#6B827D;        /* muted supporting text */
-  --rule:#C6D0CB;
+  /* ground */
+  --bg:#E8EDE6;
+  --bg-2:#EDF1EB;
+  --white:#FFFFFF;
 
-  --retail:#2E7D32;       /* division: Ascovita retail */
-  --fizz:#00A6C0;         /* division: Ascofizz online */
-  --export:#1E4B8F;       /* division: Jayraf Export */
+  /* neumorphic shadow pair — one warm light, one cool shade */
+  --hi:rgba(255,255,255,.92);
+  --lo:rgba(150,166,148,.52);
 
-  --display:'Archivo',system-ui,sans-serif;
-  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --nm:10px 10px 24px var(--lo), -10px -10px 24px var(--hi);
+  --nm-sm:5px 5px 13px var(--lo), -5px -5px 13px var(--hi);
+  --nm-xs:3px 3px 7px var(--lo), -3px -3px 7px var(--hi);
+  --nm-in:inset 6px 6px 14px var(--lo), inset -6px -6px 14px var(--hi);
+  --nm-in-sm:inset 3px 3px 8px var(--lo), inset -3px -3px 8px var(--hi);
 
-  --gut:clamp(20px,4vw,64px);
-  --spec-w:168px;
+  /* ink */
+  --ink:#17211A;
+  --ink-2:#4B5950;
+  --ink-3:#87938B;
+  --line:rgba(23,33,26,.09);
+
+  /* logo colour, used sparingly */
+  --green:#2E7D32;
+  --green-d:#1C5620;
+  --green-l:#8CC48F;
+  --gold:#C9A227;
+
+  --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+
+  --gut:clamp(20px,4.4vw,56px);
+  --max:1240px;
+  --r:22px;
+  --r-sm:14px;
 }
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:var(--font);font-size:17px;line-height:1.55;
+  font-feature-settings:'cv02','cv03','cv04','cv11';
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2.5px solid var(--green);outline-offset:4px;border-radius:6px}
+::selection{background:var(--green);color:#fff}
+
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
-body{
-  font-family:var(--display);
-  font-variation-settings:'wdth' 100;
-  background:var(--ground);
-  color:var(--ink);
-  font-size:17px;
-  line-height:1.55;
-  -webkit-font-smoothing:antialiased;
+
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gut)}
+.narrow{max-width:920px;margin-inline:auto}
+
+/* ── type scale ─────────────────────────────────────────────────── */
+.t-hero{font-size:clamp(40px,7.4vw,88px);line-height:1.03;letter-spacing:-.038em;font-weight:700}
+.t-1{font-size:clamp(32px,5vw,60px);line-height:1.06;letter-spacing:-.032em;font-weight:700}
+.t-2{font-size:clamp(24px,3.2vw,38px);line-height:1.14;letter-spacing:-.026em;font-weight:700}
+.t-3{font-size:clamp(19px,1.9vw,23px);line-height:1.3;letter-spacing:-.018em;font-weight:600}
+.lede{font-size:clamp(17px,1.75vw,21px);line-height:1.55;color:var(--ink-2);font-weight:400}
+.sm{font-size:15px;line-height:1.6;color:var(--ink-2)}
+.xs{font-size:13px;line-height:1.55;color:var(--ink-3)}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--green)}
+.grad{background:linear-gradient(103deg,var(--green-d),var(--green) 46%,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.center{text-align:center}
+
+/* ── nav ────────────────────────────────────────────────────────── */
+.nav{position:sticky;top:0;z-index:60;padding-top:12px;padding-bottom:12px;
+     background:linear-gradient(var(--bg) 62%,rgba(232,237,230,0));}
+.nav-in{
+  display:flex;align-items:center;gap:20px;height:58px;padding-inline:18px;
+  background:var(--bg);border-radius:100px;box-shadow:var(--nm-sm);
 }
-img{max-width:100%;display:block}
-a{color:inherit}
-:focus-visible{outline:2.5px solid var(--signal);outline-offset:3px}
-
-/* ── shared type ─────────────────────────────────────────── */
-.eyebrow{
-  font-family:var(--mono);font-size:11px;font-weight:500;
-  letter-spacing:.16em;text-transform:uppercase;color:var(--steel);
+.brand{display:flex;align-items:center;gap:10px;margin-right:auto}
+.brand img{height:26px;width:auto}
+.brand .fallback{font-weight:700;font-size:18px;letter-spacing:-.02em}
+.nav-links{display:flex;gap:2px}
+.nav-links a{
+  font-size:13.5px;font-weight:500;color:var(--ink-2);
+  padding:8px 15px;border-radius:100px;transition:color .2s,box-shadow .2s;
 }
-h1,h2,h3{font-weight:800;line-height:1.02;letter-spacing:-.025em;font-variation-settings:'wdth' 92}
-.lead{font-size:clamp(17px,1.9vw,21px);color:var(--ink-2);max-width:62ch}
-.muted{color:var(--steel)}
-
-/* ── layout shell ────────────────────────────────────────── */
-.wrap{max-width:1280px;margin-inline:auto;padding-inline:var(--gut)}
-
-/* The Certificate-of-Analysis grid: spec column + content column */
-.coa{display:grid;grid-template-columns:var(--spec-w) 1fr;gap:clamp(24px,4vw,56px)}
-.coa-spec{border-top:2px solid var(--ink);padding-top:14px}
-.coa-spec dl{display:grid;gap:14px}
-.coa-spec dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--steel)}
-.coa-spec dd{font-family:var(--mono);font-size:13px;font-weight:500;color:var(--ink);line-height:1.35}
-.coa-body{border-top:2px solid var(--ink);padding-top:14px;min-width:0}
-@media (max-width:820px){
-  .coa{grid-template-columns:1fr;gap:26px}
-  .coa-spec{border-top:1px solid var(--rule);order:2}
-  .coa-spec dl{grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px 20px}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a[aria-current="page"]{color:var(--ink);box-shadow:var(--nm-in-sm)}
+.nav-toggle{display:none;width:40px;height:40px;border-radius:50%;box-shadow:var(--nm-xs);
+            align-items:center;justify-content:center}
+.nav-toggle span{display:block;width:16px;height:1.5px;background:var(--ink);position:relative}
+.nav-toggle span::before,.nav-toggle span::after{content:"";position:absolute;left:0;width:16px;height:1.5px;background:var(--ink)}
+.nav-toggle span::before{top:-5px}.nav-toggle span::after{top:5px}
+@media (max-width:940px){
+  .nav-links{
+    display:none;position:absolute;top:78px;left:var(--gut);right:var(--gut);
+    flex-direction:column;gap:4px;padding:14px;border-radius:var(--r);
+    background:var(--bg);box-shadow:var(--nm);
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{padding:12px 16px}
+  .nav-toggle{display:flex}
+  .nav .btn{display:none}
 }
 
-section{padding-block:clamp(56px,8vw,112px)}
-
-/* ── header ──────────────────────────────────────────────── */
-header{
-  position:sticky;top:0;z-index:50;background:rgba(233,237,234,.88);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--rule);
-}
-.bar{display:flex;align-items:center;gap:28px;height:66px}
-.mark{display:flex;align-items:baseline;gap:9px;text-decoration:none;margin-right:auto}
-.mark b{font-size:21px;font-weight:800;letter-spacing:-.04em;font-variation-settings:'wdth' 88}
-.mark span{font-family:var(--mono);font-size:9.5px;letter-spacing:.19em;text-transform:uppercase;color:var(--steel)}
-nav.top{display:flex;gap:26px}
-nav.top a{
-  font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;
-  text-decoration:none;color:var(--ink);padding-block:4px;border-bottom:1.5px solid transparent;
-}
-nav.top a:hover{border-bottom-color:var(--signal)}
-@media (max-width:860px){nav.top{display:none}}
-
+/* ── buttons ────────────────────────────────────────────────────── */
 .btn{
-  display:inline-flex;align-items:center;gap:9px;text-decoration:none;
-  font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;
-  padding:11px 19px;border:1.5px solid var(--ink);background:var(--ink);color:var(--ground);
-  transition:background .16s,color .16s,transform .16s;
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:14.5px;font-weight:600;letter-spacing:-.01em;
+  padding:13px 24px;border-radius:100px;
+  background:var(--green);color:#fff;
+  box-shadow:0 8px 20px -8px rgba(46,125,50,.7);
+  transition:transform .28s cubic-bezier(.2,.8,.3,1),box-shadow .28s;
 }
-.btn:hover{background:transparent;color:var(--ink);transform:translateY(-1px)}
-.btn.ghost{background:transparent;color:var(--ink)}
-.btn.ghost:hover{background:var(--ink);color:var(--ground)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 28px -10px rgba(46,125,50,.8)}
+.btn:active{transform:translateY(0)}
+.btn.soft{background:var(--bg);color:var(--ink);box-shadow:var(--nm-sm)}
+.btn.soft:hover{box-shadow:var(--nm)}
+.btn.soft:active{box-shadow:var(--nm-in-sm)}
+.btn.small{padding:10px 18px;font-size:13.5px}
+.btn i{font-style:normal;transition:transform .28s}
+.btn:hover i{transform:translateX(3px)}
 
-/* ── HERO ────────────────────────────────────────────────── */
-.hero{background:var(--ink);color:var(--ground);padding-block:clamp(56px,9vw,104px) 0;overflow:hidden}
-.hero h1{
-  font-size:clamp(42px,8.4vw,112px);color:var(--paper);
-  font-variation-settings:'wdth' 86;letter-spacing:-.038em;
+/* ── layout blocks ──────────────────────────────────────────────── */
+section{padding-block:clamp(64px,9vw,124px)}
+.tight{padding-block:clamp(40px,6vw,72px)}
+
+.card{background:var(--bg);border-radius:var(--r);padding:clamp(24px,3.2vw,40px);box-shadow:var(--nm)}
+.card.flat{box-shadow:var(--nm-sm)}
+.card.sunk{box-shadow:var(--nm-in)}
+
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(16px,2.4vw,28px)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.4vw,28px)}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,2vw,24px)}
+@media (max-width:980px){.grid-3,.grid-4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:660px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
+
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:center}
+@media (max-width:900px){.split{grid-template-columns:1fr;gap:28px}}
+
+/* ── page hero ──────────────────────────────────────────────────── */
+.phero{position:relative;padding-top:clamp(48px,8vw,92px);padding-bottom:clamp(40px,6vw,72px)}
+.phero .t-hero{max-width:17ch}
+.phero .lede{max-width:56ch;margin-top:20px}
+.phero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+
+/* ── fluid canvas ───────────────────────────────────────────────── */
+.fluid-shell{
+  position:relative;border-radius:clamp(24px,3.4vw,40px);overflow:hidden;
+  box-shadow:var(--nm-in);background:var(--bg-2);
+  aspect-ratio:16/10;
 }
-.hero h1 em{font-style:normal;color:var(--signal)}
-.hero .lead{color:#B9C9C4;margin-top:22px;max-width:56ch}
-.hero-top{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:end;margin-bottom:34px}
-@media (max-width:700px){.hero-top{grid-template-columns:1fr}}
-.hero .eyebrow{color:var(--signal)}
-.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.hero .btn{border-color:var(--signal);background:var(--signal);color:var(--ink)}
-.hero .btn:hover{background:transparent;color:var(--signal)}
-.hero .btn.ghost{background:transparent;border-color:#3E5C56;color:var(--ground)}
-.hero .btn.ghost:hover{border-color:var(--ground);background:var(--ground);color:var(--ink)}
-
-/* SIGNATURE — the batch-record rail.
-   A live instrument readout of the conditions effervescent
-   manufacturing actually depends on. Nothing else on the page
-   is allowed to be this loud. */
-.rail{
-  margin-top:clamp(48px,7vw,88px);border-top:1px solid #2A4B45;
-  display:grid;grid-template-columns:repeat(6,1fr);
+@media (max-width:700px){.fluid-shell{aspect-ratio:4/5}}
+.fluid-shell canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.fluid-shell .veil{
+  position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(72% 62% at 50% 50%, rgba(232,237,230,0) 40%, rgba(232,237,230,.72) 100%);
 }
-.rail-cell{padding:20px 18px 24px;border-right:1px solid #2A4B45;position:relative}
-.rail-cell:last-child{border-right:0}
-.rail-cell .k{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#7D958F;display:block;margin-bottom:9px}
-.rail-cell .v{font-family:var(--mono);font-size:clamp(17px,2.1vw,24px);font-weight:600;color:var(--paper);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
-.rail-cell .v u{text-decoration:none;font-size:.58em;color:#7D958F;margin-left:3px;font-weight:400}
-.rail-cell::after{
-  content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;
-  background:var(--signal);transform:scaleX(0);transform-origin:left;
-  animation:sweep 9s linear infinite;
+.fluid-shell .note{
+  position:absolute;left:18px;bottom:16px;z-index:2;
+  font-size:11.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-3);pointer-events:none;
 }
-.rail-cell:nth-child(1)::after{animation-delay:0s}
-.rail-cell:nth-child(2)::after{animation-delay:1.5s}
-.rail-cell:nth-child(3)::after{animation-delay:3s}
-.rail-cell:nth-child(4)::after{animation-delay:4.5s}
-.rail-cell:nth-child(5)::after{animation-delay:6s}
-.rail-cell:nth-child(6)::after{animation-delay:7.5s}
-@keyframes sweep{0%{transform:scaleX(0)}8%{transform:scaleX(1)}20%{transform:scaleX(1)}28%,100%{transform:scaleX(0)}}
-@media (max-width:900px){.rail{grid-template-columns:repeat(3,1fr)}.rail-cell:nth-child(3){border-right:0}}
-@media (max-width:520px){.rail{grid-template-columns:repeat(2,1fr)}.rail-cell:nth-child(3){border-right:1px solid #2A4B45}.rail-cell:nth-child(2n){border-right:0}}
+.fluid-shell.fallback{background:
+  radial-gradient(58% 54% at 34% 36%, rgba(140,196,143,.55), transparent 62%),
+  radial-gradient(50% 48% at 68% 62%, rgba(201,162,39,.32), transparent 60%),
+  var(--bg-2);}
 
-/* ── DIVISIONS ───────────────────────────────────────────── */
-.divisions{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--rule);border:1px solid var(--rule);margin-top:38px}
-@media (max-width:900px){.divisions{grid-template-columns:1fr}}
-.div-card{
-  background:var(--paper);padding:30px 26px 26px;display:flex;flex-direction:column;
-  border-top:5px solid var(--c);transition:background .18s;
+/* ── logo lockup on soft disc ───────────────────────────────────── */
+.disc{
+  width:clamp(88px,11vw,128px);aspect-ratio:1;border-radius:50%;
+  background:var(--bg);box-shadow:var(--nm);
+  display:grid;place-items:center;padding:18%;
 }
-.div-card:hover{background:#FBFCFB}
-.div-card .tag{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--c);font-weight:600}
-.div-card h3{font-size:clamp(26px,3vw,34px);margin:12px 0 4px;font-variation-settings:'wdth' 90}
-.div-card .chan{font-family:var(--mono);font-size:11.5px;color:var(--steel);margin-bottom:16px}
-.div-card p{font-size:15.5px;color:var(--ink-2);margin-bottom:20px}
-.div-card ul{list-style:none;display:grid;gap:8px;margin-bottom:26px}
-.div-card li{font-family:var(--mono);font-size:12px;color:var(--ink-2);padding-left:16px;position:relative;line-height:1.45}
-.div-card li::before{content:"";position:absolute;left:0;top:.52em;width:7px;height:1.5px;background:var(--c)}
-.div-card .go{margin-top:auto}
-.div-card .go a{
-  font-family:var(--mono);font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;font-weight:600;
-  text-decoration:none;color:var(--c);border-bottom:1.5px solid var(--c);padding-bottom:3px;
-  display:inline-flex;align-items:center;gap:7px;
+.disc img{width:100%;height:auto}
+
+/* ── stat ───────────────────────────────────────────────────────── */
+.stat b{display:block;font-size:clamp(30px,3.8vw,46px);font-weight:700;letter-spacing:-.035em;line-height:1}
+.stat b u{text-decoration:none;font-size:.46em;font-weight:600;margin-left:2px;color:var(--ink-3)}
+.stat span{display:block;font-size:12.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-top:10px}
+
+/* ── division card ──────────────────────────────────────────────── */
+.dvc{display:flex;flex-direction:column;height:100%}
+.dvc .chip{
+  display:inline-flex;align-self:flex-start;align-items:center;gap:7px;
+  font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  padding:7px 13px;border-radius:100px;box-shadow:var(--nm-in-sm);color:var(--ink-2);
 }
-.div-card .go a:hover{gap:12px}
-.div-card .go span.na{font-family:var(--mono);font-size:11.5px;color:var(--steel);letter-spacing:.06em}
+.dvc .chip::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--dot,var(--green))}
+.dvc h3{margin:18px 0 6px}
+.dvc .where{font-size:13px;font-weight:600;letter-spacing:.06em;color:var(--ink-3);text-transform:uppercase}
+.dvc p{margin-top:14px}
+.dvc ul{list-style:none;margin-top:18px;display:grid;gap:9px}
+.dvc li{font-size:14.5px;color:var(--ink-2);padding-left:20px;position:relative}
+.dvc li::before{content:"";position:absolute;left:0;top:.56em;width:9px;height:9px;border-radius:50%;box-shadow:var(--nm-in-sm)}
+.dvc .foot{margin-top:auto;padding-top:26px}
 
-/* ── CAPABILITIES ────────────────────────────────────────── */
-.caps{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--rule)}
-@media (max-width:760px){.caps{grid-template-columns:1fr}}
-.cap{padding:26px 30px 26px 0;border-bottom:1px solid var(--rule)}
-.caps .cap:nth-child(odd){padding-right:40px;border-right:1px solid var(--rule)}
-.caps .cap:nth-child(even){padding-left:40px}
-@media (max-width:760px){
-  .caps .cap:nth-child(odd){padding-right:0;border-right:0}
-  .caps .cap:nth-child(even){padding-left:0}
+/* ── list rows ──────────────────────────────────────────────────── */
+.rows{display:grid;gap:12px}
+.row{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.5fr);gap:clamp(14px,3vw,44px);
+     padding:clamp(20px,2.6vw,30px);border-radius:var(--r-sm);box-shadow:var(--nm-sm);
+     transition:box-shadow .3s,transform .3s}
+.row:hover{box-shadow:var(--nm);transform:translateY(-2px)}
+@media (max-width:760px){.row{grid-template-columns:1fr;gap:8px}}
+
+/* ── marquee of formats ─────────────────────────────────────────── */
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pills span{font-size:13.5px;font-weight:500;color:var(--ink-2);padding:10px 18px;border-radius:100px;box-shadow:var(--nm-xs)}
+
+/* ── contact ────────────────────────────────────────────────────── */
+.field{display:block;margin-bottom:16px}
+.field span{display:block;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-bottom:9px}
+.field input,.field select,.field textarea{
+  width:100%;font:inherit;font-size:16px;color:var(--ink);
+  background:var(--bg);border:0;border-radius:var(--r-sm);
+  padding:15px 18px;box-shadow:var(--nm-in-sm);
 }
-.cap .n{font-family:var(--mono);font-size:11px;color:var(--signal);font-weight:600;letter-spacing:.1em}
-.cap h4{font-size:20px;font-weight:700;margin:8px 0 7px;letter-spacing:-.015em}
-.cap p{font-size:15px;color:var(--ink-2)}
+.field textarea{min-height:130px;resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:var(--ink-3)}
 
-/* ── FORMS / PRODUCTS ────────────────────────────────────── */
-.forms{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}
-.forms span{
-  font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;
-  border:1px solid var(--rule);background:var(--paper);padding:8px 14px;color:var(--ink-2);
-}
+/* ── footer ─────────────────────────────────────────────────────── */
+footer{padding-block:clamp(48px,6vw,72px) 40px}
+.fcard{border-radius:clamp(24px,3vw,34px);padding:clamp(28px,4vw,52px);box-shadow:var(--nm)}
+.fgrid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:clamp(22px,3vw,40px)}
+@media (max-width:860px){.fgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.fgrid{grid-template-columns:1fr}}
+.fcol h4{font-size:12px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin-bottom:14px}
+.fcol a{display:block;font-size:14.5px;color:var(--ink-2);padding-block:5px;transition:color .2s}
+.fcol a:hover{color:var(--green)}
+.fine{margin-top:34px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;line-height:1.7;color:var(--ink-3)}
 
-/* ── SPLIT NOTICE (why two brands) ───────────────────────── */
-.notice{background:var(--paper);border:1px solid var(--rule);border-left:5px solid var(--signal);padding:clamp(24px,3.5vw,38px)}
-.notice h3{font-size:clamp(21px,2.6vw,28px);margin-bottom:12px}
-.notice p{max-width:70ch;color:var(--ink-2);font-size:16px}
-.notice p + p{margin-top:12px}
-
-/* ── CONTACT ─────────────────────────────────────────────── */
-.contact{background:var(--ink);color:var(--ground)}
-.contact h2{color:var(--paper)}
-.contact .coa-spec,.contact .coa-body{border-top-color:#3E5C56}
-.contact .coa-spec dt{color:#7D958F}
-.contact .coa-spec dd{color:var(--ground)}
-.contact .eyebrow{color:var(--signal)}
-.contact .lead{color:#B9C9C4}
-.cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#2A4B45;border:1px solid #2A4B45;margin-top:32px}
-@media (max-width:820px){.cgrid{grid-template-columns:1fr}}
-.cbox{background:var(--ink);padding:24px}
-.cbox .k{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#7D958F;display:block;margin-bottom:10px}
-.cbox a,.cbox p{font-family:var(--mono);font-size:14px;color:var(--paper);text-decoration:none;line-height:1.6;word-break:break-word}
-.cbox a:hover{color:var(--signal)}
-
-/* ── FOOTER ──────────────────────────────────────────────── */
-footer{background:#061F1C;color:#8DA5A0;padding-block:44px 34px;font-family:var(--mono);font-size:12px}
-.fgrid{display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-start;justify-content:space-between}
-footer a{color:#B9C9C4;text-decoration:none}
-footer a:hover{color:var(--signal)}
-.fbrands{display:flex;flex-wrap:wrap;gap:18px}
-.fbrands b{color:var(--paper);font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:-.01em}
-.fnote{margin-top:30px;padding-top:20px;border-top:1px solid #16332F;line-height:1.7;max-width:80ch}
-
-/* ── scroll reveal ───────────────────────────────────────── */
-.rv{opacity:0;transform:translateY(16px);transition:opacity .6s cubic-bezier(.2,.7,.3,1),transform .6s cubic-bezier(.2,.7,.3,1)}
+/* ── reveal ─────────────────────────────────────────────────────── */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .85s cubic-bezier(.16,.84,.3,1),transform .85s cubic-bezier(.16,.84,.3,1)}
 .rv.in{opacity:1;transform:none}
+.rv.s1{transition-delay:.07s}.rv.s2{transition-delay:.14s}.rv.s3{transition-delay:.21s}
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
+
+
+/* ── SPA pages ──────────────────────────────────────────────────── */
+.page[hidden]{display:none}
+.page{animation:pageIn .42s cubic-bezier(.16,.84,.3,1) both}
+@keyframes pageIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.page{animation:none}}
+
 </style>
 </head>
 <body>
 
-<header>
-  <div class="wrap bar">
-    <a class="mark" href="/">
-      <b>ASCOVITA</b><span>Healthcare</span>
-    </a>
-    <nav class="top">
-      <a href="#divisions">Divisions</a>
-      <a href="#manufacturing">Manufacturing</a>
-      <a href="#capabilities">Capabilities</a>
-      <a href="#quality">Quality</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="btn ghost" href="#contact">Enquire</a>
-  </div>
-</header>
-
-<!-- ═══════════════ HERO ═══════════════ -->
-<div class="hero">
+<div class="nav">
   <div class="wrap">
-    <div class="hero-top">
-      <div>
-        <p class="eyebrow">Anand, Gujarat &nbsp;·&nbsp; WHO-GMP &nbsp;·&nbsp; FSSAI Approved</p>
-        <h1>We make the<br>tablet that <em>dissolves</em>.</h1>
-      </div>
-    </div>
-    <p class="lead">Ascovita Healthcare manufactures effervescent tablets, spirulina and multivitamin formulations for our own brands, for private label clients, and for export. Effervescence is unforgiving — it fails at the first trace of moisture — so we built the facility around controlling that one variable.</p>
-    <div class="hero-cta">
-      <a class="btn" href="#contact">Start a manufacturing enquiry</a>
-      <a class="btn ghost" href="#divisions">See our three divisions</a>
-    </div>
-
-    <!-- SIGNATURE: batch-record rail -->
-    <div class="rail" role="group" aria-label="Manufacturing environment parameters">
-      <div class="rail-cell"><span class="k">Relative humidity</span><span class="v" data-live="rh">22<u>%</u></span></div>
-      <div class="rail-cell"><span class="k">Room temperature</span><span class="v" data-live="temp">21<u>°C</u></span></div>
-      <div class="rail-cell"><span class="k">Tablet output</span><span class="v">36k<u>/hr</u></span></div>
-      <div class="rail-cell"><span class="k">Formulations</span><span class="v">40<u>+</u></span></div>
-      <div class="rail-cell"><span class="k">Batch size</span><span class="v">50k<u>–500k</u></span></div>
-      <div class="rail-cell"><span class="k">Lead time</span><span class="v">21<u>days</u></span></div>
+    <div class="nav-in">
+      <a class="brand" href="#/">
+        <img src="https://static.wixstatic.com/media/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png/v1/fill/w_346,h_166,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png" alt="Ascovita Healthcare" width="346" height="166">
+      </a>
+      <nav class="nav-links" id="navlinks">
+      <a href="#/" data-route="#/">Home</a>
+      <a href="#/brands" data-route="#/brands">Brands</a>
+      <a href="#/manufacturing" data-route="#/manufacturing">Manufacturing</a>
+      <a href="#/capabilities" data-route="#/capabilities">Capabilities</a>
+      <a href="#/contact" data-route="#/contact">Contact</a>
+      </nav>
+      <a class="btn small" href="#/contact">Enquire <i>&rarr;</i></a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navlinks"><span></span></button>
     </div>
   </div>
 </div>
 
-<!-- ═══════════════ DIVISIONS ═══════════════ -->
-<section id="divisions">
+<main id="app">
+<div class="page" id="pg-home" data-route="/" data-title="Ascovita Healthcare — Effervescent & Nutraceutical Manufacturer, Anand, Gujarat" data-desc="WHO-GMP certified effervescent tablet and nutraceutical manufacturing in Anand, Gujarat. Contract manufacturing, private label, retail distribution and export." hidden>
+
+<section class="phero">
   <div class="wrap">
-    <div class="coa rv">
-      <div class="coa-spec">
-        <dl>
-          <dt>Structure</dt><dd>One manufacturer<br>Three routes to market</dd>
-          <dt>Parent</dt><dd>Ascovita Healthcare</dd>
-          <dt>Established</dt><dd>Anand, Gujarat</dd>
-        </dl>
-      </div>
-      <div class="coa-body">
-        <p class="eyebrow">01 — Divisions</p>
-        <h2 style="font-size:clamp(30px,5vw,54px);margin:10px 0 16px">Three brands.<br>One factory floor.</h2>
-        <p class="lead">Each division serves a channel that behaves differently — different buyers, different margins, different pricing logic. Keeping them under separate brands is what lets each one price honestly without undercutting the others.</p>
-
-        <div class="divisions">
-          <article class="div-card" style="--c:var(--retail)">
-            <span class="tag">Division 01</span>
-            <h3>Ascovita</h3>
-            <p class="chan">Offline retail &amp; distribution — India</p>
-            <p>The original brand, and the one the trade knows. Sold through chemists, wellness stores and our stockist network across Gujarat and beyond.</p>
-            <ul>
-              <li>Distributor &amp; stockist network</li>
-              <li>Chemist and modern-trade retail</li>
-              <li>MRP-led, margin protected for the trade</li>
-              <li>Physical merchandising and POS support</li>
-            </ul>
-            <div class="go"><a href="#contact">Become a distributor →</a></div>
-          </article>
-
-          <article class="div-card" style="--c:var(--fizz)">
-            <span class="tag">Division 02</span>
-            <h3>Ascofizz</h3>
-            <p class="chan">Online direct-to-consumer — India</p>
-            <p>Our online-only brand. The same manufacturing, formulated and packed under its own identity so that e-commerce pricing never competes with a retailer's shelf.</p>
-            <ul>
-              <li>Own D2C store, marketplaces</li>
-              <li>Online-exclusive SKUs and pack sizes</li>
-              <li>Subscriptions, bundles, digital offers</li>
-              <li>Ships pan-India</li>
-            </ul>
-            <div class="go"><a href="https://www.ascofizz.com/">Shop Ascofizz →</a></div>
-          </article>
-
-          <article class="div-card" style="--c:var(--export)">
-            <span class="tag">Division 03</span>
-            <h3>Jayraf Export</h3>
-            <p class="chan">International trade &amp; export</p>
-            <p>Our export arm. Bulk nutraceuticals, moringa and finished effervescent formats for overseas distributors, with the documentation the destination market asks for.</p>
-            <ul>
-              <li>Bulk and finished-goods export</li>
-              <li>Moringa, spirulina, effervescent formats</li>
-              <li>Buyer-specific labelling and dossiers</li>
-              <li>Documentation and freight coordination</li>
-            </ul>
-            <div class="go"><a href="#contact">Request an export quote →</a></div>
-          </article>
-        </div>
-      </div>
+    <p class="eyebrow rv">Anand, Gujarat &nbsp;&middot;&nbsp; WHO-GMP &nbsp;&middot;&nbsp; FSSAI Approved</p>
+    <h1 class="t-hero rv s1" style="margin-top:18px">Effervescence,<br><span class="grad">made properly</span>.</h1>
+    <p class="lede rv s2">We manufacture effervescent tablets and the nutraceutical range around them &mdash; for our own brands, for private-label clients, and for export.</p>
+    <div class="actions rv s3">
+      <a class="btn" href="#/contact">Start an enquiry <i>&rarr;</i></a>
+      <a class="btn soft" href="#/manufacturing">See the facility</a>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════ WHY TWO CONSUMER BRANDS ═══════════════ -->
+<section class="tight" style="padding-top:0">
+  <div class="wrap">
+    <div class="fluid-shell rv">
+      <canvas></canvas>
+      <div class="veil"></div>
+      <p class="note">Move your cursor &mdash; live fluid</p>
+    </div>
+    <p class="xs center rv" style="margin-top:18px">A tablet meeting water, simulated in real time. Every swirl is solved on the fly, never the same twice.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="grid-4">
+      <div class="card flat stat rv"><b>&lt;25<u>%</u></b><span>Relative humidity</span></div>
+      <div class="card flat stat rv s1"><b>36<u>k/hr</u></b><span>Tablet output</span></div>
+      <div class="card flat stat rv s2"><b>40<u>+</u></b><span>Formulations</span></div>
+      <div class="card flat stat rv s3"><b>21<u>days</u></b><span>Artwork to dispatch</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="center narrow rv">
+      <p class="eyebrow">Three divisions</p>
+      <h2 class="t-1" style="margin-top:14px">One factory floor.<br><span class="grad">Three brands.</span></h2>
+      <p class="lede" style="margin-top:20px;margin-inline:auto">Each channel behaves differently. Separate brands are what let each one price honestly without undercutting the others.</p>
+    </div>
+
+    <div class="grid-3" style="margin-top:clamp(36px,5vw,60px)">
+      <article class="card dvc rv" style="--dot:#2E7D32">
+        <span class="chip">Division 01</span>
+        <h3 class="t-2">Ascovita</h3>
+        <p class="where">Offline retail &middot; India</p>
+        <p class="sm">The brand the trade knows &mdash; chemists, wellness stores and our stockist network, priced to protect everyone who carries it.</p>
+        <div class="foot"><a class="btn soft small" href="#/brands/retail">Distribution <i>&rarr;</i></a></div>
+      </article>
+
+      <article class="card dvc rv s1" style="--dot:#00A6C0">
+        <span class="chip">Division 02</span>
+        <h3 class="t-2">Ascofizz</h3>
+        <p class="where">Online D2C &middot; India</p>
+        <p class="sm">Our online-only brand. Same manufacturing, its own identity and pack sizes, so e-commerce pricing never sits beside a retailer's shelf price.</p>
+        <div class="foot"><a class="btn soft small" href="https://www.ascofizz.com/">Visit store <i>&rarr;</i></a></div>
+      </article>
+
+      <article class="card dvc rv s2" style="--dot:#C9A227">
+        <span class="chip">Division 03</span>
+        <h3 class="t-2">Jayraf Export</h3>
+        <p class="where">International trade</p>
+        <p class="sm">Bulk nutraceuticals, moringa and finished effervescent formats for overseas distributors, with the documentation the destination market asks for.</p>
+        <div class="foot"><a class="btn soft small" href="#/brands/export">Export <i>&rarr;</i></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section style="padding-top:0">
   <div class="wrap">
-    <div class="coa rv">
-      <div class="coa-spec">
-        <dl>
-          <dt>Policy</dt><dd>Channel separation</dd>
-          <dt>Applies to</dt><dd>All consumer SKUs</dd>
-          <dt>Effective</dt><dd>2026</dd>
-        </dl>
-      </div>
-      <div class="coa-body">
-        <div class="notice">
-          <h3>Why Ascovita and Ascofizz are priced differently</h3>
-          <p>A product on a chemist's shelf carries costs an online listing doesn't: distributor margin, retailer margin, stock credit, returns. When the same brand appears online at a lower price, the retailer who stocked it loses — and eventually stops stocking it.</p>
-          <p>So we separated the brands. <strong>Ascovita</strong> is made for the trade and priced to protect it. <strong>Ascofizz</strong> is made for online, with its own SKUs and pack sizes. Same facility, same formulations team, same quality release — two identities, so neither channel undercuts the other.</p>
+    <div class="card rv">
+      <div class="split">
+        <div>
+          <p class="eyebrow">What we do for clients</p>
+          <h2 class="t-1" style="margin-top:14px">Build your brand on our line.</h2>
+          <p class="lede" style="margin-top:18px">From 50,000 tablets. Bring a formulation, or start from one of ours.</p>
+          <a class="btn" style="margin-top:26px" href="#/capabilities">All capabilities <i>&rarr;</i></a>
+        </div>
+        <div class="pills">
+          <span>Contract manufacturing</span><span>Private label</span><span>Third-party</span>
+          <span>Formulation R&amp;D</span><span>Flavour systems</span><span>Packaging &amp; artwork</span>
+          <span>Export documentation</span><span>Quality release</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════ MANUFACTURING ═══════════════ -->
-<section id="manufacturing" style="background:var(--paper);border-block:1px solid var(--rule)">
+<section>
+  <div class="wrap center narrow rv">
+    <h2 class="t-1">Tell us what you need made.</h2>
+    <p class="lede" style="margin-top:18px;margin-inline:auto">Send the product, the quantity and the market. We come back with what it takes &mdash; usually inside a working day.</p>
+    <div class="actions" style="justify-content:center;display:flex;gap:12px;flex-wrap:wrap;margin-top:28px">
+      <a class="btn" href="#/contact">Enquire <i>&rarr;</i></a>
+      <a class="btn soft" href="https://wa.me/919898582650">WhatsApp us</a>
+    </div>
+  </div>
+</section>
+
+</div>
+<div class="page" id="pg-brands" data-route="/brands" data-title="Our brands — Ascovita, Ascofizz, Jayraf Export | Ascovita Healthcare" data-desc="Three divisions under Ascovita Healthcare: Ascovita for offline retail, Ascofizz for online D2C, and Jayraf Export for international trade." hidden>
+
+<section class="phero">
   <div class="wrap">
-    <div class="coa rv">
-      <div class="coa-spec">
-        <dl>
-          <dt>Facility</dt><dd>Anand, Gujarat<br>India — 388001</dd>
-          <dt>Certification</dt><dd>WHO-GMP<br>FSSAI approved</dd>
-          <dt>Dosage forms</dt><dd>Effervescent tablet<br>Tablet · Capsule<br>Powder · Sachet</dd>
-          <dt>Controlled RH</dt><dd>&lt; 25% throughout<br>granulation to pack</dd>
-        </dl>
-      </div>
-      <div class="coa-body">
-        <p class="eyebrow">02 — Manufacturing</p>
-        <h2 style="font-size:clamp(30px,5vw,54px);margin:10px 0 16px">Effervescence is a<br>humidity problem.</h2>
-        <p class="lead">An effervescent tablet is an acid and a base held apart by nothing but dryness. Let moisture in during granulation, compression or packing and the reaction starts early — the tablet swells, the strip bloats, and the customer opens a tube of powder.</p>
-        <p class="lead" style="margin-top:16px">Everything about how we build a batch follows from that. Dehumidified production rooms, moisture-barrier packing, and a release test that no batch skips.</p>
-
-        <div class="forms">
-          <span>Effervescent tablets</span>
-          <span>Effervescent powders</span>
-          <span>Spirulina range</span>
-          <span>Multivitamins</span>
-          <span>ACV + Moringa</span>
-          <span>Glutathione</span>
-          <span>Ayurvedic tablets</span>
-          <span>Sachets &amp; stick packs</span>
-          <span>Tubes &amp; blisters</span>
-        </div>
-      </div>
-    </div>
+    <p class="eyebrow rv">Our brands</p>
+    <h1 class="t-hero rv s1" style="margin-top:18px">Three routes<br><span class="grad">to market</span>.</h1>
+    <p class="lede rv s2">Ascovita Healthcare is the manufacturer. Everything we make reaches a customer through one of three brands, each built for a channel that behaves differently.</p>
   </div>
 </section>
 
-<!-- ═══════════════ CAPABILITIES ═══════════════ -->
-<section id="capabilities">
+<section class="tight" style="padding-top:0">
   <div class="wrap">
-    <div class="coa rv">
-      <div class="coa-spec">
-        <dl>
-          <dt>Service</dt><dd>Contract manufacturing<br>Private label<br>Third-party</dd>
-          <dt>MOQ</dt><dd>From 50,000 tablets</dd>
-          <dt>Typical lead</dt><dd>21 days from<br>approved artwork</dd>
-        </dl>
-      </div>
-      <div class="coa-body">
-        <p class="eyebrow">03 — What we do for clients</p>
-        <h2 style="font-size:clamp(30px,5vw,54px);margin:10px 0 22px">Build your brand<br>on our line.</h2>
-
-        <div class="caps">
-          <div class="cap">
-            <span class="n">CM</span>
-            <h4>Contract manufacturing</h4>
-            <p>You bring the formulation or pick one of ours. We handle granulation, compression, packing and release — and hand you finished goods with batch documentation.</p>
-          </div>
-          <div class="cap">
-            <span class="n">PL</span>
-            <h4>Private label</h4>
-            <p>Our proven formulations under your brand name. The fastest route to market: choose a SKU, approve artwork, get stock.</p>
-          </div>
-          <div class="cap">
-            <span class="n">R&amp;D</span>
-            <h4>Formulation development</h4>
-            <p>New flavour systems, new actives, new effervescent bases. Trial batches before you commit to a commercial run.</p>
-          </div>
-          <div class="cap">
-            <span class="n">PKG</span>
-            <h4>Packaging &amp; artwork</h4>
-            <p>Tubes, blisters, sachets, jars and cartons. Label content checked against Indian labelling rules before it goes to print.</p>
-          </div>
-          <div class="cap">
-            <span class="n">EXP</span>
-            <h4>Export documentation</h4>
-            <p>Through Jayraf Export: buyer-specific labelling, certificates and the paperwork a destination market asks for.</p>
-          </div>
-          <div class="cap">
-            <span class="n">QC</span>
-            <h4>Quality release</h4>
-            <p>Every batch tested and released against specification before dispatch, with retained samples and a certificate of analysis.</p>
-          </div>
-        </div>
-      </div>
+    <div class="card rv" id="why">
+      <p class="eyebrow">Channel policy &middot; 2026</p>
+      <h2 class="t-2" style="margin-top:14px;max-width:20ch">Why the prices differ between them.</h2>
+      <p class="sm" style="margin-top:18px;max-width:72ch">A product on a chemist's shelf carries costs an online listing doesn't &mdash; distributor margin, retailer margin, stock credit, returns. When the same brand appears online cheaper, the retailer who stocked it loses, and eventually stops stocking it.</p>
+      <p class="sm" style="margin-top:14px;max-width:72ch">So we separated them. <strong>Ascovita</strong> is made for the trade and priced to protect it. <strong>Ascofizz</strong> is made for online, with its own SKUs and pack sizes. Same facility, same formulations team, same release testing &mdash; two identities, so neither channel undercuts the other.</p>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════ QUALITY ═══════════════ -->
-<section id="quality" style="background:var(--paper);border-block:1px solid var(--rule)">
+<section id="retail">
   <div class="wrap">
-    <div class="coa rv">
-      <div class="coa-spec">
-        <dl>
-          <dt>Standards</dt><dd>WHO-GMP</dd>
-          <dt>Licence</dt><dd>FSSAI approved</dd>
-          <dt>Per batch</dt><dd>Certificate of analysis<br>Retained samples<br>Batch record</dd>
-          <dt>Traceability</dt><dd>Raw material lot<br>to finished pack</dd>
-        </dl>
-      </div>
-      <div class="coa-body">
-        <p class="eyebrow">04 — Quality</p>
-        <h2 style="font-size:clamp(30px,5vw,54px);margin:10px 0 16px">If it isn't written<br>down, it didn't happen.</h2>
-        <p class="lead">Every batch we release carries a paper trail: which raw material lot went in, who compressed it, what the release tests said, and a retained sample sitting on a shelf in case anyone ever needs to check. That record is what a distributor, a private-label client and an export buyer are all actually buying.</p>
+    <div class="card rv">
+      <div class="split">
+        <div class="dvc" style="--dot:#2E7D32">
+          <span class="chip">Division 01</span>
+          <h2 class="t-1" style="margin-top:18px">Ascovita</h2>
+          <p class="where">Offline retail &amp; distribution &middot; India</p>
+          <p class="lede" style="margin-top:18px">The original brand, and the one the trade knows. Sold through chemists, wellness stores and our stockist network across Gujarat and beyond.</p>
+          <div class="foot"><a class="btn" href="#/contact">Become a distributor <i>&rarr;</i></a></div>
+        </div>
+        <ul class="dvc" style="display:grid;gap:9px;list-style:none">
+          <li class="sm" style="padding-left:20px;position:relative">Distributor and stockist network</li>
+          <li class="sm" style="padding-left:20px;position:relative">Chemist and modern-trade retail</li>
+          <li class="sm" style="padding-left:20px;position:relative">MRP-led, margin protected for the trade</li>
+          <li class="sm" style="padding-left:20px;position:relative">Merchandising and point-of-sale support</li>
+          <li class="sm" style="padding-left:20px;position:relative">Territory-based appointment</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════ CONTACT ═══════════════ -->
-<section id="contact" class="contact">
+<section id="online" style="padding-top:0">
   <div class="wrap">
-    <div class="coa rv">
-      <div class="coa-spec">
-        <dl>
-          <dt>Response</dt><dd>Within 1 working day</dd>
-          <dt>Languages</dt><dd>English · हिन्दी<br>ગુજરાતી</dd>
-          <dt>Best for</dt><dd>Distribution<br>Private label<br>Export enquiry</dd>
-        </dl>
-      </div>
-      <div class="coa-body">
-        <p class="eyebrow">05 — Contact</p>
-        <h2 style="font-size:clamp(30px,5vw,54px);margin:10px 0 16px">Tell us what you<br>need made.</h2>
-        <p class="lead">Distributor, private-label client or export buyer — send the product, the quantity and the market, and we will come back with what it takes.</p>
-
-        <div class="cgrid">
-          <div class="cbox">
-            <span class="k">WhatsApp / Phone</span>
-            <a href="https://wa.me/919898582650">+91 98985 82650</a>
-          </div>
-          <div class="cbox">
-            <span class="k">Email</span>
-            <a href="mailto:info@ascovita.com">info@ascovita.com</a>
-          </div>
-          <div class="cbox">
-            <span class="k">Factory &amp; office</span>
-            <p>Near Rajshivalay Cinema,<br>Anand, Gujarat 388001, India</p>
-          </div>
+    <div class="card rv">
+      <div class="split">
+        <div class="dvc" style="--dot:#00A6C0">
+          <span class="chip">Division 02</span>
+          <h2 class="t-1" style="margin-top:18px">Ascofizz</h2>
+          <p class="where">Online direct-to-consumer &middot; India</p>
+          <p class="lede" style="margin-top:18px">Our online-only brand. The same manufacturing, formulated and packed under its own identity so e-commerce pricing never competes with a retailer's shelf.</p>
+          <div class="foot"><a class="btn" href="https://www.ascofizz.com/">Visit the store <i>&rarr;</i></a></div>
         </div>
+        <ul class="dvc" style="display:grid;gap:9px;list-style:none">
+          <li class="sm" style="padding-left:20px;position:relative">Own D2C store and marketplaces</li>
+          <li class="sm" style="padding-left:20px;position:relative">Online-exclusive SKUs and pack sizes</li>
+          <li class="sm" style="padding-left:20px;position:relative">Subscriptions, bundles, digital offers</li>
+          <li class="sm" style="padding-left:20px;position:relative">Ships pan-India</li>
+          <li class="sm" style="padding-left:20px;position:relative">Never sold into the retail trade</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="hero-cta" style="margin-top:26px">
-          <a class="btn" style="border-color:var(--signal);background:var(--signal);color:var(--ink)" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20I%20have%20a%20manufacturing%20enquiry">Message us on WhatsApp</a>
+<section id="export" style="padding-top:0">
+  <div class="wrap">
+    <div class="card rv">
+      <div class="split">
+        <div class="dvc" style="--dot:#C9A227">
+          <span class="chip">Division 03</span>
+          <h2 class="t-1" style="margin-top:18px">Jayraf Export</h2>
+          <p class="where">International trade &amp; export</p>
+          <p class="lede" style="margin-top:18px">Our export arm. Bulk nutraceuticals, moringa and finished effervescent formats for overseas distributors, with the documentation the destination market asks for.</p>
+          <div class="foot"><a class="btn" href="#/contact">Request an export quote <i>&rarr;</i></a></div>
+        </div>
+        <ul class="dvc" style="display:grid;gap:9px;list-style:none">
+          <li class="sm" style="padding-left:20px;position:relative">Bulk and finished-goods export</li>
+          <li class="sm" style="padding-left:20px;position:relative">Moringa, spirulina, effervescent formats</li>
+          <li class="sm" style="padding-left:20px;position:relative">Buyer-specific labelling and dossiers</li>
+          <li class="sm" style="padding-left:20px;position:relative">Documentation and freight coordination</li>
+          <li class="sm" style="padding-left:20px;position:relative">Sample and trial shipments</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+<div class="page" id="pg-manufacturing" data-route="/manufacturing" data-title="Manufacturing — WHO-GMP effervescent facility | Ascovita Healthcare" data-desc="Humidity-controlled effervescent tablet manufacturing in Anand, Gujarat. WHO-GMP certified, FSSAI approved, with full batch documentation." hidden>
+
+<section class="phero">
+  <div class="wrap">
+    <p class="eyebrow rv">Manufacturing</p>
+    <h1 class="t-hero rv s1" style="margin-top:18px">Effervescence is a<br><span class="grad">humidity problem</span>.</h1>
+    <p class="lede rv s2">An effervescent tablet is an acid and a base held apart by nothing but dryness. Everything about how we build a batch follows from that one fact.</p>
+  </div>
+</section>
+
+<section class="tight" style="padding-top:0">
+  <div class="wrap">
+    <div class="card rv">
+      <div class="split">
+        <div>
+          <h2 class="t-2">What goes wrong when it's made badly</h2>
+          <p class="sm" style="margin-top:16px">Let moisture in during granulation, compression or packing and the reaction starts early. The tablet swells, the strip bloats, and the customer opens a tube of powder. It usually happens weeks later, in a warehouse, long after anyone could catch it.</p>
+          <p class="sm" style="margin-top:14px">So the facility is built around controlling one variable. Dehumidified production rooms held under 25% RH from granulation through to pack, moisture-barrier packaging, and a release test no batch skips.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card sunk stat"><b>&lt;25<u>%</u></b><span>RH, throughout</span></div>
+          <div class="card sunk stat"><b>21<u>&deg;C</u></b><span>Room temperature</span></div>
+          <div class="card sunk stat"><b>36<u>k/hr</u></b><span>Tablet output</span></div>
+          <div class="card sunk stat"><b>50<u>k min</u></b><span>Batch size</span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<section>
+  <div class="wrap">
+    <div class="narrow center rv">
+      <p class="eyebrow">Dosage forms</p>
+      <h2 class="t-1" style="margin-top:14px">What we can make</h2>
+    </div>
+    <div class="pills rv" style="justify-content:center;margin-top:32px">
+      <span>Effervescent tablets</span><span>Effervescent powders</span><span>Spirulina range</span>
+      <span>Multivitamins</span><span>ACV + Moringa</span><span>Glutathione</span>
+      <span>Ayurvedic tablets</span><span>Capsules</span><span>Sachets &amp; stick packs</span>
+      <span>Tubes</span><span>Blisters</span><span>Jars</span>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="card rv">
+      <p class="eyebrow">Quality</p>
+      <h2 class="t-1" style="margin-top:14px;max-width:18ch">If it isn't written down, it didn't happen.</h2>
+      <p class="lede" style="margin-top:20px">Every batch we release carries a paper trail: which raw material lot went in, who compressed it, what the release tests said, and a retained sample on a shelf in case anyone ever needs to check.</p>
+      <div class="grid-4" style="margin-top:36px">
+        <div class="card sunk"><h3 class="t-3">WHO-GMP</h3><p class="sm" style="margin-top:9px">Certified facility and process controls.</p></div>
+        <div class="card sunk"><h3 class="t-3">FSSAI</h3><p class="sm" style="margin-top:9px">Approved for food supplement manufacture.</p></div>
+        <div class="card sunk"><h3 class="t-3">Certificate of analysis</h3><p class="sm" style="margin-top:9px">Issued against specification, every batch.</p></div>
+        <div class="card sunk"><h3 class="t-3">Traceability</h3><p class="sm" style="margin-top:9px">Raw material lot through to finished pack.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+<div class="page" id="pg-capabilities" data-route="/capabilities" data-title="Capabilities — contract manufacturing & private label | Ascovita Healthcare" data-desc="Contract manufacturing, private label, formulation development, packaging and export documentation from 50,000 tablets." hidden>
+
+<section class="phero">
+  <div class="wrap">
+    <p class="eyebrow rv">Capabilities</p>
+    <h1 class="t-hero rv s1" style="margin-top:18px">Build your brand<br><span class="grad">on our line</span>.</h1>
+    <p class="lede rv s2">From 50,000 tablets. Bring a formulation, or start from one of ours. Typical lead time is 21 days from approved artwork.</p>
+    <div class="actions rv s3"><a class="btn" href="#/contact">Start an enquiry <i>&rarr;</i></a></div>
+  </div>
+</section>
+
+<section class="tight" style="padding-top:0">
+  <div class="wrap">
+    <div class="rows">
+      <div class="row rv"><h3 class="t-3">Contract manufacturing</h3><p class="sm">You bring the formulation or pick one of ours. We handle granulation, compression, packing and release, and hand you finished goods with the batch documentation behind them.</p></div>
+      <div class="row rv"><h3 class="t-3">Private label</h3><p class="sm">Our proven formulations under your brand name. The fastest route to market &mdash; choose a SKU, approve artwork, get stock.</p></div>
+      <div class="row rv"><h3 class="t-3">Formulation development</h3><p class="sm">New flavour systems, new actives, new effervescent bases. Trial batches before you commit to a commercial run.</p></div>
+      <div class="row rv"><h3 class="t-3">Packaging &amp; artwork</h3><p class="sm">Tubes, blisters, sachets, jars and cartons. Label content checked against Indian labelling rules before it goes to print.</p></div>
+      <div class="row rv"><h3 class="t-3">Export documentation</h3><p class="sm">Through Jayraf Export &mdash; buyer-specific labelling, certificates, and the paperwork a destination market asks for.</p></div>
+      <div class="row rv"><h3 class="t-3">Quality release</h3><p class="sm">Every batch tested against specification before dispatch, with retained samples and a certificate of analysis.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="card rv">
+      <p class="eyebrow">How a project runs</p>
+      <h2 class="t-1" style="margin-top:14px">Five steps, about eight weeks</h2>
+      <div class="grid-4" style="margin-top:34px">
+        <div class="card sunk"><h3 class="t-3">01 &middot; Brief</h3><p class="sm" style="margin-top:9px">Product, quantity, market, target price.</p></div>
+        <div class="card sunk"><h3 class="t-3">02 &middot; Formulation</h3><p class="sm" style="margin-top:9px">Ours or yours, with a costing against it.</p></div>
+        <div class="card sunk"><h3 class="t-3">03 &middot; Trial batch</h3><p class="sm" style="margin-top:9px">Samples to approve before commercial scale.</p></div>
+        <div class="card sunk"><h3 class="t-3">04 &middot; Artwork</h3><p class="sm" style="margin-top:9px">Label content checked, then to print.</p></div>
+      </div>
+      <div class="card sunk rv" style="margin-top:clamp(14px,2vw,24px)">
+        <h3 class="t-3">05 &middot; Production &amp; release</h3>
+        <p class="sm" style="margin-top:9px">Commercial run, tested against specification, released with a certificate of analysis and dispatched. Roughly 21 days from the moment artwork is approved.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+<div class="page" id="pg-contact" data-route="/contact" data-title="Contact — distribution, private label & export enquiries | Ascovita Healthcare" data-desc="Talk to Ascovita Healthcare about distribution, private label, contract manufacturing or export. Anand, Gujarat, India." hidden>
+
+<section class="phero">
+  <div class="wrap">
+    <p class="eyebrow rv">Contact</p>
+    <h1 class="t-hero rv s1" style="margin-top:18px">Tell us what<br>you need <span class="grad">made</span>.</h1>
+    <p class="lede rv s2">Distributor, private-label client or export buyer &mdash; send the product, the quantity and the market, and we come back with what it takes. Usually inside a working day.</p>
+  </div>
+</section>
+
+<section class="tight" style="padding-top:0">
+  <div class="wrap">
+    <div class="split" style="align-items:start">
+      <div class="card rv">
+        <h2 class="t-2">Send an enquiry</h2>
+        <p class="sm" style="margin-top:10px">This opens WhatsApp with your details filled in, so nothing gets lost in a contact form.</p>
+        <div style="margin-top:26px">
+          <label class="field"><span>Your name</span><input id="f-name" type="text" placeholder="Full name" autocomplete="name"></label>
+          <label class="field"><span>Company</span><input id="f-co" type="text" placeholder="Company name" autocomplete="organization"></label>
+          <label class="field"><span>I am a</span>
+            <select id="f-type">
+              <option>Distributor / stockist</option>
+              <option>Private label client</option>
+              <option>Contract manufacturing client</option>
+              <option>Export buyer</option>
+              <option>Something else</option>
+            </select>
+          </label>
+          <label class="field"><span>What you need</span><textarea id="f-msg" placeholder="Product, quantity, market, target price"></textarea></label>
+          <button class="btn" id="f-send" type="button">Send on WhatsApp <i>&rarr;</i></button>
+          <p class="xs" id="f-err" style="margin-top:12px;display:none;color:#B3261E">Please add your name and what you need.</p>
+        </div>
+      </div>
+
+      <div style="display:grid;gap:clamp(14px,2vw,22px)">
+        <div class="card flat rv">
+          <h3 class="t-3">Phone &amp; WhatsApp</h3>
+          <p class="lede" style="margin-top:8px"><a href="https://wa.me/919898582650">+91 98985 82650</a></p>
+        </div>
+        <div class="card flat rv s1">
+          <h3 class="t-3">Email</h3>
+          <p class="lede" style="margin-top:8px"><a href="mailto:info@ascovita.com">info@ascovita.com</a></p>
+        </div>
+        <div class="card flat rv s2">
+          <h3 class="t-3">Factory &amp; office</h3>
+          <p class="sm" style="margin-top:8px">Near Rajshivalay Cinema,<br>Anand, Gujarat 388001,<br>India</p>
+        </div>
+        <div class="card flat rv s3">
+          <h3 class="t-3">Languages</h3>
+          <p class="sm" style="margin-top:8px">English &middot; &#2361;&#2367;&#2344;&#2381;&#2342;&#2368; &middot; &#2711;&#2753;&#2716;&#2736;&#2750;&#2724;&#2752;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var btn = document.getElementById('f-send');
+  if (!btn) return;
+  btn.addEventListener('click', function(){
+    var name = document.getElementById('f-name').value.trim();
+    var co   = document.getElementById('f-co').value.trim();
+    var type = document.getElementById('f-type').value;
+    var msg  = document.getElementById('f-msg').value.trim();
+    var err  = document.getElementById('f-err');
+    if (!name || !msg) { err.style.display = 'block'; return; }
+    err.style.display = 'none';
+    var text = 'Hello Ascovita Healthcare.\n\nName: ' + name +
+               (co ? '\nCompany: ' + co : '') +
+               '\nEnquiry type: ' + type +
+               '\n\n' + msg;
+    window.open('https://wa.me/919898582650?text=' + encodeURIComponent(text), '_blank', 'noopener');
+  });
+})();
+</script>
+
+</div>
+
+<div class="page" id="pg-404" data-route="/404" data-title="Page not found — Ascovita Healthcare" data-desc="That page could not be found." hidden>
+<section class="phero" style="min-height:52vh;display:flex;align-items:center">
+  <div class="wrap narrow center">
+    <p class="eyebrow">Error 404</p>
+    <h1 class="t-1" style="margin-top:16px">This page has <span class="grad">dissolved</span>.</h1>
+    <p class="lede" style="margin-top:18px;margin-inline:auto">It may have moved when we separated our brands. Products now live on Ascofizz; manufacturing and distribution stay here.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:30px">
+      <a class="btn" href="#/">Ascovita home <i>&rarr;</i></a>
+      <a class="btn soft" href="https://www.ascofizz.com/">Shop Ascofizz</a>
+    </div>
+  </div>
+</section>
+</div>
+
+</main>
 
 <footer>
   <div class="wrap">
-    <div class="fgrid">
-      <div>
-        <div class="fbrands">
-          <b>Ascovita</b><b>Ascofizz</b><b>Jayraf Export</b>
+    <div class="fcard">
+      <div class="fgrid">
+        <div class="fcol">
+          <div class="disc" style="width:74px;padding:14%"><img src="https://static.wixstatic.com/media/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png/v1/fill/w_346,h_166,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png" alt="Ascovita Healthcare"></div>
+          <p class="sm" style="margin-top:16px;max-width:30ch">Effervescent and nutraceutical manufacturing. WHO-GMP certified, FSSAI approved. Anand, Gujarat, India.</p>
         </div>
-        <p style="margin-top:10px">Brands of Ascovita Healthcare, Anand, Gujarat, India</p>
+        <div class="fcol">
+          <h4>Company</h4>
+          <a href="#/">Home</a>
+          <a href="#/manufacturing">Manufacturing</a>
+          <a href="#/capabilities">Capabilities</a>
+          <a href="#/contact">Contact</a>
+        </div>
+        <div class="fcol">
+          <h4>Brands</h4>
+          <a href="#/brands/retail">Ascovita &mdash; retail</a>
+          <a href="https://www.ascofizz.com/">Ascofizz &mdash; online</a>
+          <a href="#/brands/export">Jayraf Export</a>
+        </div>
+        <div class="fcol">
+          <h4>Reach us</h4>
+          <a href="https://wa.me/919898582650">+91 98985 82650</a>
+          <a href="mailto:info@ascovita.com">info@ascovita.com</a>
+          <a href="#/contact">Anand, Gujarat 388001</a>
+        </div>
       </div>
-      <div style="display:grid;gap:7px">
-        <a href="#divisions">Divisions</a>
-        <a href="#manufacturing">Manufacturing</a>
-        <a href="#capabilities">Capabilities</a>
-      </div>
-      <div style="display:grid;gap:7px">
-        <a href="https://www.ascofizz.com/">Shop online — Ascofizz</a>
-        <a href="#contact">Distributor enquiry</a>
-        <a href="#contact">Export enquiry</a>
-      </div>
+      <p class="fine">
+        Products manufactured by Ascovita Healthcare are food supplements and are not intended to diagnose, treat, cure or prevent any disease. Consult a qualified healthcare professional before use.
+        <br>&copy; <span data-year>2026</span> Ascovita Healthcare. All rights reserved.
+      </p>
     </div>
-    <p class="fnote">
-      These statements have not been evaluated by the FDA. Products manufactured by Ascovita Healthcare are food supplements and are not intended to diagnose, treat, cure or prevent any disease. Consult a qualified healthcare professional before use.
-      <br><br>© <span id="yr">2026</span> Ascovita Healthcare. All rights reserved.
-    </p>
   </div>
 </footer>
 
 <script>
-document.getElementById('yr').textContent = new Date().getFullYear();
+/* ══════════════════════════════════════════════════════════════════
+   fluid.js — Ascovita Healthcare
 
-/* Scroll reveal */
-(function(){
-  var els = document.querySelectorAll('.rv');
-  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    els.forEach(function(e){ e.classList.add('in'); });
-    return;
+   A real-time incompressible fluid solver on the GPU (stable fluids:
+   advect → curl → vorticity → divergence → pressure → project).
+   Not a looping video, not a noise texture — the dye actually obeys
+   the velocity field, so it swirls differently every time and reacts
+   to the pointer.
+
+   Dye is restricted to a narrow band around the Ascovita green with
+   an occasional gold, so it reads as one liquid rather than a rainbow.
+
+   initFluid(canvasEl) → { destroy() }  ·  returns null if WebGL is
+   unavailable, so the caller can fall back to a static gradient.
+   ══════════════════════════════════════════════════════════════════ */
+
+function initFluid(canvas){
+  var CFG = {
+    SIM:128, DYE:512,
+    DENSITY_DISSIPATION:0.965,
+    VELOCITY_DISSIPATION:0.985,
+    PRESSURE:0.78, PRESSURE_ITER:18,
+    CURL:26, RADIUS:0.19
+  };
+
+  var params = { alpha:false, depth:false, stencil:false, antialias:false, preserveDrawingBuffer:false };
+  var gl = canvas.getContext('webgl2', params);
+  var isWebGL2 = !!gl;
+  if (!gl) gl = canvas.getContext('webgl', params) || canvas.getContext('experimental-webgl', params);
+  if (!gl) return null;
+
+  var halfFloat, supportLinear;
+  if (isWebGL2) {
+    gl.getExtension('EXT_color_buffer_float');
+    supportLinear = !!gl.getExtension('OES_texture_float_linear');
+  } else {
+    halfFloat = gl.getExtension('OES_texture_half_float');
+    supportLinear = !!gl.getExtension('OES_texture_half_float_linear');
+    if (!halfFloat) return null;
   }
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(en){
-      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+  var HALF = isWebGL2 ? gl.HALF_FLOAT : halfFloat.HALF_FLOAT_OES;
+
+  function fmt(internal, format, type){
+    if (!supported(internal, format, type)) {
+      if (!isWebGL2) return null;
+      if (internal === gl.R16F)    return fmt(gl.RG16F,   gl.RG,   type);
+      if (internal === gl.RG16F)   return fmt(gl.RGBA16F, gl.RGBA, type);
+      return null;
+    }
+    return { internalFormat:internal, format:format };
+  }
+  function supported(internal, format, type){
+    var tex = gl.createTexture();
+    gl.bindTexture(gl.TEXTURE_2D, tex);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    gl.texImage2D(gl.TEXTURE_2D, 0, internal, 4, 4, 0, format, type, null);
+    var fbo = gl.createFramebuffer();
+    gl.bindFramebuffer(gl.FRAMEBUFFER, fbo);
+    gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, tex, 0);
+    var ok = gl.checkFramebufferStatus(gl.FRAMEBUFFER) === gl.FRAMEBUFFER_COMPLETE;
+    gl.deleteFramebuffer(fbo); gl.deleteTexture(tex);
+    gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+    return ok;
+  }
+
+  var RGBA = isWebGL2 ? fmt(gl.RGBA16F, gl.RGBA, HALF) : fmt(gl.RGBA, gl.RGBA, HALF);
+  var RG   = isWebGL2 ? fmt(gl.RG16F,   gl.RG,   HALF) : fmt(gl.RGBA, gl.RGBA, HALF);
+  var R    = isWebGL2 ? fmt(gl.R16F,    gl.RED,  HALF) : fmt(gl.RGBA, gl.RGBA, HALF);
+  if (!RGBA || !RG || !R) return null;
+  var FILTER = supportLinear ? gl.LINEAR : gl.NEAREST;
+
+  /* ── shader plumbing ─────────────────────────────────────────── */
+  function compile(type, src){
+    var s = gl.createShader(type);
+    gl.shaderSource(s, src); gl.compileShader(s);
+    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) { console.warn(gl.getShaderInfoLog(s)); return null; }
+    return s;
+  }
+  function Program(vs, fs){
+    var p = gl.createProgram();
+    gl.attachShader(p, vs); gl.attachShader(p, fs); gl.linkProgram(p);
+    this.program = p; this.uniforms = {};
+    var n = gl.getProgramParameter(p, gl.ACTIVE_UNIFORMS);
+    for (var i=0;i<n;i++){ var name = gl.getActiveUniform(p, i).name; this.uniforms[name] = gl.getUniformLocation(p, name); }
+  }
+  Program.prototype.bind = function(){ gl.useProgram(this.program); };
+
+  var baseVS = compile(gl.VERTEX_SHADER, [
+    'precision highp float;',
+    'attribute vec2 aPosition;',
+    'varying vec2 vUv, vL, vR, vT, vB;',
+    'uniform vec2 texelSize;',
+    'void main(){',
+    ' vUv = aPosition * 0.5 + 0.5;',
+    ' vL = vUv - vec2(texelSize.x, 0.0);',
+    ' vR = vUv + vec2(texelSize.x, 0.0);',
+    ' vT = vUv + vec2(0.0, texelSize.y);',
+    ' vB = vUv - vec2(0.0, texelSize.y);',
+    ' gl_Position = vec4(aPosition, 0.0, 1.0);',
+    '}'].join('\n'));
+
+  function F(src){ return compile(gl.FRAGMENT_SHADER, 'precision highp float;precision highp sampler2D;\n' + src); }
+
+  var copyFS = F([
+    'varying vec2 vUv; uniform sampler2D uTexture;',
+    'void main(){ gl_FragColor = texture2D(uTexture, vUv); }'].join('\n'));
+
+  var displayFS = F([
+    'varying vec2 vUv; uniform sampler2D uTexture;',
+    'void main(){',
+    ' vec3 c = texture2D(uTexture, vUv).rgb;',
+    // The dye is an absorption field, not an emissive one: it is subtracted
+    // from the page ground so the liquid always sits in the same soft
+    // neumorphic range as the rest of the site and can never go black.
+    ' vec3 ground = vec3(0.910, 0.929, 0.902);',
+    ' gl_FragColor = vec4(clamp(ground - c * 0.85, 0.0, 1.0), 1.0);',
+    '}'].join('\n'));
+
+  var splatFS = F([
+    'varying vec2 vUv; uniform sampler2D uTarget; uniform float aspectRatio;',
+    'uniform vec3 color; uniform vec2 point; uniform float radius;',
+    'void main(){',
+    ' vec2 p = vUv - point.xy; p.x *= aspectRatio;',
+    ' vec3 splat = exp(-dot(p,p)/radius) * color;',
+    ' gl_FragColor = vec4(texture2D(uTarget, vUv).xyz + splat, 1.0);',
+    '}'].join('\n'));
+
+  var advectionFS = F([
+    'varying vec2 vUv; uniform sampler2D uVelocity, uSource;',
+    'uniform vec2 texelSize, dyeTexelSize; uniform float dt, dissipation;',
+    'vec4 bilerp(sampler2D s, vec2 uv, vec2 tsize){',
+    ' vec2 st = uv/tsize - 0.5; vec2 iuv = floor(st); vec2 fuv = fract(st);',
+    ' vec4 a = texture2D(s,(iuv+vec2(0.5,0.5))*tsize), b = texture2D(s,(iuv+vec2(1.5,0.5))*tsize);',
+    ' vec4 c = texture2D(s,(iuv+vec2(0.5,1.5))*tsize), d = texture2D(s,(iuv+vec2(1.5,1.5))*tsize);',
+    ' return mix(mix(a,b,fuv.x), mix(c,d,fuv.x), fuv.y);',
+    '}',
+    'void main(){',
+    ' vec2 coord = vUv - dt * bilerp(uVelocity, vUv, texelSize).xy * texelSize;',
+    ' gl_FragColor = bilerp(uSource, coord, dyeTexelSize) / (1.0 + dissipation*dt);',
+    '}'].join('\n'));
+
+  var divergenceFS = F([
+    'varying highp vec2 vUv, vL, vR, vT, vB; uniform sampler2D uVelocity;',
+    'void main(){',
+    ' float L = texture2D(uVelocity, vL).x, Rr = texture2D(uVelocity, vR).x;',
+    ' float T = texture2D(uVelocity, vT).y, B = texture2D(uVelocity, vB).y;',
+    ' vec2 C = texture2D(uVelocity, vUv).xy;',
+    ' if (vL.x < 0.0) L = -C.x; if (vR.x > 1.0) Rr = -C.x;',
+    ' if (vT.y > 1.0) T = -C.y; if (vB.y < 0.0) B = -C.y;',
+    ' gl_FragColor = vec4(0.5*(Rr-L+T-B), 0.0, 0.0, 1.0);',
+    '}'].join('\n'));
+
+  var curlFS = F([
+    'varying highp vec2 vUv, vL, vR, vT, vB; uniform sampler2D uVelocity;',
+    'void main(){',
+    ' float L = texture2D(uVelocity, vL).y, Rr = texture2D(uVelocity, vR).y;',
+    ' float T = texture2D(uVelocity, vT).x, B = texture2D(uVelocity, vB).x;',
+    ' gl_FragColor = vec4(Rr - L - T + B, 0.0, 0.0, 1.0);',
+    '}'].join('\n'));
+
+  var vorticityFS = F([
+    'varying highp vec2 vUv, vL, vR, vT, vB;',
+    'uniform sampler2D uVelocity, uCurl; uniform float curl, dt;',
+    'void main(){',
+    ' float L = texture2D(uCurl, vL).x, Rr = texture2D(uCurl, vR).x;',
+    ' float T = texture2D(uCurl, vT).x, B = texture2D(uCurl, vB).x;',
+    ' float C = texture2D(uCurl, vUv).x;',
+    ' vec2 force = 0.5 * vec2(abs(T)-abs(B), abs(Rr)-abs(L));',
+    ' force /= length(force) + 0.0001; force *= curl * C; force.y *= -1.0;',
+    ' vec2 vel = texture2D(uVelocity, vUv).xy + force * dt;',
+    ' vel = min(max(vel, -1000.0), 1000.0);',
+    ' gl_FragColor = vec4(vel, 0.0, 1.0);',
+    '}'].join('\n'));
+
+  var pressureFS = F([
+    'varying highp vec2 vUv, vL, vR, vT, vB; uniform sampler2D uPressure, uDivergence;',
+    'void main(){',
+    ' float L = texture2D(uPressure, vL).x, Rr = texture2D(uPressure, vR).x;',
+    ' float T = texture2D(uPressure, vT).x, B = texture2D(uPressure, vB).x;',
+    ' float div = texture2D(uDivergence, vUv).x;',
+    ' gl_FragColor = vec4((L + Rr + B + T - div) * 0.25, 0.0, 0.0, 1.0);',
+    '}'].join('\n'));
+
+  var gradientFS = F([
+    'varying highp vec2 vUv, vL, vR, vT, vB; uniform sampler2D uPressure, uVelocity;',
+    'void main(){',
+    ' float L = texture2D(uPressure, vL).x, Rr = texture2D(uPressure, vR).x;',
+    ' float T = texture2D(uPressure, vT).x, B = texture2D(uPressure, vB).x;',
+    ' vec2 vel = texture2D(uVelocity, vUv).xy - vec2(Rr-L, T-B);',
+    ' gl_FragColor = vec4(vel, 0.0, 1.0);',
+    '}'].join('\n'));
+
+  var clearFS = F([
+    'varying vec2 vUv; uniform sampler2D uTexture; uniform float value;',
+    'void main(){ gl_FragColor = value * texture2D(uTexture, vUv); }'].join('\n'));
+
+  if (!baseVS || !copyFS || !displayFS || !splatFS || !advectionFS) return null;
+
+  var copyP = new Program(baseVS, copyFS),
+      displayP = new Program(baseVS, displayFS),
+      splatP = new Program(baseVS, splatFS),
+      advectP = new Program(baseVS, advectionFS),
+      divP = new Program(baseVS, divergenceFS),
+      curlP = new Program(baseVS, curlFS),
+      vortP = new Program(baseVS, vorticityFS),
+      pressP = new Program(baseVS, pressureFS),
+      gradP = new Program(baseVS, gradientFS),
+      clearP = new Program(baseVS, clearFS);
+
+  /* full-screen quad */
+  var vbo = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, vbo);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, -1,1, 1,1, 1,-1]), gl.STATIC_DRAW);
+  var ibo = gl.createBuffer();
+  gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, ibo);
+  gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array([0,1,2, 0,2,3]), gl.STATIC_DRAW);
+  gl.vertexAttribPointer(0, 2, gl.FLOAT, false, 0, 0);
+  gl.enableVertexAttribArray(0);
+
+  function blit(target){
+    if (target == null){ gl.viewport(0,0,gl.drawingBufferWidth,gl.drawingBufferHeight); gl.bindFramebuffer(gl.FRAMEBUFFER, null); }
+    else { gl.viewport(0,0,target.width,target.height); gl.bindFramebuffer(gl.FRAMEBUFFER, target.fbo); }
+    gl.drawElements(gl.TRIANGLES, 6, gl.UNSIGNED_SHORT, 0);
+  }
+
+  function createFBO(w,h,internal,format,type,filter){
+    gl.activeTexture(gl.TEXTURE0);
+    var tex = gl.createTexture();
+    gl.bindTexture(gl.TEXTURE_2D, tex);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, filter);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, filter);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    gl.texImage2D(gl.TEXTURE_2D, 0, internal, w, h, 0, format, type, null);
+    var fbo = gl.createFramebuffer();
+    gl.bindFramebuffer(gl.FRAMEBUFFER, fbo);
+    gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, tex, 0);
+    gl.viewport(0,0,w,h); gl.clear(gl.COLOR_BUFFER_BIT);
+    return { texture:tex, fbo:fbo, width:w, height:h, texelSizeX:1/w, texelSizeY:1/h,
+      attach:function(id){ gl.activeTexture(gl.TEXTURE0 + id); gl.bindTexture(gl.TEXTURE_2D, tex); return id; } };
+  }
+  function createDouble(w,h,internal,format,type,filter){
+    var a = createFBO(w,h,internal,format,type,filter), b = createFBO(w,h,internal,format,type,filter);
+    return { width:w, height:h, texelSizeX:a.texelSizeX, texelSizeY:a.texelSizeY,
+      get read(){ return a; }, set read(v){ a = v; },
+      get write(){ return b; }, set write(v){ b = v; },
+      swap:function(){ var t=a; a=b; b=t; } };
+  }
+
+  var dye, velocity, divergence, curlFBO, pressure;
+  function initBuffers(){
+    var s = res(CFG.SIM), d = res(CFG.DYE);
+    dye      = createDouble(d.w, d.h, RGBA.internalFormat, RGBA.format, HALF, FILTER);
+    velocity = createDouble(s.w, s.h, RG.internalFormat,  RG.format,  HALF, FILTER);
+    divergence = createFBO(s.w, s.h, R.internalFormat, R.format, HALF, gl.NEAREST);
+    curlFBO    = createFBO(s.w, s.h, R.internalFormat, R.format, HALF, gl.NEAREST);
+    pressure   = createDouble(s.w, s.h, R.internalFormat, R.format, HALF, gl.NEAREST);
+  }
+  function res(n){
+    var ar = gl.drawingBufferWidth / gl.drawingBufferHeight;
+    if (ar < 1) ar = 1/ar;
+    var min = Math.round(n), max = Math.round(n * ar);
+    return gl.drawingBufferWidth > gl.drawingBufferHeight ? { w:max, h:min } : { w:min, h:max };
+  }
+
+  function resize(){
+    var dpr = Math.min(devicePixelRatio || 1, 1.75);
+    var w = Math.floor(canvas.clientWidth * dpr), h = Math.floor(canvas.clientHeight * dpr);
+    if (w === 0 || h === 0) return false;
+    if (canvas.width !== w || canvas.height !== h){ canvas.width = w; canvas.height = h; return true; }
+    return false;
+  }
+  resize(); initBuffers();
+
+  /* ── dye colour: a narrow band around the logo green, gold now and
+     then. Full-spectrum random colour is what makes these effects
+     look like a demo instead of a brand. ───────────────────────── */
+  function dyeColor(){
+    var gold = Math.random() < 0.20;
+    var j = 0.72 + Math.random() * 0.56;
+    // Absorption values. Green = take out red and blue. Gold = take out blue.
+    return gold
+      ? { r:0.014*j, g:0.026*j, b:0.082*j }
+      : { r:0.062*j, g:0.013*j, b:0.050*j };
+  }
+
+  function splat(x, y, dx, dy, color){
+    splatP.bind();
+    gl.uniform1i(splatP.uniforms.uTarget, velocity.read.attach(0));
+    gl.uniform1f(splatP.uniforms.aspectRatio, canvas.width / canvas.height);
+    gl.uniform2f(splatP.uniforms.point, x, y);
+    gl.uniform3f(splatP.uniforms.color, dx, dy, 0.0);
+    gl.uniform1f(splatP.uniforms.radius, CFG.RADIUS / 100.0);
+    blit(velocity.write); velocity.swap();
+
+    gl.uniform1i(splatP.uniforms.uTarget, dye.read.attach(0));
+    gl.uniform3f(splatP.uniforms.color, color.r, color.g, color.b);
+    blit(dye.write); dye.swap();
+  }
+
+  /* ── pointer ─────────────────────────────────────────────────── */
+  var pointer = { down:false, moved:false, x:0.5, y:0.5, dx:0, dy:0, color:dyeColor() };
+  function toLocal(e){
+    var r = canvas.getBoundingClientRect();
+    return { x:(e.clientX - r.left)/r.width, y:1.0 - (e.clientY - r.top)/r.height };
+  }
+  function onMove(e){
+    var p = toLocal(e);
+    pointer.dx = (p.x - pointer.x) * 5.2;
+    pointer.dy = (p.y - pointer.y) * 5.2;
+    pointer.x = p.x; pointer.y = p.y;
+    pointer.moved = Math.abs(pointer.dx) > 0 || Math.abs(pointer.dy) > 0;
+  }
+  canvas.addEventListener('pointermove', onMove, { passive:true });
+  canvas.addEventListener('pointerdown', function(e){
+    var p = toLocal(e); pointer.x = p.x; pointer.y = p.y;
+    pointer.color = dyeColor();
+    splat(p.x, p.y, (Math.random()-0.5)*400, (Math.random()-0.5)*400, pointer.color);
+  }, { passive:true });
+
+  /* ── ambient motion: the liquid keeps living without a pointer ── */
+  var nextBurst = 0;
+  function burst(t){
+    if (t < nextBurst) return;
+    nextBurst = t + 1400 + Math.random() * 2400;
+    var x = 0.18 + Math.random() * 0.64, y = 0.18 + Math.random() * 0.64;
+    var a = Math.random() * Math.PI * 2, s = 240 + Math.random() * 380;
+    splat(x, y, Math.cos(a)*s, Math.sin(a)*s, dyeColor());
+  }
+
+  /* seed so the panel is never empty on first paint */
+  for (var k=0;k<6;k++){
+    var a0 = (k/6)*Math.PI*2;
+    splat(0.5 + Math.cos(a0)*0.2, 0.5 + Math.sin(a0)*0.2, Math.cos(a0)*300, Math.sin(a0)*300, dyeColor());
+  }
+
+  /* ── step ────────────────────────────────────────────────────── */
+  var last = performance.now(), raf = 0, alive = true, visible = true;
+  document.addEventListener('visibilitychange', function(){ visible = !document.hidden; });
+
+  function step(dt){
+    gl.disable(gl.BLEND);
+
+    curlP.bind();
+    gl.uniform2f(curlP.uniforms.texelSize, velocity.texelSizeX, velocity.texelSizeY);
+    gl.uniform1i(curlP.uniforms.uVelocity, velocity.read.attach(0));
+    blit(curlFBO);
+
+    vortP.bind();
+    gl.uniform2f(vortP.uniforms.texelSize, velocity.texelSizeX, velocity.texelSizeY);
+    gl.uniform1i(vortP.uniforms.uVelocity, velocity.read.attach(0));
+    gl.uniform1i(vortP.uniforms.uCurl, curlFBO.attach(1));
+    gl.uniform1f(vortP.uniforms.curl, CFG.CURL);
+    gl.uniform1f(vortP.uniforms.dt, dt);
+    blit(velocity.write); velocity.swap();
+
+    divP.bind();
+    gl.uniform2f(divP.uniforms.texelSize, velocity.texelSizeX, velocity.texelSizeY);
+    gl.uniform1i(divP.uniforms.uVelocity, velocity.read.attach(0));
+    blit(divergence);
+
+    clearP.bind();
+    gl.uniform1i(clearP.uniforms.uTexture, pressure.read.attach(0));
+    gl.uniform1f(clearP.uniforms.value, CFG.PRESSURE);
+    blit(pressure.write); pressure.swap();
+
+    pressP.bind();
+    gl.uniform2f(pressP.uniforms.texelSize, velocity.texelSizeX, velocity.texelSizeY);
+    gl.uniform1i(pressP.uniforms.uDivergence, divergence.attach(0));
+    for (var i=0;i<CFG.PRESSURE_ITER;i++){
+      gl.uniform1i(pressP.uniforms.uPressure, pressure.read.attach(1));
+      blit(pressure.write); pressure.swap();
+    }
+
+    gradP.bind();
+    gl.uniform2f(gradP.uniforms.texelSize, velocity.texelSizeX, velocity.texelSizeY);
+    gl.uniform1i(gradP.uniforms.uPressure, pressure.read.attach(0));
+    gl.uniform1i(gradP.uniforms.uVelocity, velocity.read.attach(1));
+    blit(velocity.write); velocity.swap();
+
+    advectP.bind();
+    gl.uniform2f(advectP.uniforms.texelSize, velocity.texelSizeX, velocity.texelSizeY);
+    gl.uniform2f(advectP.uniforms.dyeTexelSize, velocity.texelSizeX, velocity.texelSizeY);
+    var vid = velocity.read.attach(0);
+    gl.uniform1i(advectP.uniforms.uVelocity, vid);
+    gl.uniform1i(advectP.uniforms.uSource, vid);
+    gl.uniform1f(advectP.uniforms.dt, dt);
+    gl.uniform1f(advectP.uniforms.dissipation, 1.0 - CFG.VELOCITY_DISSIPATION);
+    blit(velocity.write); velocity.swap();
+
+    gl.uniform2f(advectP.uniforms.dyeTexelSize, dye.texelSizeX, dye.texelSizeY);
+    gl.uniform1i(advectP.uniforms.uVelocity, velocity.read.attach(0));
+    gl.uniform1i(advectP.uniforms.uSource, dye.read.attach(1));
+    gl.uniform1f(advectP.uniforms.dissipation, 1.0 - CFG.DENSITY_DISSIPATION);
+    blit(dye.write); dye.swap();
+  }
+
+  function render(now){
+    if (!alive) return;
+    raf = requestAnimationFrame(render);
+    if (!visible) { last = now; return; }
+
+    if (resize()) initBuffers();
+    var dt = Math.min((now - last) / 1000, 0.0166);
+    last = now;
+
+    if (pointer.moved){
+      pointer.moved = false;
+      splat(pointer.x, pointer.y, pointer.dx * 900, pointer.dy * 900, pointer.color);
+    }
+    burst(now);
+    step(dt);
+
+    displayP.bind();
+    gl.uniform1i(displayP.uniforms.uTexture, dye.read.attach(0));
+    blit(null);
+  }
+  raf = requestAnimationFrame(function(n){ last = n; render(n); });
+
+  return { destroy:function(){ alive = false; cancelAnimationFrame(raf); } };
+}
+
+</script>
+
+<script>
+/* ══════════════════════════════════════════════════════════════════
+   site.js — Ascovita Healthcare
+   Nav, scroll reveals, logo fallback, and booting the fluid hero.
+   ══════════════════════════════════════════════════════════════════ */
+(function(){
+  'use strict';
+
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ── mobile nav ────────────────────────────────────────────────── */
+  var toggle = document.querySelector('.nav-toggle');
+  var links  = document.querySelector('.nav-links');
+  if (toggle && links) {
+    toggle.addEventListener('click', function(){
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
-  els.forEach(function(e){ io.observe(e); });
+    document.addEventListener('click', function(e){
+      if (!links.contains(e.target) && !toggle.contains(e.target)) {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  /* ── mark the current page in the nav ──────────────────────────── */
+  var here = location.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+  if (here === '') here = '/';
+  document.querySelectorAll('.nav-links a').forEach(function(a){
+    var href = a.getAttribute('href') || '';
+    var path = href.replace(/^\.\//, '/').replace(/\.html$/, '');
+    if (path === '/index') path = '/';
+    if (path === here || (here === '/' && (href === 'index.html' || href === '/'))) {
+      a.setAttribute('aria-current', 'page');
+    }
+  });
+
+  /* ── scroll reveal (re-callable: the SPA router invokes it per route) ── */
+  window.__ascovitaReveal = function(scope){
+    var nodes = (scope || document).querySelectorAll('.rv');
+    if (!('IntersectionObserver' in window) || reduced) {
+      nodes.forEach(function(el){ el.classList.add('in'); });
+      return;
+    }
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) { en.target.classList.add('in'); obs.unobserve(en.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -6% 0px' });
+    nodes.forEach(function(el){ obs.observe(el); });
+  };
+
+  /* ── original one-shot reveal ─────────────────────────────────── */
+  var rv = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window) || reduced) {
+    rv.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -6% 0px' });
+    rv.forEach(function(el){ io.observe(el); });
+  }
+
+  /* ── logo: if the hosted file ever moves, fall back to a wordmark
+        rather than showing a broken image on every page ─────────── */
+  document.querySelectorAll('.brand img, .disc img').forEach(function(img){
+    img.addEventListener('error', function(){
+      var host = img.parentNode;
+      img.remove();
+      if (host.classList.contains('disc')) { host.remove(); return; }
+      var span = document.createElement('span');
+      span.className = 'fallback';
+      span.textContent = 'Ascovita';
+      host.insertBefore(span, host.firstChild);
+    });
+  });
+
+  /* ── year ──────────────────────────────────────────────────────── */
+  document.querySelectorAll('[data-year]').forEach(function(el){
+    el.textContent = new Date().getFullYear();
+  });
+
+  /* ── fluid hero (router calls this again when Home is shown) ───── */
+  var started = false;
+  var shell  = document.querySelector('.fluid-shell');
+  var canvas = shell && shell.querySelector('canvas');
+
+  function fallback(){
+    if (!shell) return;
+    shell.classList.add('fallback');
+    if (canvas) canvas.style.display = 'none';
+    var note = shell.querySelector('.note');
+    if (note) note.remove();
+  }
+
+  if (!shell || !canvas) return;
+
+  // Honour reduced-motion: a continuously churning fluid is exactly the
+  // kind of thing that setting exists for.
+  if (reduced || typeof initFluid !== 'function') { fallback(); return; }
+
+  // Only start once the panel is actually on screen — no point running a
+  // pressure solve for a canvas nobody has scrolled to yet.
+  function boot(){
+    if (started) return;
+    started = true;
+    var instance = null;
+    try { instance = initFluid(canvas); } catch (e) { instance = null; }
+    if (!instance) { fallback(); return; }
+    window.addEventListener('pagehide', function(){ instance.destroy(); });
+  }
+
+  window.__ascovitaFluid = function(){
+    if (started) return;
+    if (shell.offsetParent === null) return;  // Home not on screen yet
+    boot();
+  };
+
+  if ('IntersectionObserver' in window) {
+    var io2 = new IntersectionObserver(function(entries){
+      if (entries[0].isIntersecting) { io2.disconnect(); boot(); }
+    }, { rootMargin: '200px' });
+    io2.observe(shell);
+  } else {
+    boot();
+  }
 })();
 
-/* Batch rail — the RH and temperature readouts drift by a fraction, the way
-   a real instrument does. Small enough to be honest, live enough to be read
-   as a running line rather than a static stat. */
+</script>
+
+<script>
+
+/* ══════════════════════════════════════════════════════════════════
+   Router — hash based, because this is a single file on static
+   hosting. Every page's markup is already in the document; the
+   router only decides which one is visible. That means all the copy
+   is in the HTML source for crawlers even though only one section
+   is on screen at a time.
+   ══════════════════════════════════════════════════════════════════ */
 (function(){
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var rh   = document.querySelector('[data-live="rh"]');
-  var temp = document.querySelector('[data-live="temp"]');
-  if (!rh || !temp) return;
-  setInterval(function(){
-    var r = (21 + Math.random() * 2).toFixed(1);
-    var t = (20.5 + Math.random() * 1.4).toFixed(1);
-    rh.innerHTML   = r + '<u>%</u>';
-    temp.innerHTML = t + '<u>°C</u>';
-  }, 4200);
+  'use strict';
+  var pages = Array.prototype.slice.call(document.querySelectorAll('.page'));
+  var links = Array.prototype.slice.call(document.querySelectorAll('[data-route]'));
+  var metaDesc = document.querySelector('meta[name="description"]');
+  var canonical = document.querySelector('link[rel="canonical"]');
+  var current = null;
+
+  function parse(){
+    var h = (location.hash || '#/').replace(/^#/, '');
+    if (h.indexOf('//') === 0) return { route:'/', frag:h.slice(2) };  // #//anchor on home
+    var parts = h.split('/').filter(Boolean);
+    if (!parts.length) return { route:'/', frag:'' };
+    return { route:'/' + parts[0], frag: parts[1] || '' };
+  }
+
+  function show(){
+    var r = parse();
+    var target = null;
+    for (var i=0;i<pages.length;i++){
+      if (pages[i].getAttribute('data-route') === r.route) { target = pages[i]; break; }
+    }
+    if (!target) target = document.getElementById('pg-404');
+
+    if (target !== current) {
+      pages.forEach(function(p){
+        if (p === target) { p.hidden = false; p.classList.add('active'); }
+        else { p.hidden = true; p.classList.remove('active'); }
+      });
+      current = target;
+
+      document.title = target.getAttribute('data-title') || document.title;
+      if (metaDesc) metaDesc.setAttribute('content', target.getAttribute('data-desc') || '');
+      if (canonical) canonical.setAttribute('href', 'https://www.ascovita.com/' + (location.hash || ''));
+
+      links.forEach(function(a){
+        var isHere = a.getAttribute('data-route') === '#' + r.route ||
+                     (r.route === '/' && a.getAttribute('data-route') === '#/');
+        if (isHere) a.setAttribute('aria-current', 'page');
+        else a.removeAttribute('aria-current');
+      });
+
+      // re-run reveals for whatever just became visible
+      window.__ascovitaReveal && window.__ascovitaReveal(target);
+      // boot the fluid the first time the home panel appears
+      window.__ascovitaFluid && window.__ascovitaFluid();
+    }
+
+    var menu = document.querySelector('.nav-links');
+    if (menu) menu.classList.remove('open');
+
+    if (r.frag) {
+      var el = document.getElementById(r.frag);
+      if (el) { el.scrollIntoView({ behavior:'smooth', block:'start' }); return; }
+    }
+    window.scrollTo(0, 0);
+  }
+
+  window.addEventListener('hashchange', show);
+  show();
 })();
+
 </script>
 </body>
 </html>
