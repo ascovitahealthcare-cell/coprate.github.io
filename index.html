@@ -1,584 +1,612 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-<title>Ascovita Healthcare | Nutraceutical Manufacturing, Private Label & Export — India</title>
-<meta name="description" content="Ascovita Healthcare is a WHO-GMP certified nutraceutical manufacturer in Anand, Gujarat, India — specialising in third-party manufacturing, private label supplements, effervescent tablet manufacturing, product development and export. Parent company of AscoFizz and Jayraf Export.">
-<meta name="keywords" content="nutraceutical manufacturer India, third party manufacturing, private label supplements, effervescent tablet manufacturer, export manufacturer, contract manufacturing supplements, WHO-GMP certified manufacturer Gujarat">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ascovita Healthcare — WHO-GMP Effervescent & Nutraceutical Manufacturer, Anand, Gujarat</title>
+<meta name="description" content="Ascovita Healthcare manufactures effervescent tablets, spirulina and multivitamin formulations at a WHO-GMP certified, FSSAI approved facility in Anand, Gujarat. Contract manufacturing, private label, retail distribution and export.">
+<link rel="canonical" href="https://www.ascovita.com/">
+<meta name="theme-color" content="#0A2E2A">
+
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ascovita Healthcare">
-<meta property="og:title" content="Ascovita Healthcare | Nutraceutical Manufacturing, Private Label &amp; Export">
-<meta property="og:description" content="WHO-GMP certified nutraceutical manufacturer — third-party manufacturing, private label, product development and global export. Anand, Gujarat, India.">
+<meta property="og:title" content="Ascovita Healthcare — Effervescent & Nutraceutical Manufacturing">
+<meta property="og:description" content="WHO-GMP certified manufacturing in Anand, Gujarat. Three divisions: retail distribution, Ascofizz online, Jayraf Export.">
 <meta property="og:url" content="https://www.ascovita.com/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ascovita Healthcare | Nutraceutical Manufacturing &amp; Export">
-<link rel="canonical" href="https://www.ascovita.com/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,400..800;1,75..125,400..700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://www.ascovita.com/#organization",
   "name": "Ascovita Healthcare",
   "url": "https://www.ascovita.com/",
-  "description": "WHO-GMP certified nutraceutical manufacturer offering third-party manufacturing, private label manufacturing, custom formulation, product development and export services, based in Anand, Gujarat, India.",
-  "address": { "@type": "PostalAddress", "addressLocality": "Anand", "addressRegion": "Gujarat", "addressCountry": "IN" },
-  "makesOffer": [
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Third Party Manufacturing" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private Label Manufacturing" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Formulation & Product Development" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Export Services" } }
-  ],
+  "description": "WHO-GMP certified nutraceutical and effervescent tablet manufacturer.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Near Rajshivalay Cinema",
+    "addressLocality": "Anand",
+    "addressRegion": "Gujarat",
+    "postalCode": "388001",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91-98985-82650",
   "brand": [
-    { "@type": "Brand", "name": "AscoFizz", "description": "Premium direct-to-consumer wellness brand of Ascovita Healthcare.", "url": "https://ascofizz.com" },
-    { "@type": "Brand", "name": "Jayraf Export", "description": "Global export division of Ascovita Healthcare." }
+    { "@type": "Brand", "name": "Ascovita" },
+    { "@type": "Brand", "name": "Ascofizz", "url": "https://www.ascofizz.com/" },
+    { "@type": "Brand", "name": "Jayraf Export" }
   ]
 }
 </script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-
 <style>
+/* ══════════════════════════════════════════════════════════════
+   ASCOVITA HEALTHCARE — corporate site
+   Design system: "Certificate of Analysis"
+   Every section carries a left spec column (mono parameters) beside
+   its content, because this is a company whose entire value is
+   documented, tested and certified. The structure is the argument.
+   ══════════════════════════════════════════════════════════════ */
+
 :root{
-  --deep:#0A2118;
-  --forest:#194B30;
-  --forest-2:#20603C;
-  --sage:#8FB996;
-  --lime:#CFE7A8;
-  --paper:#F6F7F2;
-  --paper-2:#EEF1E8;
-  --ink:#12180F;
-  --gray:#5B6660;
-  --white:#FFFFFF;
-  --radius:18px;
-  --font-display:'Fraunces',serif;
-  --font-body:'Inter',sans-serif;
-  --font-mono:'IBM Plex Mono',monospace;
-  --ease:cubic-bezier(.22,1,.36,1);
+  --ink:#0A2E2A;          /* deep green-black — Ascovita green pushed dark */
+  --ink-2:#123F39;
+  --ground:#E9EDEA;       /* cool bone with a green cast */
+  --paper:#FFFFFF;
+  --signal:#E4A11B;       /* regulatory amber — the certified marker */
+  --steel:#6B827D;        /* muted supporting text */
+  --rule:#C6D0CB;
+
+  --retail:#2E7D32;       /* division: Ascovita retail */
+  --fizz:#00A6C0;         /* division: Ascofizz online */
+  --export:#1E4B8F;       /* division: Jayraf Export */
+
+  --display:'Archivo',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+
+  --gut:clamp(20px,4vw,64px);
+  --spec-w:168px;
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--font-body);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+body{
+  font-family:var(--display);
+  font-variation-settings:'wdth' 100;
+  background:var(--ground);
+  color:var(--ink);
+  font-size:17px;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
 img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-.container{max-width:1240px;margin:0 auto;padding:0 32px}
-.eyebrow{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--forest-2);font-weight:600;display:inline-flex;align-items:center;gap:8px}
-.eyebrow::before{content:'';width:18px;height:1px;background:var(--forest-2)}
-h1,h2,h3{font-family:var(--font-display);color:var(--deep);font-weight:600;letter-spacing:-.01em}
-section{position:relative}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:100px;font-weight:600;font-size:.9rem;font-family:var(--font-body);cursor:pointer;border:1.5px solid transparent;transition:all .35s var(--ease)}
-.btn-primary{background:var(--forest);color:var(--white)}
-.btn-primary:hover{background:var(--deep);transform:translateY(-2px);box-shadow:0 14px 30px rgba(10,33,24,.25)}
-.btn-ghost{border-color:rgba(255,255,255,.35);color:var(--white)}
-.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.6)}
-.btn-dark-ghost{border-color:var(--forest);color:var(--forest)}
-.btn-dark-ghost:hover{background:var(--forest);color:var(--white)}
-[data-reveal]{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
-[data-reveal].revealed{opacity:1;transform:none}
+a{color:inherit}
+:focus-visible{outline:2.5px solid var(--signal);outline-offset:3px}
 
-/* ── NAV ── */
-.navbar{position:fixed;top:0;left:0;right:0;z-index:100;padding:22px 0;transition:all .4s var(--ease)}
-.navbar.scrolled{padding:14px 0;background:rgba(246,247,242,.86);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(10,33,24,.08)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between}
-.logo{font-family:var(--font-display);font-weight:600;font-size:1.35rem;color:var(--deep);display:flex;align-items:center;gap:9px;letter-spacing:-.01em}
-.navbar.scrolled .logo{color:var(--deep)}
-body:not(.scrolled-body) .navbar:not(.scrolled) .logo{color:var(--white)}
-.nav-links{display:flex;gap:34px;font-size:.86rem;font-weight:500}
-.navbar:not(.scrolled) .nav-links a{color:rgba(255,255,255,.86)}
-.navbar.scrolled .nav-links a{color:var(--ink)}
-.nav-links a{position:relative;transition:color .3s}
-.nav-links a:hover{color:var(--lime)}
-.navbar.scrolled .nav-links a:hover{color:var(--forest)}
-.nav-cta{display:flex;gap:12px;align-items:center}
-.hamb{display:none}
-
-/* ── HERO ── */
-.hero{min-height:100vh;display:flex;align-items:center;background:radial-gradient(ellipse 120% 90% at 20% -10%,#1F5636 0%,var(--forest) 42%,var(--deep) 100%);color:var(--white);position:relative;overflow:hidden;padding:120px 0 80px}
-.hero-mesh{position:absolute;inset:0;opacity:.5}
-.hero-mesh svg{width:100%;height:100%}
-.hero-inner{position:relative;z-index:2;max-width:760px}
-.hero .eyebrow{color:var(--lime)}
-.hero .eyebrow::before{background:var(--lime)}
-.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.04;margin:22px 0 22px;font-weight:500}
-.hero h1 em{font-style:italic;color:var(--lime)}
-.hero p{font-size:1.08rem;color:rgba(255,255,255,.8);max-width:560px;margin-bottom:38px;line-height:1.75}
-.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:64px}
-.hero-stats{display:flex;gap:0;border-top:1px solid rgba(255,255,255,.18);padding-top:28px;flex-wrap:wrap}
-.hero-stat{padding-right:44px;margin-right:44px;border-right:1px solid rgba(255,255,255,.18)}
-.hero-stat:last-child{border-right:none}
-.hero-stat b{display:block;font-family:var(--font-display);font-size:1.7rem;color:var(--lime);font-weight:600}
-.hero-stat span{font-size:.74rem;color:rgba(255,255,255,.65);text-transform:uppercase;letter-spacing:.06em}
-.scroll-cue{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.6);font-size:.7rem;font-family:var(--font-mono);letter-spacing:.1em;display:flex;flex-direction:column;align-items:center;gap:8px}
-.scroll-cue .line{width:1px;height:34px;background:linear-gradient(rgba(255,255,255,.7),transparent);animation:scrollcue 1.8s infinite}
-@keyframes scrollcue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
-
-/* ── SECTION HEADERS ── */
-.sec-head{max-width:640px;margin-bottom:56px}
-.sec-head h2{font-size:clamp(1.9rem,3.4vw,2.7rem);margin:16px 0 14px;font-weight:500}
-.sec-head p{color:var(--gray);font-size:1rem;line-height:1.8}
-.sec-pad{padding:110px 0}
-.bg-white{background:var(--white)}
-.bg-paper{background:var(--paper)}
-.bg-paper2{background:var(--paper-2)}
-
-/* ── ABOUT ── */
-.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
-.about-copy p{color:var(--gray);margin-bottom:18px;line-height:1.85;font-size:.98rem}
-.pillar-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.pillar{background:var(--white);border:1px solid rgba(10,33,24,.08);border-radius:16px;padding:26px 22px;transition:all .35s var(--ease)}
-.pillar:hover{border-color:var(--forest);transform:translateY(-4px);box-shadow:0 16px 34px rgba(10,33,24,.08)}
-.pillar .ico{font-size:1.5rem;margin-bottom:12px}
-.pillar h4{font-family:var(--font-display);font-weight:600;font-size:1.02rem;color:var(--deep);margin-bottom:6px}
-.pillar p{font-size:.82rem;color:var(--gray);line-height:1.65}
-
-/* ── SERVICES ── */
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.svc-card{background:var(--white);border-radius:20px;padding:36px 30px;border:1px solid rgba(10,33,24,.07);transition:all .4s var(--ease);position:relative;overflow:hidden}
-.svc-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--forest),var(--sage));transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
-.svc-card:hover::before{transform:scaleX(1)}
-.svc-card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(10,33,24,.1)}
-.svc-num{font-family:var(--font-mono);font-size:.76rem;color:var(--sage);font-weight:600}
-.svc-card h3{font-size:1.2rem;margin:16px 0 12px;font-weight:600}
-.svc-card p{font-size:.87rem;color:var(--gray);line-height:1.75}
-
-/* ── PRODUCT CATEGORIES ── */
-.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
-.cat-chip{background:var(--white);border:1px solid rgba(10,33,24,.08);border-radius:14px;padding:22px 18px;display:flex;flex-direction:column;gap:10px;transition:all .3s var(--ease)}
-.cat-chip:hover{border-color:var(--sage);background:var(--paper-2)}
-.cat-chip .ico{font-size:1.3rem}
-.cat-chip span{font-size:.87rem;font-weight:600;color:var(--deep)}
-
-/* ── BRANDS ── */
-.brand-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:24px}
-.brand-card{border-radius:22px;padding:40px 32px;position:relative;overflow:hidden;min-height:340px;display:flex;flex-direction:column}
-.brand-card.flagship{background:linear-gradient(155deg,var(--deep) 0%,var(--forest) 60%,#2C6B44 100%);color:var(--white)}
-.brand-card.flagship::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 85% 15%,rgba(207,231,168,.28),transparent 55%)}
-.brand-card:not(.flagship){background:var(--white);border:1px solid rgba(10,33,24,.08);color:var(--ink)}
-.brand-tag{font-family:var(--font-mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;opacity:.7;margin-bottom:20px}
-.brand-card h3{font-size:1.7rem;margin-bottom:10px;position:relative;z-index:2}
-.brand-card.flagship h3{color:var(--white)}
-.brand-desc{font-size:.9rem;opacity:.85;line-height:1.7;margin-bottom:auto;position:relative;z-index:2}
-.brand-link{margin-top:26px;font-weight:600;font-size:.87rem;display:inline-flex;align-items:center;gap:8px;position:relative;z-index:2}
-.brand-card.flagship .brand-link{color:var(--lime)}
-.brand-card:not(.flagship) .brand-link{color:var(--forest)}
-
-/* ── PROCESS TIMELINE (signature element) ── */
-.process-wrap{position:relative;padding-top:20px}
-.process-line{position:absolute;top:38px;left:0;right:0;height:2px;background:rgba(10,33,24,.12)}
-.process-line-fill{position:absolute;top:0;left:0;height:100%;width:0%;background:linear-gradient(90deg,var(--forest),var(--sage));transition:width 1.6s var(--ease)}
-.process-line-fill.on{width:100%}
-.process-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;position:relative}
-.proc-step{display:flex;flex-direction:column;align-items:flex-start;text-align:left}
-.proc-node{width:76px;height:76px;border-radius:50%;background:var(--white);border:2px solid rgba(10,33,24,.14);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-weight:600;color:var(--gray);font-size:.95rem;margin-bottom:18px;position:relative;z-index:2;transition:all .5s var(--ease)}
-.proc-step.on .proc-node{border-color:var(--forest);background:var(--forest);color:var(--white);transform:scale(1.06)}
-.proc-step h4{font-family:var(--font-display);font-weight:600;font-size:1rem;color:var(--deep);margin-bottom:6px}
-.proc-step p{font-size:.79rem;color:var(--gray);line-height:1.6}
-
-/* ── GLOBAL PRESENCE ── */
-.global-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:center}
-.region-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.region-item{background:var(--white);border:1px solid rgba(10,33,24,.08);border-radius:14px;padding:16px 18px;font-size:.86rem;font-weight:500;display:flex;align-items:center;gap:10px}
-.globe-wrap{position:relative;aspect-ratio:1;max-width:420px;margin:0 auto}
-.globe-ring{position:absolute;border:1px solid rgba(25,75,48,.18);border-radius:50%}
-.dot{position:absolute;width:9px;height:9px;border-radius:50%;background:var(--forest);box-shadow:0 0 0 6px rgba(25,75,48,.12)}
-.dot.pulse::before{content:'';position:absolute;inset:-6px;border-radius:50%;border:1.5px solid var(--forest);animation:pulse 2.4s infinite}
-@keyframes pulse{0%{transform:scale(.7);opacity:1}100%{transform:scale(2.1);opacity:0}}
-
-/* ── GALLERY ── */
-.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:180px;gap:14px}
-.gallery-grid .g1{grid-column:span 2;grid-row:span 2}
-.gtile{border-radius:16px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:18px;color:var(--white);font-size:.82rem;font-weight:600}
-.gtile::before{content:'';position:absolute;inset:0;background:linear-gradient(160deg,var(--forest) 0%,var(--deep) 100%);opacity:.92}
-.gtile::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.55),transparent 55%)}
-.gtile span{position:relative;z-index:2}
-.gtile .gico{position:absolute;top:16px;left:18px;font-size:1.4rem;z-index:2;opacity:.85}
-.gtile.g1::before{background:linear-gradient(160deg,#2C6B44 0%,var(--deep) 100%)}
-.gtile.g2::before{background:linear-gradient(160deg,#1F5636 0%,var(--forest) 100%)}
-.gtile.g3::before{background:linear-gradient(160deg,var(--forest) 0%,#123422 100%)}
-.gtile.g4::before{background:linear-gradient(160deg,#20603C 0%,var(--deep) 100%)}
-.gtile.g5::before{background:linear-gradient(160deg,#2C6B44 0%,#123422 100%)}
-
-/* ── CONTACT ── */
-.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:70px}
-.contact-info h3{font-size:1.5rem;margin-bottom:16px}
-.contact-info p{color:var(--gray);line-height:1.8;margin-bottom:28px;font-size:.94rem}
-.contact-detail{display:flex;gap:14px;align-items:flex-start;margin-bottom:20px}
-.contact-detail .ico{width:38px;height:38px;border-radius:10px;background:var(--paper-2);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
-.contact-detail b{display:block;font-size:.86rem;color:var(--deep)}
-.contact-detail span{font-size:.83rem;color:var(--gray)}
-.form-card{background:var(--white);border-radius:22px;padding:40px;border:1px solid rgba(10,33,24,.08)}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
-.field label{display:block;font-size:.78rem;font-weight:600;color:var(--deep);margin-bottom:8px}
-.field input,.field select,.field textarea{width:100%;border:1.5px solid rgba(10,33,24,.14);border-radius:12px;padding:13px 14px;font-family:var(--font-body);font-size:.9rem;background:var(--paper);transition:border .25s}
-.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--forest)}
-.field{margin-bottom:16px}
-.field textarea{resize:vertical;min-height:110px}
-.form-submit{width:100%;justify-content:center;margin-top:6px}
-
-/* ── FOOTER ── */
-footer{background:var(--deep);color:rgba(255,255,255,.72);padding-top:80px}
-.foot-brand-banner{background:linear-gradient(120deg,#163C26,#0A2118);border:1px solid rgba(207,231,168,.18);border-radius:22px;padding:36px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:70px}
-.foot-brand-banner p{color:var(--white);font-size:1.02rem;max-width:520px;font-family:var(--font-display);font-weight:500;line-height:1.5}
-.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:50px}
-.foot-logo{font-family:var(--font-display);font-size:1.3rem;color:var(--white);margin-bottom:14px}
-.foot-grid h5{color:var(--white);font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:18px}
-.foot-grid ul{list-style:none}
-.foot-grid li{margin-bottom:11px;font-size:.87rem}
-.foot-grid a:hover{color:var(--lime)}
-.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding:24px 0;display:flex;justify-content:space-between;font-size:.78rem;flex-wrap:wrap;gap:10px}
-
-@media(max-width:900px){
-  .about-grid,.global-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
-  .svc-grid{grid-template-columns:1fr 1fr}
-  .brand-grid{grid-template-columns:1fr}
-  .process-grid{grid-template-columns:repeat(3,1fr);row-gap:36px}
-  .process-line,.process-line-fill{display:none}
-  .gallery-grid{grid-template-columns:repeat(2,1fr)}
-  .gallery-grid .g1{grid-column:span 2}
-  .foot-grid{grid-template-columns:1fr 1fr}
-  .nav-links{display:none}
-  .form-row{grid-template-columns:1fr}
+/* ── shared type ─────────────────────────────────────────── */
+.eyebrow{
+  font-family:var(--mono);font-size:11px;font-weight:500;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--steel);
 }
-@media(max-width:560px){
-  .container{padding:0 20px}
-  .svc-grid,.foot-grid{grid-template-columns:1fr}
-  .process-grid{grid-template-columns:1fr 1fr}
-  .hero-stat{padding-right:26px;margin-right:26px}
+h1,h2,h3{font-weight:800;line-height:1.02;letter-spacing:-.025em;font-variation-settings:'wdth' 92}
+.lead{font-size:clamp(17px,1.9vw,21px);color:var(--ink-2);max-width:62ch}
+.muted{color:var(--steel)}
+
+/* ── layout shell ────────────────────────────────────────── */
+.wrap{max-width:1280px;margin-inline:auto;padding-inline:var(--gut)}
+
+/* The Certificate-of-Analysis grid: spec column + content column */
+.coa{display:grid;grid-template-columns:var(--spec-w) 1fr;gap:clamp(24px,4vw,56px)}
+.coa-spec{border-top:2px solid var(--ink);padding-top:14px}
+.coa-spec dl{display:grid;gap:14px}
+.coa-spec dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--steel)}
+.coa-spec dd{font-family:var(--mono);font-size:13px;font-weight:500;color:var(--ink);line-height:1.35}
+.coa-body{border-top:2px solid var(--ink);padding-top:14px;min-width:0}
+@media (max-width:820px){
+  .coa{grid-template-columns:1fr;gap:26px}
+  .coa-spec{border-top:1px solid var(--rule);order:2}
+  .coa-spec dl{grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px 20px}
 }
+
+section{padding-block:clamp(56px,8vw,112px)}
+
+/* ── header ──────────────────────────────────────────────── */
+header{
+  position:sticky;top:0;z-index:50;background:rgba(233,237,234,.88);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--rule);
+}
+.bar{display:flex;align-items:center;gap:28px;height:66px}
+.mark{display:flex;align-items:baseline;gap:9px;text-decoration:none;margin-right:auto}
+.mark b{font-size:21px;font-weight:800;letter-spacing:-.04em;font-variation-settings:'wdth' 88}
+.mark span{font-family:var(--mono);font-size:9.5px;letter-spacing:.19em;text-transform:uppercase;color:var(--steel)}
+nav.top{display:flex;gap:26px}
+nav.top a{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;
+  text-decoration:none;color:var(--ink);padding-block:4px;border-bottom:1.5px solid transparent;
+}
+nav.top a:hover{border-bottom-color:var(--signal)}
+@media (max-width:860px){nav.top{display:none}}
+
+.btn{
+  display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+  font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;
+  padding:11px 19px;border:1.5px solid var(--ink);background:var(--ink);color:var(--ground);
+  transition:background .16s,color .16s,transform .16s;
+}
+.btn:hover{background:transparent;color:var(--ink);transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--ground)}
+
+/* ── HERO ────────────────────────────────────────────────── */
+.hero{background:var(--ink);color:var(--ground);padding-block:clamp(56px,9vw,104px) 0;overflow:hidden}
+.hero h1{
+  font-size:clamp(42px,8.4vw,112px);color:var(--paper);
+  font-variation-settings:'wdth' 86;letter-spacing:-.038em;
+}
+.hero h1 em{font-style:normal;color:var(--signal)}
+.hero .lead{color:#B9C9C4;margin-top:22px;max-width:56ch}
+.hero-top{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:end;margin-bottom:34px}
+@media (max-width:700px){.hero-top{grid-template-columns:1fr}}
+.hero .eyebrow{color:var(--signal)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero .btn{border-color:var(--signal);background:var(--signal);color:var(--ink)}
+.hero .btn:hover{background:transparent;color:var(--signal)}
+.hero .btn.ghost{background:transparent;border-color:#3E5C56;color:var(--ground)}
+.hero .btn.ghost:hover{border-color:var(--ground);background:var(--ground);color:var(--ink)}
+
+/* SIGNATURE — the batch-record rail.
+   A live instrument readout of the conditions effervescent
+   manufacturing actually depends on. Nothing else on the page
+   is allowed to be this loud. */
+.rail{
+  margin-top:clamp(48px,7vw,88px);border-top:1px solid #2A4B45;
+  display:grid;grid-template-columns:repeat(6,1fr);
+}
+.rail-cell{padding:20px 18px 24px;border-right:1px solid #2A4B45;position:relative}
+.rail-cell:last-child{border-right:0}
+.rail-cell .k{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#7D958F;display:block;margin-bottom:9px}
+.rail-cell .v{font-family:var(--mono);font-size:clamp(17px,2.1vw,24px);font-weight:600;color:var(--paper);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.rail-cell .v u{text-decoration:none;font-size:.58em;color:#7D958F;margin-left:3px;font-weight:400}
+.rail-cell::after{
+  content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;
+  background:var(--signal);transform:scaleX(0);transform-origin:left;
+  animation:sweep 9s linear infinite;
+}
+.rail-cell:nth-child(1)::after{animation-delay:0s}
+.rail-cell:nth-child(2)::after{animation-delay:1.5s}
+.rail-cell:nth-child(3)::after{animation-delay:3s}
+.rail-cell:nth-child(4)::after{animation-delay:4.5s}
+.rail-cell:nth-child(5)::after{animation-delay:6s}
+.rail-cell:nth-child(6)::after{animation-delay:7.5s}
+@keyframes sweep{0%{transform:scaleX(0)}8%{transform:scaleX(1)}20%{transform:scaleX(1)}28%,100%{transform:scaleX(0)}}
+@media (max-width:900px){.rail{grid-template-columns:repeat(3,1fr)}.rail-cell:nth-child(3){border-right:0}}
+@media (max-width:520px){.rail{grid-template-columns:repeat(2,1fr)}.rail-cell:nth-child(3){border-right:1px solid #2A4B45}.rail-cell:nth-child(2n){border-right:0}}
+
+/* ── DIVISIONS ───────────────────────────────────────────── */
+.divisions{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--rule);border:1px solid var(--rule);margin-top:38px}
+@media (max-width:900px){.divisions{grid-template-columns:1fr}}
+.div-card{
+  background:var(--paper);padding:30px 26px 26px;display:flex;flex-direction:column;
+  border-top:5px solid var(--c);transition:background .18s;
+}
+.div-card:hover{background:#FBFCFB}
+.div-card .tag{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--c);font-weight:600}
+.div-card h3{font-size:clamp(26px,3vw,34px);margin:12px 0 4px;font-variation-settings:'wdth' 90}
+.div-card .chan{font-family:var(--mono);font-size:11.5px;color:var(--steel);margin-bottom:16px}
+.div-card p{font-size:15.5px;color:var(--ink-2);margin-bottom:20px}
+.div-card ul{list-style:none;display:grid;gap:8px;margin-bottom:26px}
+.div-card li{font-family:var(--mono);font-size:12px;color:var(--ink-2);padding-left:16px;position:relative;line-height:1.45}
+.div-card li::before{content:"";position:absolute;left:0;top:.52em;width:7px;height:1.5px;background:var(--c)}
+.div-card .go{margin-top:auto}
+.div-card .go a{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;font-weight:600;
+  text-decoration:none;color:var(--c);border-bottom:1.5px solid var(--c);padding-bottom:3px;
+  display:inline-flex;align-items:center;gap:7px;
+}
+.div-card .go a:hover{gap:12px}
+.div-card .go span.na{font-family:var(--mono);font-size:11.5px;color:var(--steel);letter-spacing:.06em}
+
+/* ── CAPABILITIES ────────────────────────────────────────── */
+.caps{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--rule)}
+@media (max-width:760px){.caps{grid-template-columns:1fr}}
+.cap{padding:26px 30px 26px 0;border-bottom:1px solid var(--rule)}
+.caps .cap:nth-child(odd){padding-right:40px;border-right:1px solid var(--rule)}
+.caps .cap:nth-child(even){padding-left:40px}
+@media (max-width:760px){
+  .caps .cap:nth-child(odd){padding-right:0;border-right:0}
+  .caps .cap:nth-child(even){padding-left:0}
+}
+.cap .n{font-family:var(--mono);font-size:11px;color:var(--signal);font-weight:600;letter-spacing:.1em}
+.cap h4{font-size:20px;font-weight:700;margin:8px 0 7px;letter-spacing:-.015em}
+.cap p{font-size:15px;color:var(--ink-2)}
+
+/* ── FORMS / PRODUCTS ────────────────────────────────────── */
+.forms{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}
+.forms span{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;
+  border:1px solid var(--rule);background:var(--paper);padding:8px 14px;color:var(--ink-2);
+}
+
+/* ── SPLIT NOTICE (why two brands) ───────────────────────── */
+.notice{background:var(--paper);border:1px solid var(--rule);border-left:5px solid var(--signal);padding:clamp(24px,3.5vw,38px)}
+.notice h3{font-size:clamp(21px,2.6vw,28px);margin-bottom:12px}
+.notice p{max-width:70ch;color:var(--ink-2);font-size:16px}
+.notice p + p{margin-top:12px}
+
+/* ── CONTACT ─────────────────────────────────────────────── */
+.contact{background:var(--ink);color:var(--ground)}
+.contact h2{color:var(--paper)}
+.contact .coa-spec,.contact .coa-body{border-top-color:#3E5C56}
+.contact .coa-spec dt{color:#7D958F}
+.contact .coa-spec dd{color:var(--ground)}
+.contact .eyebrow{color:var(--signal)}
+.contact .lead{color:#B9C9C4}
+.cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#2A4B45;border:1px solid #2A4B45;margin-top:32px}
+@media (max-width:820px){.cgrid{grid-template-columns:1fr}}
+.cbox{background:var(--ink);padding:24px}
+.cbox .k{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#7D958F;display:block;margin-bottom:10px}
+.cbox a,.cbox p{font-family:var(--mono);font-size:14px;color:var(--paper);text-decoration:none;line-height:1.6;word-break:break-word}
+.cbox a:hover{color:var(--signal)}
+
+/* ── FOOTER ──────────────────────────────────────────────── */
+footer{background:#061F1C;color:#8DA5A0;padding-block:44px 34px;font-family:var(--mono);font-size:12px}
+.fgrid{display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-start;justify-content:space-between}
+footer a{color:#B9C9C4;text-decoration:none}
+footer a:hover{color:var(--signal)}
+.fbrands{display:flex;flex-wrap:wrap;gap:18px}
+.fbrands b{color:var(--paper);font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:-.01em}
+.fnote{margin-top:30px;padding-top:20px;border-top:1px solid #16332F;line-height:1.7;max-width:80ch}
+
+/* ── scroll reveal ───────────────────────────────────────── */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s cubic-bezier(.2,.7,.3,1),transform .6s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 
-<nav class="navbar" id="nav">
-  <div class="container nav-inner">
-    <a href="#home" class="logo">&#9670; Ascovita Healthcare</a>
-    <div class="nav-links">
-      <a href="#about">About</a>
+<header>
+  <div class="wrap bar">
+    <a class="mark" href="/">
+      <b>ASCOVITA</b><span>Healthcare</span>
+    </a>
+    <nav class="top">
+      <a href="#divisions">Divisions</a>
       <a href="#manufacturing">Manufacturing</a>
-      <a href="#products">Products</a>
-      <a href="#brands">Brands</a>
-      <a href="#global">Global</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#quality">Quality</a>
       <a href="#contact">Contact</a>
-    </div>
-    <div class="nav-cta">
-      <a href="#contact" class="btn btn-primary" style="padding:11px 24px;font-size:.82rem">Become a Partner</a>
-    </div>
+    </nav>
+    <a class="btn ghost" href="#contact">Enquire</a>
   </div>
-</nav>
+</header>
 
-<!-- ══════════ HERO ══════════ -->
-<section class="hero" id="home">
-  <div class="hero-mesh">
-    <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
-      <g stroke="rgba(207,231,168,0.35)" stroke-width="1">
-        <line x1="120" y1="80" x2="340" y2="220"/><line x1="340" y1="220" x2="560" y2="140"/>
-        <line x1="560" y1="140" x2="780" y2="260"/><line x1="780" y1="260" x2="1020" y2="120"/>
-        <line x1="200" y1="420" x2="420" y2="340"/><line x1="420" y1="340" x2="650" y2="460"/>
-        <line x1="650" y1="460" x2="880" y2="380"/><line x1="880" y1="380" x2="1100" y2="500"/>
-        <line x1="80" y1="600" x2="300" y2="560"/><line x1="300" y1="560" x2="540" y2="640"/>
-      </g>
-      <g fill="rgba(207,231,168,0.55)">
-        <circle cx="120" cy="80" r="4"/><circle cx="340" cy="220" r="4"/><circle cx="560" cy="140" r="4"/>
-        <circle cx="780" cy="260" r="4"/><circle cx="1020" cy="120" r="4"/><circle cx="200" cy="420" r="4"/>
-        <circle cx="420" cy="340" r="4"/><circle cx="650" cy="460" r="4"/><circle cx="880" cy="380" r="4"/>
-        <circle cx="1100" cy="500" r="4"/><circle cx="80" cy="600" r="4"/><circle cx="300" cy="560" r="4"/>
-        <circle cx="540" cy="640" r="4"/>
-      </g>
-    </svg>
-  </div>
-  <div class="container hero-inner">
-    <div class="eyebrow">WHO-GMP Certified &middot; Anand, Gujarat, India</div>
-    <h1>Manufacturing<br><em>Better Health.</em></h1>
-    <p>Premium nutraceutical manufacturing, export &amp; private label solutions — from formulation to finished product, for brands across India and abroad.</p>
-    <div class="hero-ctas">
-      <a href="#contact" class="btn btn-primary">Become a Partner &#8594;</a>
-      <a href="#manufacturing" class="btn btn-ghost">Explore Manufacturing</a>
-    </div>
-    <div class="hero-stats">
-      <div class="hero-stat"><b>WHO-GMP</b><span>Certified Facility</span></div>
-      <div class="hero-stat"><b>FSSAI</b><span>Approved</span></div>
-      <div class="hero-stat"><b>2</b><span>Consumer Brands</span></div>
-      <div class="hero-stat"><b>Low MOQ</b><span>Private Label</span></div>
-    </div>
-  </div>
-  <div class="scroll-cue"><span class="line"></span>SCROLL</div>
-</section>
-
-<!-- ══════════ ABOUT ══════════ -->
-<section class="sec-pad bg-white" id="about">
-  <div class="container">
-    <div class="about-grid">
+<!-- ═══════════════ HERO ═══════════════ -->
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-top">
       <div>
-        <div class="eyebrow">About Ascovita</div>
-        <h2 style="font-size:clamp(1.9rem,3.4vw,2.6rem);margin:16px 0 20px">The manufacturer<br>behind the brand.</h2>
-        <div class="about-copy" data-reveal>
-          <p>Ascovita Healthcare is a WHO-GMP certified, FSSAI approved nutraceutical manufacturer based in Anand, Gujarat — India's nutraceutical manufacturing hub. We are not a retail storefront; we are the formulation, production and quality engine behind our own consumer brands and behind the private label brands we manufacture for.</p>
-          <p><strong>Mission —</strong> Make premium-grade nutrition manufacturing accessible and dependable for health brands, at any scale.</p>
-          <p><strong>Vision —</strong> To be India's most trusted nutraceutical manufacturing partner for effervescent and specialty supplement formats, recognised for quality, compliance and export reliability.</p>
+        <p class="eyebrow">Anand, Gujarat &nbsp;·&nbsp; WHO-GMP &nbsp;·&nbsp; FSSAI Approved</p>
+        <h1>We make the<br>tablet that <em>dissolves</em>.</h1>
+      </div>
+    </div>
+    <p class="lead">Ascovita Healthcare manufactures effervescent tablets, spirulina and multivitamin formulations for our own brands, for private label clients, and for export. Effervescence is unforgiving — it fails at the first trace of moisture — so we built the facility around controlling that one variable.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#contact">Start a manufacturing enquiry</a>
+      <a class="btn ghost" href="#divisions">See our three divisions</a>
+    </div>
+
+    <!-- SIGNATURE: batch-record rail -->
+    <div class="rail" role="group" aria-label="Manufacturing environment parameters">
+      <div class="rail-cell"><span class="k">Relative humidity</span><span class="v" data-live="rh">22<u>%</u></span></div>
+      <div class="rail-cell"><span class="k">Room temperature</span><span class="v" data-live="temp">21<u>°C</u></span></div>
+      <div class="rail-cell"><span class="k">Tablet output</span><span class="v">36k<u>/hr</u></span></div>
+      <div class="rail-cell"><span class="k">Formulations</span><span class="v">40<u>+</u></span></div>
+      <div class="rail-cell"><span class="k">Batch size</span><span class="v">50k<u>–500k</u></span></div>
+      <div class="rail-cell"><span class="k">Lead time</span><span class="v">21<u>days</u></span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ DIVISIONS ═══════════════ -->
+<section id="divisions">
+  <div class="wrap">
+    <div class="coa rv">
+      <div class="coa-spec">
+        <dl>
+          <dt>Structure</dt><dd>One manufacturer<br>Three routes to market</dd>
+          <dt>Parent</dt><dd>Ascovita Healthcare</dd>
+          <dt>Established</dt><dd>Anand, Gujarat</dd>
+        </dl>
+      </div>
+      <div class="coa-body">
+        <p class="eyebrow">01 — Divisions</p>
+        <h2 style="font-size:clamp(30px,5vw,54px);margin:10px 0 16px">Three brands.<br>One factory floor.</h2>
+        <p class="lead">Each division serves a channel that behaves differently — different buyers, different margins, different pricing logic. Keeping them under separate brands is what lets each one price honestly without undercutting the others.</p>
+
+        <div class="divisions">
+          <article class="div-card" style="--c:var(--retail)">
+            <span class="tag">Division 01</span>
+            <h3>Ascovita</h3>
+            <p class="chan">Offline retail &amp; distribution — India</p>
+            <p>The original brand, and the one the trade knows. Sold through chemists, wellness stores and our stockist network across Gujarat and beyond.</p>
+            <ul>
+              <li>Distributor &amp; stockist network</li>
+              <li>Chemist and modern-trade retail</li>
+              <li>MRP-led, margin protected for the trade</li>
+              <li>Physical merchandising and POS support</li>
+            </ul>
+            <div class="go"><a href="#contact">Become a distributor →</a></div>
+          </article>
+
+          <article class="div-card" style="--c:var(--fizz)">
+            <span class="tag">Division 02</span>
+            <h3>Ascofizz</h3>
+            <p class="chan">Online direct-to-consumer — India</p>
+            <p>Our online-only brand. The same manufacturing, formulated and packed under its own identity so that e-commerce pricing never competes with a retailer's shelf.</p>
+            <ul>
+              <li>Own D2C store, marketplaces</li>
+              <li>Online-exclusive SKUs and pack sizes</li>
+              <li>Subscriptions, bundles, digital offers</li>
+              <li>Ships pan-India</li>
+            </ul>
+            <div class="go"><a href="https://www.ascofizz.com/">Shop Ascofizz →</a></div>
+          </article>
+
+          <article class="div-card" style="--c:var(--export)">
+            <span class="tag">Division 03</span>
+            <h3>Jayraf Export</h3>
+            <p class="chan">International trade &amp; export</p>
+            <p>Our export arm. Bulk nutraceuticals, moringa and finished effervescent formats for overseas distributors, with the documentation the destination market asks for.</p>
+            <ul>
+              <li>Bulk and finished-goods export</li>
+              <li>Moringa, spirulina, effervescent formats</li>
+              <li>Buyer-specific labelling and dossiers</li>
+              <li>Documentation and freight coordination</li>
+            </ul>
+            <div class="go"><a href="#contact">Request an export quote →</a></div>
+          </article>
         </div>
       </div>
-      <div class="pillar-grid" data-reveal>
-        <div class="pillar"><div class="ico">&#127981;</div><h4>Manufacturing Facility</h4><p>Purpose-built effervescent tablet lines with controlled environment production.</p></div>
-        <div class="pillar"><div class="ico">&#129514;</div><h4>Research &amp; Development</h4><p>In-house formulation science for effervescent, powder and capsule delivery formats.</p></div>
-        <div class="pillar"><div class="ico">&#9989;</div><h4>Quality Assurance</h4><p>Batch-level testing, stability studies and documentation aligned to WHO-GMP.</p></div>
-        <div class="pillar"><div class="ico">&#127890;</div><h4>Certifications</h4><p>WHO-GMP compliant, FSSAI licensed, with export documentation support.</p></div>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════ MANUFACTURING SERVICES ══════════ -->
-<section class="sec-pad bg-paper" id="manufacturing">
-  <div class="container">
-    <div class="sec-head" data-reveal>
-      <div class="eyebrow">Manufacturing Services</div>
-      <h2>End-to-end manufacturing, under one roof.</h2>
-      <p>From formulation to final packaging, we handle every stage of production so partner brands can focus on go-to-market.</p>
-    </div>
-    <div class="svc-grid">
-      <div class="svc-card" data-reveal><div class="svc-num">01</div><h3>Third Party Manufacturing</h3><p>Full contract manufacturing on our existing formulations — fast turnaround, WHO-GMP compliant lines.</p></div>
-      <div class="svc-card" data-reveal><div class="svc-num">02</div><h3>Private Label Manufacturing</h3><p>Launch your own supplement brand on our formulations, packaged and labelled under your identity.</p></div>
-      <div class="svc-card" data-reveal><div class="svc-num">03</div><h3>Custom Formulation</h3><p>Bespoke effervescent, powder and capsule formulations built around your brand's positioning.</p></div>
-      <div class="svc-card" data-reveal><div class="svc-num">04</div><h3>Product Development</h3><p>Concept-to-shelf development support, including stability testing and regulatory documentation.</p></div>
-      <div class="svc-card" data-reveal><div class="svc-num">05</div><h3>Packaging</h3><p>Strip, sachet and bottle packaging lines with custom design and branding options.</p></div>
-      <div class="svc-card" data-reveal><div class="svc-num">06</div><h3>Export Services</h3><p>Documentation, compliance and logistics support for international shipments via Jayraf Export.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ PRODUCT CATEGORIES ══════════ -->
-<section class="sec-pad bg-white" id="products">
-  <div class="container">
-    <div class="sec-head" data-reveal>
-      <div class="eyebrow">Product Categories</div>
-      <h2>Formats we manufacture at scale.</h2>
-      <p>Our production lines cover the categories driving India's nutraceutical demand today.</p>
-    </div>
-    <div class="cat-grid" data-reveal>
-      <div class="cat-chip"><span class="ico">&#128167;</span><span>Effervescent Tablets</span></div>
-      <div class="cat-chip"><span class="ico">&#128138;</span><span>Multivitamins</span></div>
-      <div class="cat-chip"><span class="ico">&#127939;</span><span>Protein</span></div>
-      <div class="cat-chip"><span class="ico">&#10024;</span><span>Collagen</span></div>
-      <div class="cat-chip"><span class="ico">&#127820;</span><span>Apple Cider Vinegar</span></div>
-      <div class="cat-chip"><span class="ico">&#10024;</span><span>Glutathione</span></div>
-      <div class="cat-chip"><span class="ico">&#9889;</span><span>Electrolytes</span></div>
-      <div class="cat-chip"><span class="ico">&#128737;&#65039;</span><span>Immunity</span></div>
-      <div class="cat-chip"><span class="ico">&#129680;</span><span>Kids Nutrition</span></div>
-      <div class="cat-chip"><span class="ico">&#127940;</span><span>Sports Nutrition</span></div>
-      <div class="cat-chip"><span class="ico">&#128150;</span><span>Beauty Nutrition</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ BRANDS ══════════ -->
-<section class="sec-pad bg-paper2" id="brands">
-  <div class="container">
-    <div class="sec-head" data-reveal>
-      <div class="eyebrow">Our Brands</div>
-      <h2>One manufacturer. Multiple brands.</h2>
-      <p>Ascovita Healthcare manufactures for, and operates, the following consumer and trade divisions.</p>
-    </div>
-    <div class="brand-grid">
-      <div class="brand-card flagship" data-reveal>
-        <div class="brand-tag">Flagship Consumer Brand</div>
-        <h3>AscoFizz</h3>
-        <p class="brand-desc">Premium direct-to-consumer wellness brand. The full effervescent vitamin range, sold online, direct from the manufacturer.</p>
-        <a href="https://ascofizz.com" target="_blank" rel="noopener" class="brand-link">Official Store &#8594;</a>
+<!-- ═══════════════ WHY TWO CONSUMER BRANDS ═══════════════ -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="coa rv">
+      <div class="coa-spec">
+        <dl>
+          <dt>Policy</dt><dd>Channel separation</dd>
+          <dt>Applies to</dt><dd>All consumer SKUs</dd>
+          <dt>Effective</dt><dd>2026</dd>
+        </dl>
       </div>
-      <div class="brand-card" data-reveal>
-        <div class="brand-tag">Heritage Range</div>
-        <h3>Ascovita Products</h3>
-        <p class="brand-desc">Traditional healthcare products manufactured under the Ascovita name for pharmacy and wellness channels.</p>
-      </div>
-      <div class="brand-card" data-reveal>
-        <div class="brand-tag">Trade Division</div>
-        <h3>Jayraf Export</h3>
-        <p class="brand-desc">Global export division handling international shipments, documentation and cross-border partnerships.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ MANUFACTURING PROCESS (signature timeline) ══════════ -->
-<section class="sec-pad bg-white">
-  <div class="container">
-    <div class="sec-head" data-reveal>
-      <div class="eyebrow">How We Work</div>
-      <h2>Manufacturing Process</h2>
-      <p>Every batch follows the same disciplined path, from first formulation to final delivery.</p>
-    </div>
-    <div class="process-wrap" data-reveal>
-      <div class="process-line"><div class="process-line-fill" id="procFill"></div></div>
-      <div class="process-grid" id="procGrid">
-        <div class="proc-step"><div class="proc-node">01</div><h4>Research</h4><p>Ingredient sourcing &amp; formulation science.</p></div>
-        <div class="proc-step"><div class="proc-node">02</div><h4>Development</h4><p>Prototype batches &amp; stability testing.</p></div>
-        <div class="proc-step"><div class="proc-node">03</div><h4>Manufacturing</h4><p>Controlled-environment production runs.</p></div>
-        <div class="proc-step"><div class="proc-node">04</div><h4>Testing</h4><p>Batch-level QA &amp; compliance checks.</p></div>
-        <div class="proc-step"><div class="proc-node">05</div><h4>Packaging</h4><p>Strip, sachet &amp; bottle line packaging.</p></div>
-        <div class="proc-step"><div class="proc-node">06</div><h4>Distribution</h4><p>Domestic dispatch &amp; export logistics.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ GLOBAL PRESENCE ══════════ -->
-<section class="sec-pad bg-paper" id="global">
-  <div class="container">
-    <div class="global-grid">
-      <div data-reveal>
-        <div class="eyebrow">Global Presence</div>
-        <h2 style="font-size:clamp(1.9rem,3.4vw,2.6rem);margin:16px 0 20px">Manufactured in India,<br>exported worldwide.</h2>
-        <p style="color:var(--gray);line-height:1.8;margin-bottom:28px;font-size:.94rem">Jayraf Export manages documentation, compliance and logistics for partner brands shipping internationally. <em>[Add your confirmed export markets and shipment volumes here.]</em></p>
-        <div class="region-list">
-          <div class="region-item">&#127757; Middle East</div>
-          <div class="region-item">&#127757; Africa</div>
-          <div class="region-item">&#127757; Southeast Asia</div>
-          <div class="region-item">&#127757; South Asia</div>
+      <div class="coa-body">
+        <div class="notice">
+          <h3>Why Ascovita and Ascofizz are priced differently</h3>
+          <p>A product on a chemist's shelf carries costs an online listing doesn't: distributor margin, retailer margin, stock credit, returns. When the same brand appears online at a lower price, the retailer who stocked it loses — and eventually stops stocking it.</p>
+          <p>So we separated the brands. <strong>Ascovita</strong> is made for the trade and priced to protect it. <strong>Ascofizz</strong> is made for online, with its own SKUs and pack sizes. Same facility, same formulations team, same quality release — two identities, so neither channel undercuts the other.</p>
         </div>
       </div>
-      <div class="globe-wrap" data-reveal>
-        <div class="globe-ring" style="inset:0"></div>
-        <div class="globe-ring" style="inset:14%"></div>
-        <div class="globe-ring" style="inset:28%"></div>
-        <div class="dot pulse" style="top:20%;left:30%"></div>
-        <div class="dot" style="top:38%;left:68%"></div>
-        <div class="dot pulse" style="top:58%;left:22%"></div>
-        <div class="dot" style="top:66%;left:52%"></div>
-        <div class="dot pulse" style="top:80%;left:74%"></div>
-        <div class="dot" style="top:48%;left:44%;width:13px;height:13px;background:var(--deep)"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ MANUFACTURING ═══════════════ -->
+<section id="manufacturing" style="background:var(--paper);border-block:1px solid var(--rule)">
+  <div class="wrap">
+    <div class="coa rv">
+      <div class="coa-spec">
+        <dl>
+          <dt>Facility</dt><dd>Anand, Gujarat<br>India — 388001</dd>
+          <dt>Certification</dt><dd>WHO-GMP<br>FSSAI approved</dd>
+          <dt>Dosage forms</dt><dd>Effervescent tablet<br>Tablet · Capsule<br>Powder · Sachet</dd>
+          <dt>Controlled RH</dt><dd>&lt; 25% throughout<br>granulation to pack</dd>
+        </dl>
+      </div>
+      <div class="coa-body">
+        <p class="eyebrow">02 — Manufacturing</p>
+        <h2 style="font-size:clamp(30px,5vw,54px);margin:10px 0 16px">Effervescence is a<br>humidity problem.</h2>
+        <p class="lead">An effervescent tablet is an acid and a base held apart by nothing but dryness. Let moisture in during granulation, compression or packing and the reaction starts early — the tablet swells, the strip bloats, and the customer opens a tube of powder.</p>
+        <p class="lead" style="margin-top:16px">Everything about how we build a batch follows from that. Dehumidified production rooms, moisture-barrier packing, and a release test that no batch skips.</p>
+
+        <div class="forms">
+          <span>Effervescent tablets</span>
+          <span>Effervescent powders</span>
+          <span>Spirulina range</span>
+          <span>Multivitamins</span>
+          <span>ACV + Moringa</span>
+          <span>Glutathione</span>
+          <span>Ayurvedic tablets</span>
+          <span>Sachets &amp; stick packs</span>
+          <span>Tubes &amp; blisters</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════ FACTORY GALLERY ══════════ -->
-<section class="sec-pad bg-white">
-  <div class="container">
-    <div class="sec-head" data-reveal>
-      <div class="eyebrow">Inside Ascovita</div>
-      <h2>Factory &amp; Facility</h2>
-      <p>Replace these placeholders with real photography of your manufacturing floor, lab and packaging lines.</p>
-    </div>
-    <div class="gallery-grid" data-reveal>
-      <div class="gtile g1"><span class="gico">&#127981;</span><span>Manufacturing Floor</span></div>
-      <div class="gtile g2"><span class="gico">&#129514;</span><span>R&amp;D Laboratory</span></div>
-      <div class="gtile g3"><span class="gico">&#9989;</span><span>Quality Control</span></div>
-      <div class="gtile g4"><span class="gico">&#128230;</span><span>Packaging Line</span></div>
-      <div class="gtile g5"><span class="gico">&#128666;</span><span>Dispatch &amp; Logistics</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ CONTACT / PARTNER ENQUIRY ══════════ -->
-<section class="sec-pad bg-paper2" id="contact">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="contact-info" data-reveal>
-        <div class="eyebrow">Partner With Us</div>
-        <h3 style="margin-top:16px">Start a manufacturing enquiry.</h3>
-        <p>Tell us about your brand and requirements — our team responds to every partner enquiry within 2 business days.</p>
-        <div class="contact-detail"><div class="ico">&#128205;</div><div><b>Facility</b><span>Anand, Gujarat, India</span></div></div>
-        <div class="contact-detail"><div class="ico">&#128222;</div><div><b>Phone</b><span>+91 9898 582 650</span></div></div>
-        <div class="contact-detail"><div class="ico">&#9993;&#65039;</div><div><b>Email</b><span>info@ascovita.com</span></div></div>
+<!-- ═══════════════ CAPABILITIES ═══════════════ -->
+<section id="capabilities">
+  <div class="wrap">
+    <div class="coa rv">
+      <div class="coa-spec">
+        <dl>
+          <dt>Service</dt><dd>Contract manufacturing<br>Private label<br>Third-party</dd>
+          <dt>MOQ</dt><dd>From 50,000 tablets</dd>
+          <dt>Typical lead</dt><dd>21 days from<br>approved artwork</dd>
+        </dl>
       </div>
-      <form class="form-card" data-reveal onsubmit="event.preventDefault();this.querySelector('.form-submit').textContent='Enquiry Received ✓';">
-        <div class="form-row">
-          <div class="field"><label>Full Name</label><input type="text" required placeholder="Your name"></div>
-          <div class="field"><label>Company Name</label><input type="text" required placeholder="Your company"></div>
+      <div class="coa-body">
+        <p class="eyebrow">03 — What we do for clients</p>
+        <h2 style="font-size:clamp(30px,5vw,54px);margin:10px 0 22px">Build your brand<br>on our line.</h2>
+
+        <div class="caps">
+          <div class="cap">
+            <span class="n">CM</span>
+            <h4>Contract manufacturing</h4>
+            <p>You bring the formulation or pick one of ours. We handle granulation, compression, packing and release — and hand you finished goods with batch documentation.</p>
+          </div>
+          <div class="cap">
+            <span class="n">PL</span>
+            <h4>Private label</h4>
+            <p>Our proven formulations under your brand name. The fastest route to market: choose a SKU, approve artwork, get stock.</p>
+          </div>
+          <div class="cap">
+            <span class="n">R&amp;D</span>
+            <h4>Formulation development</h4>
+            <p>New flavour systems, new actives, new effervescent bases. Trial batches before you commit to a commercial run.</p>
+          </div>
+          <div class="cap">
+            <span class="n">PKG</span>
+            <h4>Packaging &amp; artwork</h4>
+            <p>Tubes, blisters, sachets, jars and cartons. Label content checked against Indian labelling rules before it goes to print.</p>
+          </div>
+          <div class="cap">
+            <span class="n">EXP</span>
+            <h4>Export documentation</h4>
+            <p>Through Jayraf Export: buyer-specific labelling, certificates and the paperwork a destination market asks for.</p>
+          </div>
+          <div class="cap">
+            <span class="n">QC</span>
+            <h4>Quality release</h4>
+            <p>Every batch tested and released against specification before dispatch, with retained samples and a certificate of analysis.</p>
+          </div>
         </div>
-        <div class="form-row">
-          <div class="field"><label>Email</label><input type="email" required placeholder="you@company.com"></div>
-          <div class="field"><label>Phone</label><input type="tel" placeholder="+91"></div>
-        </div>
-        <div class="field">
-          <label>Enquiry Type</label>
-          <select required>
-            <option value="">Select an option</option>
-            <option>Third Party Manufacturing</option>
-            <option>Private Label Manufacturing</option>
-            <option>Custom Formulation</option>
-            <option>Export Partnership</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="field"><label>Message</label><textarea placeholder="Tell us about your requirement, target category and expected volume"></textarea></div>
-        <button type="submit" class="btn btn-primary form-submit">Submit Enquiry</button>
-      </form>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════ FOOTER ══════════ -->
+<!-- ═══════════════ QUALITY ═══════════════ -->
+<section id="quality" style="background:var(--paper);border-block:1px solid var(--rule)">
+  <div class="wrap">
+    <div class="coa rv">
+      <div class="coa-spec">
+        <dl>
+          <dt>Standards</dt><dd>WHO-GMP</dd>
+          <dt>Licence</dt><dd>FSSAI approved</dd>
+          <dt>Per batch</dt><dd>Certificate of analysis<br>Retained samples<br>Batch record</dd>
+          <dt>Traceability</dt><dd>Raw material lot<br>to finished pack</dd>
+        </dl>
+      </div>
+      <div class="coa-body">
+        <p class="eyebrow">04 — Quality</p>
+        <h2 style="font-size:clamp(30px,5vw,54px);margin:10px 0 16px">If it isn't written<br>down, it didn't happen.</h2>
+        <p class="lead">Every batch we release carries a paper trail: which raw material lot went in, who compressed it, what the release tests said, and a retained sample sitting on a shelf in case anyone ever needs to check. That record is what a distributor, a private-label client and an export buyer are all actually buying.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CONTACT ═══════════════ -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="coa rv">
+      <div class="coa-spec">
+        <dl>
+          <dt>Response</dt><dd>Within 1 working day</dd>
+          <dt>Languages</dt><dd>English · हिन्दी<br>ગુજરાતી</dd>
+          <dt>Best for</dt><dd>Distribution<br>Private label<br>Export enquiry</dd>
+        </dl>
+      </div>
+      <div class="coa-body">
+        <p class="eyebrow">05 — Contact</p>
+        <h2 style="font-size:clamp(30px,5vw,54px);margin:10px 0 16px">Tell us what you<br>need made.</h2>
+        <p class="lead">Distributor, private-label client or export buyer — send the product, the quantity and the market, and we will come back with what it takes.</p>
+
+        <div class="cgrid">
+          <div class="cbox">
+            <span class="k">WhatsApp / Phone</span>
+            <a href="https://wa.me/919898582650">+91 98985 82650</a>
+          </div>
+          <div class="cbox">
+            <span class="k">Email</span>
+            <a href="mailto:info@ascovita.com">info@ascovita.com</a>
+          </div>
+          <div class="cbox">
+            <span class="k">Factory &amp; office</span>
+            <p>Near Rajshivalay Cinema,<br>Anand, Gujarat 388001, India</p>
+          </div>
+        </div>
+
+        <div class="hero-cta" style="margin-top:26px">
+          <a class="btn" style="border-color:var(--signal);background:var(--signal);color:var(--ink)" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20I%20have%20a%20manufacturing%20enquiry">Message us on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer>
-  <div class="container">
-    <div class="foot-brand-banner">
-      <p>AscoFizz is the official premium consumer wellness brand of Ascovita Healthcare.</p>
-      <a href="https://ascofizz.com" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--lime);color:var(--deep)">Visit AscoFizz Official Store &#8594;</a>
-    </div>
-    <div class="foot-grid">
+  <div class="wrap">
+    <div class="fgrid">
       <div>
-        <div class="foot-logo">&#9670; Ascovita Healthcare</div>
-        <p style="font-size:.85rem;max-width:280px;line-height:1.7">WHO-GMP certified nutraceutical manufacturer — third-party manufacturing, private label, product development and export. Anand, Gujarat, India.</p>
+        <div class="fbrands">
+          <b>Ascovita</b><b>Ascofizz</b><b>Jayraf Export</b>
+        </div>
+        <p style="margin-top:10px">Brands of Ascovita Healthcare, Anand, Gujarat, India</p>
       </div>
-      <div>
-        <h5>Company</h5>
-        <ul><li><a href="#about">About</a></li><li><a href="#manufacturing">Manufacturing</a></li><li><a href="#products">Products</a></li><li><a href="#global">Global Presence</a></li></ul>
+      <div style="display:grid;gap:7px">
+        <a href="#divisions">Divisions</a>
+        <a href="#manufacturing">Manufacturing</a>
+        <a href="#capabilities">Capabilities</a>
       </div>
-      <div>
-        <h5>Brands</h5>
-        <ul><li><a href="https://ascofizz.com" target="_blank" rel="noopener">AscoFizz</a></li><li><a href="#brands">Ascovita Products</a></li><li><a href="#brands">Jayraf Export</a></li></ul>
-      </div>
-      <div>
-        <h5>Contact</h5>
-        <ul><li>Anand, Gujarat, India</li><li>+91 9898 582 650</li><li>info@ascovita.com</li></ul>
+      <div style="display:grid;gap:7px">
+        <a href="https://www.ascofizz.com/">Shop online — Ascofizz</a>
+        <a href="#contact">Distributor enquiry</a>
+        <a href="#contact">Export enquiry</a>
       </div>
     </div>
-    <div class="foot-bottom">
-      <span>&copy; <span id="yr"></span> Ascovita Healthcare. All rights reserved.</span>
-      <span>A manufacturing company — not an online retail store.</span>
-    </div>
+    <p class="fnote">
+      These statements have not been evaluated by the FDA. Products manufactured by Ascovita Healthcare are food supplements and are not intended to diagnose, treat, cure or prevent any disease. Consult a qualified healthcare professional before use.
+      <br><br>© <span id="yr">2026</span> Ascovita Healthcare. All rights reserved.
+    </p>
   </div>
 </footer>
 
 <script>
 document.getElementById('yr').textContent = new Date().getFullYear();
 
-// Navbar scroll state
-var nav = document.getElementById('nav');
-window.addEventListener('scroll', function(){
-  nav.classList.toggle('scrolled', window.scrollY > 40);
-}, {passive:true});
+/* Scroll reveal */
+(function(){
+  var els = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    els.forEach(function(e){ e.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  els.forEach(function(e){ io.observe(e); });
+})();
 
-// Scroll-reveal
-var ro = new IntersectionObserver(function(entries){
-  entries.forEach(function(e){
-    if(e.isIntersecting){ e.target.classList.add('revealed'); ro.unobserve(e.target); }
-  });
-}, {threshold:.14, rootMargin:'0px 0px -60px 0px'});
-document.querySelectorAll('[data-reveal]').forEach(function(el){ ro.observe(el); });
-
-// Process timeline draw-in + sequential node activation
-var procGrid = document.getElementById('procGrid');
-var procFill = document.getElementById('procFill');
-var procObserved = false;
-var po = new IntersectionObserver(function(entries){
-  entries.forEach(function(e){
-    if(e.isIntersecting && !procObserved){
-      procObserved = true;
-      procFill.classList.add('on');
-      var steps = procGrid.querySelectorAll('.proc-step');
-      steps.forEach(function(step, i){
-        setTimeout(function(){ step.classList.add('on'); }, 220 * i);
-      });
-      po.unobserve(e.target);
-    }
-  });
-}, {threshold:.4});
-po.observe(procGrid);
+/* Batch rail — the RH and temperature readouts drift by a fraction, the way
+   a real instrument does. Small enough to be honest, live enough to be read
+   as a running line rather than a static stat. */
+(function(){
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var rh   = document.querySelector('[data-live="rh"]');
+  var temp = document.querySelector('[data-live="temp"]');
+  if (!rh || !temp) return;
+  setInterval(function(){
+    var r = (21 + Math.random() * 2).toFixed(1);
+    var t = (20.5 + Math.random() * 1.4).toFixed(1);
+    rh.innerHTML   = r + '<u>%</u>';
+    temp.innerHTML = t + '<u>°C</u>';
+  }, 4200);
+})();
 </script>
 </body>
 </html>
