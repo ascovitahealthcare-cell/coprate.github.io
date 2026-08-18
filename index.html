@@ -119,25 +119,40 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .nav{position:sticky;top:0;z-index:60;padding-top:12px;padding-bottom:12px;
      background:linear-gradient(var(--bg) 62%,rgba(232,237,230,0));}
 .nav-in{
-  display:flex;align-items:center;gap:20px;height:58px;padding-inline:18px;
+  display:flex;align-items:center;gap:10px;height:58px;padding-inline:14px 18px;
   background:var(--bg);border-radius:100px;box-shadow:var(--nm-sm);
 }
 .brand{display:flex;align-items:center;gap:10px;margin-right:auto}
 .brand img{height:26px;width:auto}
 .brand .fallback{font-weight:700;font-size:18px;letter-spacing:-.02em}
-.nav-links{display:flex;gap:2px}
+.nav-links{display:flex;gap:2px;flex-wrap:nowrap;justify-content:center}
 .nav-links a{
   font-size:13.5px;font-weight:500;color:var(--ink-2);
-  padding:8px 15px;border-radius:100px;transition:color .2s,box-shadow .2s;
+  padding:8px 14px;border-radius:100px;transition:color .2s,box-shadow .2s;
+  white-space:nowrap;
 }
 .nav-links a:hover{color:var(--ink)}
 .nav-links a[aria-current="page"]{color:var(--ink);box-shadow:var(--nm-in-sm)}
+.nav-cta{margin-right:4px}
+.nav-ascofizz{margin-left:4px}
 .nav-toggle{display:none;width:40px;height:40px;border-radius:50%;box-shadow:var(--nm-xs);
-            align-items:center;justify-content:center}
+            align-items:center;justify-content:center;flex:0 0 auto}
+.nav-in .nav-cta{margin-right:0}
 .nav-toggle span{display:block;width:16px;height:1.5px;background:var(--ink);position:relative}
 .nav-toggle span::before,.nav-toggle span::after{content:"";position:absolute;left:0;width:16px;height:1.5px;background:var(--ink)}
 .nav-toggle span::before{top:-5px}.nav-toggle span::after{top:5px}
+/* ── medium screens: 7 links + 2 CTAs no longer fit in one pill ────── */
+@media (max-width:1240px){
+  .nav-ascofizz{display:none}
+}
+@media (max-width:1060px){
+  .nav-in{height:auto;flex-wrap:wrap;gap:8px;padding:10px 14px 12px;border-radius:28px}
+  .brand{flex:1 1 auto;min-width:0}
+  .brand img{height:40px}
+  .nav-cta{font-size:13px;padding:10px 18px;margin-right:0}
+}
 @media (max-width:940px){
+  .nav-in{flex-wrap:nowrap;height:58px}
   .nav-links{
     display:none;position:absolute;top:78px;left:var(--gut);right:var(--gut);
     flex-direction:column;gap:4px;padding:16px;border-radius:var(--r);
@@ -539,11 +554,11 @@ blockquote{margin:0}
       <a href="#/services" data-route="#/services">Services</a>
       <a href="#/brand-launch" data-route="#/brand-launch">Brand Launch</a>
       <a href="#/b2b" data-route="#/b2b">B2B</a>
-      <a href="#/global-export" data-route="#/global-export">Global / Export</a>
+      <a href="#/global-export" data-route="#/global-export">Global Export</a>
       <a href="#/contact" data-route="#/contact">Contact</a>
       </nav>
       <a class="nav-cta" href="#/contact" data-magnetic>Start Your Brand <i>&rarr;</i></a>
-      <a class="btn small soft" href="https://www.ascofizz.com/" target="_blank" rel="noopener" style="margin-right:6px" title="Demo website: marketing &amp; web development services" aria-label="View Ascofizz demo website">Ascofizz (demo) <i>&rarr;</i></a>
+      <a class="btn small soft nav-ascofizz" href="https://www.ascofizz.com/" target="_blank" rel="noopener" title="Demo website: marketing &amp; web development services" aria-label="View Ascofizz demo website">Ascofizz (demo) <i>&rarr;</i></a>
       <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navlinks"><span></span></button><div class="menu-brand" style="display:none"><img src="./assets/ascovita_logo.png" alt="Ascovita Healthcare"><span>Ascovita Healthcare</span></div>
     </div>
   </div>
