@@ -467,6 +467,31 @@ blockquote{margin:0}
 .banner-steps{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
 .banner-steps span{font-size:12px;font-weight:600;letter-spacing:.04em;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.12);backdrop-filter:blur(6px);color:#F5F1E5;border:1px solid rgba(255,255,255,.16)}
 
+/* ── brand launch page highlight ───────────────────────────────── */
+.bl-hero{position:relative;overflow:hidden;border-radius:var(--r);box-shadow:var(--nm)}
+.bl-hero img{display:block;width:100%;height:clamp(340px,52vw,560px);object-fit:cover}
+.bl-hero .veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,34,16,.9) 0%,rgba(20,34,16,.72) 42%,rgba(20,34,16,.12) 100%)}
+.bl-hero .copy{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,5vw,72px);max-width:62ch}
+.bl-hero .copy .eyebrow{color:#C9A227}
+.bl-hero .copy h2{color:#F5F1E5}
+.bl-hero .copy p{color:#CDD8C6}
+.bl-hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.bl-hero .chipline{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.bl-hero .chipline span{font-size:12px;font-weight:600;padding:6px 13px;border-radius:999px;background:rgba(255,255,255,.12);backdrop-filter:blur(6px);color:#F5F1E5;border:1px solid rgba(255,255,255,.16)}
+.blnum{display:inline-flex;align-items:center;justify-content:center;width:clamp(44px,5.4vw,60px);aspect-ratio:1;border-radius:50%;flex-shrink:0;font-size:14px;font-weight:700;color:#C9A227;box-shadow:var(--nm-sm);background:linear-gradient(135deg,#23341E,#314426)}
+.blnum::before{content:none}
+.blref{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,22px)}
+@media (max-width:760px){.blref{grid-template-columns:1fr}}
+.blref .brcard{border-radius:var(--r-sm);overflow:hidden;box-shadow:var(--nm-sm)}
+.blref img{width:100%;aspect-ratio:21/9;object-fit:cover;display:block}
+.blref .brcopy{padding:18px 20px}
+.blref .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:10px}
+.blref .live .tag{background:rgba(46,125,50,.14);color:var(--green)}
+.blref .demo .tag{background:rgba(201,162,39,.16);color:#8F7318}
+.blref h4{font-size:16.5px;font-weight:700}
+.blref p{font-size:13.5px;color:var(--ink-2);margin-top:7px}
+.blref .link{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:600;color:var(--green);margin-top:12px}.blref .link i{font-style:normal;transition:transform .15s ease}.blref .link:hover i{transform:translateX(3px)}
+
 .nav-cta{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:14px;font-size:14px;font-weight:600;text-decoration:none;color:#E8EDE6;background:linear-gradient(135deg,var(--green,#2E7D32),#4C6B2A);box-shadow:var(--shadow-flat)}
 .nav-cta i{font-style:normal;transition:transform .15s ease}.nav-cta:hover i{transform:translateX(3px)}
 @media (max-width:860px){.nav-cta{display:none}}
@@ -512,6 +537,7 @@ blockquote{margin:0}
       <a href="#/" data-route="#/">Home</a>
       <a href="#/about" data-route="#/about">About</a>
       <a href="#/services" data-route="#/services">Services</a>
+      <a href="#/brand-launch" data-route="#/brand-launch">Brand Launch</a>
       <a href="#/b2b" data-route="#/b2b">B2B</a>
       <a href="#/global-export" data-route="#/global-export">Global / Export</a>
       <a href="#/contact" data-route="#/contact">Contact</a>
@@ -670,9 +696,9 @@ blockquote{margin:0}
 <section id="brand-launch" class="tight" style="padding-top:0">
   <div class="wrap">
     <div class="narrow center rv">
-      <p class="eyebrow">Brand launch</p>
+      <p class="eyebrow">New &middot; Brand launch by Ascovita</p>
       <h2 class="t-1" style="margin-top:14px">Build your nutraceutical<br>brand <span class="grad">with Ascovita</span></h2>
-      <p class="lede" style="margin-top:20px;margin-inline:auto">One partner for the whole journey &mdash; from the first idea to a brand selling in stores and online.</p>
+      <p class="lede" style="margin-top:20px;margin-inline:auto">One partner for the whole journey &mdash; research, identity, legal, manufacturing, website, e-commerce and a dedicated marketing team. See how we do it, step by step.</p>
     </div>
     <div class="journey rv" style="margin-top:clamp(30px,4vw,48px)">
       <div class="jstep"><span class="jnum">01</span><h4 class="t-3" style="font-size:15px">Product idea</h4><p class="xs">Your concept, market and audience.</p></div>
@@ -685,8 +711,8 @@ blockquote{margin:0}
       <div class="jstep"><span class="jnum">08</span><h4 class="t-3" style="font-size:15px">Launch</h4><p class="xs">Retail, D2C or marketplace.</p></div>
       <div class="jstep"><span class="jnum">09</span><h4 class="t-3" style="font-size:15px">Distribution</h4><p class="xs">Scale across channels.</p></div>
     </div>
-    <p class="xs center rv" style="margin-top:26px">Ozylix.com is <strong>Ascovita’s own brand</strong> &mdash; built, manufactured and launched with Ascovita. Ascofizz.com is a <strong>demo website</strong> we show to clients interested in our marketing &amp; web development services.</p>
-    <div class="center rv" style="margin-top:24px"><a class="btn" href="#/services">Explore brand launch <i>&rarr;</i></a></div>
+    <p class="xs center rv" style="margin-top:26px">Ozylix.com is <strong>Ascovita’s own brand</strong> &mdash; built, manufactured and launched with Ascovita. Ascofizz.com is a <strong>demo website</strong> we show to clients interested in our marketing &amp; web development services. See every step on our dedicated brand launch page.</p>
+    <div class="center rv" style="margin-top:24px"><a class="btn" href="#/brand-launch">See the full launch plan <i>&rarr;</i></a></div>
   </div>
 </section>
 
@@ -1012,8 +1038,8 @@ blockquote{margin:0}
         <div class="jstep"><span class="jnum">08</span><h4 class="t-3" style="font-size:15px">Launch</h4><p class="xs">Retail, D2C or marketplace.</p></div>
         <div class="jstep"><span class="jnum">09</span><h4 class="t-3" style="font-size:15px">Distribution</h4><p class="xs">Scale across channels.</p></div>
       </div>
-      <p class="xs center rv" style="margin-top:26px">Ozylix.com is <strong>Ascovita’s own brand</strong>. Ascofizz.com is a <strong>demo website</strong> we show to clients interested in our marketing &amp; web development services.</p>
-      <div class="center rv" style="margin-top:24px"><a class="btn" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20brand%20launch%20enquiry">Start your brand <i>&rarr;</i></a></div>
+      <p class="xs center rv" style="margin-top:26px">Ozylix.com is <strong>Ascovita’s own brand</strong>. Ascofizz.com is a <strong>demo website</strong> we show to clients interested in our marketing &amp; web development services. See every step on our dedicated brand launch page.</p>
+      <div class="center rv" style="margin-top:24px"><a class="btn" href="#/brand-launch">See the full launch plan <i>&rarr;</i></a></div>
     </div>
   </div>
 </section>
@@ -1134,6 +1160,114 @@ blockquote{margin:0}
       <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px">
         <a class="btn" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" data-magnetic>WhatsApp enquiry <i>&rarr;</i></a>
         <a class="btn soft" href="#/contact">Send an enquiry</a>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+<div class="page" id="pg-brandlaunch" data-route="/brand-launch" data-title="Brand Launch by Ascovita — your brand, our dedicated team | everything handled end-to-end" data-desc="Ascovita launches your nutraceutical brand end-to-end: market research, product selection, brand identity and design, legal and FSSAI process, manufacturing, packaging, website and e-commerce with integrations, and a dedicated marketing team — all under one roof." hidden>
+<section class="phero">
+  <div class="wrap">
+    <p class="eyebrow rv">Brand launch by Ascovita</p>
+    <h1 class="t-hero rv s1" style="margin-top:18px">Your brand launched<br>by a <span class="grad">dedicated team</span>.</h1>
+    <p class="lede rv s2" style="max-width:60ch">Most manufacturers stop at the tube. Ascovita does not. From the first market research to the first sale &mdash; identity, design, legal, manufacturing, website, e-commerce, marketing and distribution &mdash; your experienced team handles every step, in one plant, in one partnership.</p>
+    <div class="actions rv s3">
+      <a class="btn" href="#/contact" data-magnetic>Launch my brand <i>&rarr;</i></a>
+      <a class="btn soft" href="https://wa.me/919898582650?text=Hello%20Ascovita%20-%20I%20want%20to%20launch%20my%20brand%20with%20your%20dedicated%20team." target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+    <div class="rv s3" style="display:flex;flex-wrap:wrap;gap:9px;margin-top:34px">
+      <span class="pills"><span style="box-shadow:none;background:var(--bg);">Market research</span><span style="box-shadow:none;background:var(--bg);">Brand identity</span><span style="box-shadow:none;background:var(--bg);">Manufacturing</span><span style="box-shadow:none;background:var(--bg);">Website &amp; e-commerce</span><span style="box-shadow:none;background:var(--bg);">Marketing team</span><span style="box-shadow:none;background:var(--bg);">Legal process</span></span>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="bl-hero rv" data-tilt>
+      <img src="./assets/hero-vertical.png" alt="Ascovita effervescent tablet tube &mdash; brand launch hero" loading="eager" width="1440" height="960">
+      <div class="veil"></div>
+      <div class="copy">
+        <p class="eyebrow">All in one &middot; By Ascovita</p>
+        <h2 class="t-1" style="margin-top:14px">Everything a brand needs &mdash;<br><span style="color:#C9A227">handled by us.</span></h2>
+        <p class="lede">You bring the vision. Our dedicated, experienced team runs design, manufacturing, digital and marketing in parallel &mdash; so your brand launches faster, with fewer partners and one accountable team.</p>
+        <div class="chipline">
+          <span>One team</span><span>One plant</span><span>One contract</span><span>Zero middlemen</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="narrow center rv">
+      <p class="eyebrow">The Ascovita launch method</p>
+      <h2 class="t-1" style="margin-top:14px">Eight steps.<br><span class="grad">Zero gaps.</span></h2>
+      <p class="lede" style="margin-top:18px;margin-inline:auto">Follow how your brand moves from an idea to a business that is selling &mdash; with a dedicated Ascovita team member owning every step.</p>
+    </div>
+    <div class="steps rv" style="margin-top:clamp(34px,5vw,56px)">
+      <div class="stepc card flat dvc"><span class="blnum">01</span><h4 class="t-3" style="margin-top:12px">Market research</h4><p class="sm" style="margin-top:10px">Our team studies your category, competitors and pricing so the brand launches with real market fit &mdash; not guesswork.</p></div>
+      <div class="stepc card flat dvc"><span class="blnum">02</span><h4 class="t-3" style="margin-top:12px">Product selection &amp; formulation</h4><p class="sm" style="margin-top:10px">Pick from our proven catalogue or co-develop custom formulations with certified nutritionists &mdash; actives, flavour, format and dose.</p></div>
+      <div class="stepc card flat dvc"><span class="blnum">03</span><h4 class="t-3" style="margin-top:12px">Brand identity &amp; design</h4><p class="sm" style="margin-top:10px">Logo, colour system, packaging design and label artwork &mdash; a complete identity built by our design team, not outsourced fragments.</p></div>
+      <div class="stepc card flat dvc"><span class="blnum">04</span><h4 class="t-3" style="margin-top:12px">Legal &amp; compliance</h4><p class="sm" style="margin-top:10px">FSSAI licensing, product registrations, label regulations, GST and documentation &mdash; handled so your brand is legal from day one.</p></div>
+      <div class="stepc card flat dvc"><span class="blnum">05</span><h4 class="t-3" style="margin-top:12px">Manufacturing</h4><p class="sm" style="margin-top:10px">Produced in our own FSSAI licensed, WHO-GMP compliant plant &mdash; effervescent, tablets, capsules, softgels, powders and sachets.</p></div>
+      <div class="stepc card flat dvc"><span class="blnum">06</span><h4 class="t-3" style="margin-top:12px">Website &amp; e-commerce</h4><p class="sm" style="margin-top:10px">A full e-commerce website for your brand &mdash; storefront, payments, delivery integrations and marketplace onboarding, built by our web team.</p></div>
+      <div class="stepc card flat dvc"><span class="blnum">07</span><h4 class="t-3" style="margin-top:12px">Dedicated marketing team</h4><p class="sm" style="margin-top:10px">A dedicated team plans your launch and growth &mdash; campaigns, content, social and performance marketing that keeps selling after launch.</p></div>
+      <div class="stepc card flat dvc"><span class="blnum">08</span><h4 class="t-3" style="margin-top:12px">Launch &amp; distribution</h4><p class="sm" style="margin-top:10px">Retail, wholesale, franchise or D2C &mdash; we scale your brand across channels with priority stock and ongoing supply.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="padding-top:0">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <p class="eyebrow">See it working</p>
+        <h2 class="t-1" style="margin-top:14px">Live brands,<br><span class="grad">real results</span></h2>
+        <p class="lede" style="margin-top:18px">This is not theory. <strong>Ozylix</strong> is an Ascovita-owned brand that was researched, designed, manufactured, packaged and marketed by our own team &mdash; and it is live today. <strong>Ascofizz</strong> is the demo we show to clients who want our marketing and web development services: a complete working storefront built by the same team that would build yours.</p>
+        <div style="margin-top:24px" class="pills rv">
+          <span style="box-shadow:none;background:var(--bg);">Strategy &amp; identity</span><span style="box-shadow:none;background:var(--bg);">Web development</span><span style="box-shadow:none;background:var(--bg);">E-commerce</span><span style="box-shadow:none;background:var(--bg);">Digital marketing</span>
+        </div>
+      </div>
+      <div class="rv s1">
+        <div class="blref">
+          <a class="brcard live" href="https://www.ozylix.com/" target="_blank" rel="noopener" data-tilt>
+            <img src="./assets/hero-vertical.png" alt="Ozylix — live Ascovita brand" loading="lazy" width="800" height="343">
+            <div class="brcopy">
+              <span class="tag">Live brand</span>
+              <h4>Ozylix</h4>
+              <p>Ascovita&rsquo;s own brand &mdash; built and launched end-to-end by our dedicated team.</p>
+              <span class="link">Visit ozylix.com <i>&rarr;</i></span>
+            </div>
+          </a>
+          <a class="brcard demo" href="https://www.ascofizz.com/" target="_blank" rel="noopener" data-tilt>
+            <img src="./assets/svc_brandlaunch.png" alt="Ascofizz — demo website for marketing &amp; web development services" loading="lazy" width="800" height="343">
+            <div class="brcopy">
+              <span class="tag">Demo website</span>
+              <h4>Ascofizz</h4>
+              <p>The demo storefront we show clients for marketing &amp; web development services.</p>
+              <span class="link">View ascofizz.com <i>&rarr;</i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-dark" style="padding-top:0">
+  <div class="wrap">
+    <div class="card sunk rv">
+      <div class="split">
+        <div>
+          <p class="eyebrow">One team. One partnership.</p>
+          <h2 class="t-1" style="margin-top:14px">Your brand, with our<br><span style="color:#C9A227">dedicated experienced team</span>.</h2>
+          <p class="lede" style="margin-top:18px">Research, identity, legal, manufacturing, website, e-commerce and marketing &mdash; under one roof and one point of contact. Quotation within 48 hours.</p>
+        </div>
+        <div style="display:grid;gap:12px">
+          <a class="btn" href="#/contact" data-magnetic>Launch my brand <i>&rarr;</i></a>
+          <a class="btn soft" href="https://wa.me/919898582650?text=Hello%20Ascovita%20-%20I%20want%20to%20launch%20my%20brand%20with%20your%20dedicated%20team." target="_blank" rel="noopener">WhatsApp us</a>
+        </div>
       </div>
     </div>
   </div>
@@ -1495,7 +1629,8 @@ blockquote{margin:0}
           <a href="#/services#svc-contract">Contract manufacturing</a>
           <a href="#/services#svc-development">Product development</a>
           <a href="#/services#svc-design">Design &amp; labelling</a>
-          <a href="#/services#svc-brandlaunch">Brand launch</a>
+          <a href="#/brand-launch">Brand launch by Ascovita</a>
+          <a href="#/services#svc-brandlaunch">Brand launch service</a>
           <a href="#/services#svc-franchise">Franchise programme</a>
         </div>
         <div class="fcol">
@@ -2597,6 +2732,7 @@ function initArt(canvas){
     if (route === '/catalogue') { route = '/b2b'; location.hash = '#/b2b'; }
     if (route === '/brands') { route = '/b2b'; location.hash = '#/b2b'; }
     if (route === '/faq') { route = '/'; location.hash = '#/'; }
+    if (route === '/launch') { route = '/brand-launch'; location.hash = '#/brand-launch'; }
     return { route: route, frag: parts[1] || '' };
   }
 
