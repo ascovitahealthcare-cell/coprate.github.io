@@ -8,14 +8,14 @@
 <meta name="keywords" content="nutraceutical manufacturer, nutraceutical manufacturing company, private label nutraceutical manufacturer, white label nutraceutical manufacturer, contract nutraceutical manufacturer, nutraceutical product development, supplement manufacturer, nutraceutical manufacturer India, nutraceutical export">
 <link rel="canonical" href="https://www.ascovita.com/">
 <meta name="theme-color" content="#E8EDE6">
-<link rel="icon" href="https://static.wixstatic.com/media/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png/v1/fill/w_346,h_166,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png">
+<link rel="icon" href="./assets/ascovita_logo_192.png">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ascovita Healthcare">
 <meta property="og:title" content="Ascovita Healthcare — Effervescent & Nutraceutical Manufacturer in Anand, Gujarat">
 <meta property="og:description" content="Ascovita Healthcare manufactures effervescent tablets, capsules, softgels, tablets, powders and sachets in its own FSSAI licensed, WHO-GMP compliant plant in Anand, Gujarat — with private label, white label, contract manufacturing, product development, packaging and brand launch support.">
 <meta property="og:url" content="https://www.ascovita.com/">
-<meta property="og:image" content="https://static.wixstatic.com/media/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png/v1/fill/w_346,h_166,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png">
+<meta property="og:image" content="https://www.ascovita.com/assets/ascovita_logo_192.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@
 <script type="application/ld+json">
 {
   "@context":"https://schema.org","@type":"Organization",
-  "name":"Ascovita Healthcare","url":"https://www.ascovita.com/","logo":"https://static.wixstatic.com/media/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png/v1/fill/w_346,h_166,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png",
+  "name":"Ascovita Healthcare","url":"https://www.ascovita.com/","logo":"https://www.ascovita.com/assets/ascovita_logo_192.png",
   "description":"WHO-GMP certified nutraceutical and effervescent tablet manufacturer in Anand, Gujarat, India.",
   "address":{"@type":"PostalAddress","streetAddress":"Near Rajshivalay Cinema","addressLocality":"Anand","addressRegion":"Gujarat","postalCode":"388001","addressCountry":"IN"},
   "telephone":"+91-98985-82650",
@@ -140,13 +140,33 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 @media (max-width:940px){
   .nav-links{
     display:none;position:absolute;top:78px;left:var(--gut);right:var(--gut);
-    flex-direction:column;gap:4px;padding:14px;border-radius:var(--r);
+    flex-direction:column;gap:4px;padding:16px;border-radius:var(--r);
     background:var(--bg);box-shadow:var(--nm);
   }
   .nav-links.open{display:flex}
-  .nav-links a{padding:12px 16px}
+  .nav-links a{padding:14px 18px;font-size:16px}
+  .nav-links .menu-brand{display:flex;align-items:center;gap:12px;padding:4px 18px 14px;border-bottom:1px solid var(--nm-shadow-light,var(--ink-alpha,.15))}
+  .nav-links .menu-brand img{height:34px;width:auto;object-fit:contain}
+  .nav-links .menu-brand span{font-weight:700;font-size:14px;letter-spacing:-.01em}
   .nav-toggle{display:flex}
   .nav .btn{display:none}
+  .hero-vert{grid-template-columns:1fr}
+  .hero-vert .art-shell{order:-1;aspect-ratio:1/1}
+  .phero .split{grid-template-columns:1fr;gap:28px}
+  .phero .img-vert{order:-1;justify-self:center;width:min(400px,86vw)!important;max-height:62vh}
+  .phero .img-vert img{height:auto;max-height:62vh;object-position:center top}
+  .menu-brand{display:none}
+  .nav-links.open{padding-top:8px}
+  .phero .t-hero{font-size:clamp(36px,8.6vw,56px)}
+  .phero .lede{font-size:16px}
+}
+
+.menu-brand-mobile{display:none}
+@media (max-width:940px){
+  .menu-brand-mobile{display:none;align-items:center;gap:12px;padding:4px 18px 14px;margin-bottom:4px;border-bottom:1px solid rgba(23,33,26,.12)}
+  .menu-brand-mobile img{height:34px;width:auto;object-fit:contain}
+  .menu-brand-mobile span{font-weight:700;font-size:14px;letter-spacing:-.01em}
+  .nav-links.open .menu-brand-mobile{display:flex}
 }
 
 /* ── buttons ────────────────────────────────────────────────────── */
@@ -450,6 +470,31 @@ blockquote{margin:0}
 .nav-cta{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:14px;font-size:14px;font-weight:600;text-decoration:none;color:#E8EDE6;background:linear-gradient(135deg,var(--green,#2E7D32),#4C6B2A);box-shadow:var(--shadow-flat)}
 .nav-cta i{font-style:normal;transition:transform .15s ease}.nav-cta:hover i{transform:translateX(3px)}
 @media (max-width:860px){.nav-cta{display:none}}
+
+/* ── welcome modal ──────────────────────────────────────────────── */
+.welcome{position:fixed;inset:0;z-index:9000;display:flex;align-items:center;justify-content:center;
+  padding:20px;background:rgba(20,24,16,.35);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.welcome.show{opacity:1;visibility:visible}
+.welcome-card{position:relative;width:min(460px,92vw);text-align:center;padding:clamp(28px,4vw,44px) 32px 28px;
+  background:var(--bg);border-radius:24px;box-shadow:0 24px 60px -18px rgba(20,24,16,.45);
+  transform:translateY(16px);transition:transform .35s cubic-bezier(.2,.8,.3,1)}
+.welcome.show .welcome-card{transform:translateY(0)}
+.welcome-x{position:absolute;top:14px;right:14px;width:36px;height:36px;border-radius:50%;border:0;
+  background:var(--nm);box-shadow:var(--nm-xs);font-size:20px;line-height:1;color:var(--ink);cursor:pointer}
+.welcome-logo{height:64px;width:auto;object-fit:contain;margin-bottom:14px}
+.welcome h3{font-size:26px;line-height:1.15;letter-spacing:-.02em;margin-bottom:12px}
+.welcome-sub{font-size:14.5px;line-height:1.6;color:var(--ink-soft,var(--ink));margin-bottom:22px;max-width:40ch;margin-inline:auto}
+.welcome-cta{display:flex;flex-direction:column;gap:10px}
+.welcome-cta .btn{justify-content:center}
+.welcome-fine{font-size:11.5px;color:var(--fine,var(--ink));margin-top:18px;opacity:.7}
+@media (min-width:640px){.welcome-cta{flex-direction:row;flex-wrap:wrap;justify-content:center}}
+
+/* mobile: FAB stays clear of content + welcome modal fit */
+@media (max-width:520px){
+  #wa-toggle{bottom:16px;right:16px;width:52px;height:52px;font-size:22px}
+  #wa-toggle+.wa-pop,#wa-toggle~.wa-pop{bottom:78px}
+}
 </style>
 </head>
 <body>
@@ -461,7 +506,7 @@ blockquote{margin:0}
   <div class="wrap">
     <div class="nav-in">
       <a class="brand" href="#/">
-        <img src="https://static.wixstatic.com/media/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png/v1/fill/w_346,h_166,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png" alt="Ascovita Healthcare" width="346" height="166">
+        <img src="./assets/ascovita_logo.png" alt="Ascovita Healthcare" width="200" height="96" style="width:auto;height:44px;object-fit:contain;object-position:left;max-width:none">
       </a>
       <nav class="nav-links" id="navlinks">
       <a href="#/" data-route="#/">Home</a>
@@ -473,7 +518,7 @@ blockquote{margin:0}
       </nav>
       <a class="nav-cta" href="#/contact" data-magnetic>Start Your Brand <i>&rarr;</i></a>
       <a class="btn small soft" href="https://www.ascofizz.com/" target="_blank" rel="noopener" style="margin-right:6px">Shop Ascofizz</a>
-      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navlinks"><span></span></button>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navlinks"><span></span></button><div class="menu-brand" style="display:none"><img src="./assets/ascovita_logo.png" alt="Ascovita Healthcare"><span>Ascovita Healthcare</span></div>
     </div>
   </div>
 </div>
@@ -1433,7 +1478,7 @@ blockquote{margin:0}
     <div class="fcard">
       <div class="fgrid">
         <div class="fcol">
-          <div class="disc" style="width:74px;padding:14%"><img src="https://static.wixstatic.com/media/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png/v1/fill/w_346,h_166,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png" alt="Ascovita Healthcare"></div>
+          <div class="disc" style="width:96px;padding:10%"><img src="./assets/ascovita_logo.png" alt="Ascovita Healthcare" style="width:100%;height:auto;object-fit:contain"></div>
           <p class="sm" style="margin-top:16px;max-width:30ch">Nutraceutical manufacturing &amp; brand development. FSSAI licensed, WHO-GMP compliant. Anand, Gujarat, India.</p>
         </div>
         <div class="fcol">
@@ -1478,6 +1523,21 @@ blockquote{margin:0}
     </div>
   </div>
 </footer>
+<!-- first-visit welcome modal -->
+<div class="welcome" id="welcome" role="dialog" aria-modal="true" aria-labelledby="welcome-h">
+  <div class="welcome-card">
+    <button class="welcome-x" type="button" aria-label="Close" id="welcome-close">&times;</button>
+    <img src="./assets/ascovita_logo.png" alt="Ascovita Healthcare" class="welcome-logo">
+    <h3 id="welcome-h">Welcome to Ascovita Healthcare</h3>
+    <p class="welcome-sub">We manufacture nutraceuticals &mdash; effervescent tablets, tablets, capsules, softgels, powders &amp; sachets &mdash; and build brands around them. FSSAI licensed, WHO-GMP compliant, Anand, Gujarat, India.</p>
+    <div class="welcome-cta">
+      <a class="btn" href="#/contact" id="welcome-cta-brand">Start Your Brand &rarr;</a>
+      <a class="btn soft" href="#/b2b">View B2B Catalogue</a>
+      <a class="btn ghost" href="https://wa.me/919898582650?text=Hello%20Ascovita%20-%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+    <p class="welcome-fine">This welcome appears only on your first visit.</p>
+  </div>
+</div>
 
 <div id="wa-fab" role="region" aria-label="Talk to Ascovita on WhatsApp" style="position:fixed;bottom:18px;right:18px;z-index:99;display:flex;flex-direction:column;align-items:flex-end;gap:10px">
   <div id="wa-menu" aria-hidden="true" style="display:none;flex-direction:column;gap:8px;margin-bottom:4px">
@@ -2176,6 +2236,19 @@ function initArt(canvas){
       var open = links.classList.toggle('open');
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
+    links.addEventListener('click', function(e){
+      if (e.target.closest('a[href^="#"]')) {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    var brandSrc = document.querySelector('.menu-brand');
+    if (brandSrc) {
+      var mb = document.createElement('div');
+      mb.className = 'menu-brand-mobile';
+      mb.innerHTML = brandSrc.innerHTML;
+      links.insertBefore(mb, links.firstChild);
+    }
     document.addEventListener('click', function(e){
       if (!links.contains(e.target) && !toggle.contains(e.target)) {
         links.classList.remove('open');
@@ -2581,6 +2654,23 @@ function initArt(canvas){
   show();
 })();
 
+</script>
+<script>
+/* first-visit welcome modal */
+(function(){
+  var key='ascovita_welcomed',el=document.getElementById('welcome'),
+      x=document.getElementById('welcome-close'),timer=null;
+  if(!el||!el.querySelector('.welcome-card'))return;
+  function close(){el.classList.remove('show');if(timer)clearTimeout(timer);try{localStorage.setItem(key,'1')}catch(e){}}
+  function openModal(){
+    el.classList.add('show');
+    timer=setTimeout(close,15000);
+    document.addEventListener('keydown',function k(e){if(e.key==='Escape'){close();document.removeEventListener('keydown',k)}});
+  }
+  function show(){try{if(localStorage.getItem(key))return}catch(e){}openModal();x.addEventListener('click',close);
+    document.addEventListener('click',function once(e){if(e.target===el){close();document.removeEventListener('click',once)}})}
+  if(document.readyState==='complete'){show()}else{window.addEventListener('load',function(){setTimeout(show,900)})}
+})();
 </script>
 </body>
 </html>
