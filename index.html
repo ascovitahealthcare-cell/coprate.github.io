@@ -2915,8 +2915,18 @@ function initArt(canvas){
   function close(){el.classList.remove('show');if(timer)clearTimeout(timer);try{localStorage.setItem(key,'1')}catch(e){}}
   function openModal(){
     el.classList.add('show');
-    timer=setTimeout(close,15000);
+    var isTouch=('ontouchstart' in window)||(navigator.maxTouchPoints>0);
+    timer=setTimeout(close,isTouch?8000:15000);
     document.addEventListener('keydown',function k(e){if(e.key==='Escape'){close();document.removeEventListener('keydown',k)}});
+    var early=function(){close();window.removeEventListener('scroll',sc);document.removeEventListener('touchstart',ts);document.removeEventListener('click',cc)};
+    var sc=function(){if(window.scrollY>40)early()};
+    var ts=function(e){if(e.target===el)early()};
+    var cc=function once(e){if(e.target===el){close();document.removeEventListener('click',once)}
+      else if(el.contains(e.target)){var t=e.target;while(t&&t!==el){if(t.tagName==='A'||t.tagName==='BUTTON')return;t=t.parentElement}early()}};
+    window.addEventListener('scroll',sc,{passive:true});
+    document.addEventListener('touchstart',ts,{passive:true});
+    document.addEventListener('click',cc);
+    if(isTouch)timer=setTimeout(close,8000);
   }
   function show(){try{if(localStorage.getItem(key))return}catch(e){}openModal();x.addEventListener('click',close);
     document.addEventListener('click',function once(e){if(e.target===el){close();document.removeEventListener('click',once)}})}
