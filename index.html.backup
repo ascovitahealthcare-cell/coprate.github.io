@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ascovita Healthcare — Effervescent & Nutraceutical Manufacturer in Anand, Gujarat</title>
-<meta name="description" content="WHO-GMP compliant, FSSAI licensed nutraceutical manufacturer in Anand, Gujarat. Effervescent tablets, capsules, softgels, powders. Private label, white label, contract manufacturing, brand launch, franchise and export services.">
-<meta name="keywords" content="nutraceutical manufacturer, nutraceutical manufacturing company, private label nutraceutical manufacturer, white label nutraceutical manufacturer, contract nutraceutical manufacturer, nutraceutical product development, supplement manufacturer, nutraceutical manufacturer India, nutraceutical export">
+<meta name="description" content="WHO-GMP compliant, FSSAI licensed nutraceutical manufacturing in Anand, Gujarat. Effervescent tablets, capsules, softgels, powders. Private label, third-party manufacturing, franchise and export to 30+ countries.">
 <link rel="canonical" href="https://www.ascovita.com/">
 <meta name="theme-color" content="#E8EDE6">
 <link rel="icon" href="https://static.wixstatic.com/media/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png/v1/fill/w_346,h_166,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png">
@@ -13,7 +12,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ascovita Healthcare">
 <meta property="og:title" content="Ascovita Healthcare — Effervescent & Nutraceutical Manufacturer in Anand, Gujarat">
-<meta property="og:description" content="WHO-GMP compliant, FSSAI licensed nutraceutical manufacturer in Anand, Gujarat. Effervescent tablets, capsules, softgels, powders. Private label, white label, contract manufacturing, brand launch, franchise and export services.">
+<meta property="og:description" content="WHO-GMP compliant, FSSAI licensed nutraceutical manufacturing in Anand, Gujarat. Effervescent tablets, capsules, softgels, powders. Private label, third-party manufacturing, franchise and export to 30+ countries.">
 <meta property="og:url" content="https://www.ascovita.com/">
 <meta property="og:image" content="https://static.wixstatic.com/media/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png/v1/fill/w_346,h_166,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_05a2b4385ab84453aa9c2e9a1cec4b97~mv2.png">
 
@@ -29,7 +28,7 @@
   "description":"WHO-GMP certified nutraceutical and effervescent tablet manufacturer in Anand, Gujarat, India.",
   "address":{"@type":"PostalAddress","streetAddress":"Near Rajshivalay Cinema","addressLocality":"Anand","addressRegion":"Gujarat","postalCode":"388001","addressCountry":"IN"},
   "telephone":"+91-98985-82650",
-  "brand":[{"@type":"Brand","name":"Ascovita"},{"@type":"Brand","name":"Ascofizz","url":"https://www.ascofizz.com/"},{"@type":"Brand","name":"Ozylix","url":"https://www.ozylix.com/"}]
+  "brand":[{"@type":"Brand","name":"Ascovita"},{"@type":"Brand","name":"Ascofizz","url":"https://www.ascofizz.com/"},{"@type":"Brand","name":"Jayraf Export"}]
 }
 </script>
 
@@ -437,31 +436,32 @@ blockquote{margin:0}
       <nav class="nav-links" id="navlinks">
       <a href="#/" data-route="#/">Home</a>
       <a href="#/about" data-route="#/about">About</a>
-      <a href="#/services" data-route="#/services">Services</a>
-      <a href="#/partners" data-route="#/partners">Partners</a>
-      <a href="#/brands" data-route="#/brands">Our Brands</a>
-      <a href="#/catalogue" data-route="#/catalogue">Catalogue</a>
-      <a href="#/contact" data-route="#/contact">Contact</a>
+      <a href="#/brands" data-route="#/brands">Brands</a>
       <a href="https://www.ascofizz.com/" target="_blank" rel="noopener" style="color:var(--green);font-weight:700">Shop Ascofizz</a>
+      <a href="#/manufacturing" data-route="#/manufacturing">Manufacturing</a>
+      <a href="#/catalogue" data-route="#/catalogue">Catalogue</a>
+      <a href="#/capabilities" data-route="#/capabilities">B2B</a>
+      <a href="#/faq" data-route="#/faq">FAQ</a>
+      <a href="#/contact" data-route="#/contact">Contact</a>
       </nav>
       <a class="btn small soft" href="https://www.ascofizz.com/" target="_blank" rel="noopener" style="margin-right:6px">Shop Ascofizz</a>
-      <a class="btn small" href="#/contact">Start Your Brand <i>&rarr;</i></a>
+      <a class="btn small" href="#/contact">Enquire <i>&rarr;</i></a>
       <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navlinks"><span></span></button>
     </div>
   </div>
 </div>
 
 <main id="app">
-<div class="page" id="pg-home" data-route="/" data-title="Ascovita Healthcare — Effervescent & Nutraceutical Manufacturer in Anand, Gujarat" data-desc="WHO-GMP compliant, FSSAI licensed nutraceutical manufacturer in Anand, Gujarat. Effervescent tablets, capsules, softgels, powders. Private label, white label, contract manufacturing, brand launch, franchise and export services." hidden>
+<div class="page" id="pg-home" data-route="/" data-title="Ascovita Healthcare — Effervescent & Nutraceutical Manufacturer in Anand, Gujarat" data-desc="WHO-GMP compliant, FSSAI licensed nutraceutical manufacturing in Anand, Gujarat. Effervescent tablets, capsules, softgels, powders. Private label, third-party manufacturing, franchise and export to 30+ countries." hidden>
 
 <section class="phero">
   <div class="wrap">
     <p class="eyebrow rv">Anand, Gujarat &nbsp;&middot;&nbsp; WHO-GMP &nbsp;&middot;&nbsp; FSSAI Licensed</p>
     <h1 class="t-hero rv s1" style="margin-top:18px">Rooted in nature,<br><span class="grad">powered by science</span>.</h1>
-    <p class="lede rv s2">Ascovita Healthcare is a complete nutraceutical manufacturing and brand development partner. From our own GMP-certified plant in Anand &mdash; effervescent tablets, capsules, softgels, powders and sachets &mdash; through formulation, packaging, branding and launch, for our own brands, private-label clients, and global markets.</p>
+    <p class="lede rv s2">Ascovita Healthcare formulates and manufactures premium nutraceuticals from our own GMP-certified plant in Anand &mdash; effervescent tablets, capsules, softgels, powders and sachets &mdash; for our own brands, for private-label clients, and for export to 30+ countries.</p>
     <div class="actions rv s3">
-      <a class="btn" href="#/contact" data-magnetic>Start Your Brand <i>&rarr;</i></a>
-      <a class="btn soft" href="#/services">Our services</a>
+      <a class="btn" href="#/contact" data-magnetic>Start an enquiry <i>&rarr;</i></a>
+      <a class="btn soft" href="#/capabilities">B2B &amp; private label</a>
     </div>
   </div>
 </section>
@@ -483,7 +483,7 @@ blockquote{margin:0}
       <div class="card flat stat rv" data-tilt><b data-count="10000" data-suffix="+">0</b><span>Customers served</span></div>
       <div class="card flat stat rv s1" data-tilt><b data-count="50" data-suffix="+">0</b><span>B2B partners</span></div>
       <div class="card flat stat rv s2" data-tilt><b data-count="40" data-suffix="+">0</b><span>Product SKUs</span></div>
-      <div class="card flat stat rv s3" data-tilt><b data-count="48" data-suffix="h">0</b><span>Quote turnaround</span></div>
+      <div class="card flat stat rv s3" data-tilt><b data-count="30" data-suffix="+">0</b><span>Countries exported</span></div>
     </div>
   </div>
 </section>
@@ -536,15 +536,15 @@ blockquote{margin:0}
 
     <div class="grid-3" style="margin-top:clamp(36px,5vw,60px)">
       <article class="card dvc rv" data-tilt style="--dot:#2E7D32">
-        <span class="chip">Brand 01</span>
+        <span class="chip">Division 01</span>
         <h3 class="t-2">Ascovita</h3>
         <p class="where">Offline retail &middot; India</p>
         <p class="sm">The brand the trade knows &mdash; chemists, wellness stores and our stockist network, priced to protect everyone who carries it.</p>
-        <div class="foot"><a class="btn soft small" href="#/brands">Our brands <i>&rarr;</i></a></div>
+        <div class="foot"><a class="btn soft small" href="#/brands/retail">Distribution <i>&rarr;</i></a></div>
       </article>
 
       <article class="card dvc rv s1" data-tilt style="--dot:#00A6C0">
-        <span class="chip">Brand 02</span>
+        <span class="chip">Division 02</span>
         <h3 class="t-2">Ascofizz</h3>
         <p class="where">Online D2C &middot; India</p>
         <p class="sm">Our online-only brand. Same manufacturing, its own identity and pack sizes, so e-commerce pricing never sits beside a retailer's shelf price.</p>
@@ -552,11 +552,11 @@ blockquote{margin:0}
       </article>
 
       <article class="card dvc rv s2" data-tilt style="--dot:#C9A227">
-        <span class="chip">Global &amp; Export</span>
-        <h3 class="t-2">Global / Export</h3>
-        <p class="where">International buyers &middot; Worldwide</p>
-        <p class="sm">Export-ready manufacturing &mdash; export documentation, compliant packaging and formats built for international markets, with direct support from the founding team.</p>
-        <div class="foot"><a class="btn soft small" href="#/services">Global &amp; export services <i>&rarr;</i></a></div>
+        <span class="chip">Division 03</span>
+        <h3 class="t-2">Jayraf Export</h3>
+        <p class="where">International &middot; 30+ countries</p>
+        <p class="sm">Our export-import arm &mdash; organic and inorganic chemicals, herbal products and nutraceuticals for buyers worldwide.</p>
+        <div class="foot" style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn soft small" href="https://jayrafexport.in" target="_blank" rel="noopener">jayrafexport.in <i>&rarr;</i></a><a class="btn soft small" href="#/brands/export">Export <i>&rarr;</i></a></div>
       </article>
     </div>
   </div>
@@ -589,7 +589,7 @@ blockquote{margin:0}
           <h2 class="t-1" style="margin-top:14px">Your brand.<br>Our quality.</h2>
           <p class="lede" style="margin-top:18px">Private label, third-party manufacturing, specialised packaging, franchise, export and bulk wholesale &mdash; from a single SKU to an entire portfolio. MOQ from 500 units, quote in 48 hours.</p>
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
-            <a class="btn" href="#/services" data-magnetic>All services <i>&rarr;</i></a>
+            <a class="btn" href="#/capabilities" data-magnetic>All B2B services <i>&rarr;</i></a>
             <a class="btn soft" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20B2B%20manufacturing%20enquiry">WhatsApp B2B</a>
           </div>
         </div>
@@ -630,16 +630,16 @@ blockquote{margin:0}
 <section style="padding-top:0">
   <div class="wrap center narrow rv">
     <h2 class="t-1">Tell us what you need made.</h2>
-    <p class="lede" style="margin-top:18px;margin-inline:auto">Every enquiry reaches our founders directly &mdash; no sales reps, no delays.</p>
+    <p class="lede" style="margin-top:18px;margin-inline:auto">Every B2B enquiry reaches our founders directly &mdash; no sales reps, no delays.</p>
     <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px">
-      <a class="btn" href="#/contact" data-magnetic>Start Your Brand <i>&rarr;</i></a>
+      <a class="btn" href="#/contact" data-magnetic>Enquire <i>&rarr;</i></a>
       <a class="btn soft" href="https://wa.me/919898582650">WhatsApp us</a>
     </div>
   </div>
 </section>
 
 </div>
-<div class="page" id="pg-about" data-route="/about" data-title="About & founders — our story, values and facility | Ascovita Healthcare" data-desc="Founded in Anand, Gujarat to make premium nutrition accessible. Our vision, mission, manufacturing and quality standards, core values and the founders you work with directly on every enquiry." hidden>
+<div class="page" id="pg-about" data-route="/about" data-title="About & founders — our story, values and facility | Ascovita Healthcare" data-desc="Founded in Anand, Gujarat to make premium nutrition accessible. Our mission, timeline, six core values and the three founders you work with directly on every B2B enquiry." hidden>
 
 <section class="phero">
   <div class="wrap">
@@ -707,33 +707,40 @@ blockquote{margin:0}
       <h2 class="t-1" style="margin-top:14px">The founders you<br><span class="grad">work directly with</span></h2>
       <p class="lede" style="margin-top:20px;margin-inline:auto">No sales reps, no delays. Every B2B enquiry reaches our leadership team directly. That is the Ascovita promise.</p>
     </div>
-    <div class="grid-2" style="margin-top:clamp(30px,4vw,48px)">
+    <div class="grid-3" style="margin-top:clamp(30px,4vw,48px)">
       <article class="card dvc rv" data-tilt style="--dot:#2E7D32">
         <span class="chip">Strategy</span>
         <h3 class="t-2" style="margin-top:16px">Amit Dantani</h3>
-        <p class="where">Founder</p>
-        <p class="sm">Leads strategic partnerships, enterprise accounts, supply chain and overall business direction. First point of contact for bulk deals and long-term partnerships.</p>
-        <div class="foot"><a class="btn soft small" href="https://wa.me/919898582650?text=Hello%20Amit%2C%20I%20am%20interested%20in%20a%20partnership%20with%20Ascovita.">WhatsApp Founder <i>&rarr;</i></a></div>
+        <p class="where">Founder &amp; CEO</p>
+        <p class="sm">Leads strategic partnerships, enterprise accounts, supply chain and overall business direction. First point of contact for bulk deals and long-term B2B agreements.</p>
+        <div class="foot" style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn soft small" href="https://www.linkedin.com/in/amit-dantani-b724a3345/" target="_blank" rel="noopener">LinkedIn <i>&rarr;</i></a><a class="btn soft small" href="https://wa.me/919898582650?text=Hello%20Amit%2C%20I%20am%20interested%20in%20a%20B2B%20partnership%20with%20Ascovita.">WhatsApp</a><a class="btn soft small" href="mailto:ascovitahealthcare@gmail.com">Email</a></div>
       </article>
       <article class="card dvc rv s1" data-tilt style="--dot:#00A6C0">
-        <span class="chip">Co-Founder &amp; CEO</span>
-        <h3 class="t-2" style="margin-top:16px">Aamin Vahora</h3>
-        <p class="where">Co-Founder &amp; CEO</p>
-        <p class="sm">Leads business development, brand partnerships, co-branding projects and franchise development. Handles distributor onboarding and promotional strategy alongside the founder.</p>
-        <div class="foot"><a class="btn soft small" href="https://wa.me/919898582650?text=Hello%20Aamin%2C%20I%20am%20interested%20in%20a%20partnership%20with%20Ascovita.">WhatsApp Co-Founder &amp; CEO <i>&rarr;</i></a></div>
+        <span class="chip">Marketing</span>
+        <h3 class="t-2" style="margin-top:16px">Aamin Ghachivahora</h3>
+        <p class="where">Co-Founder &amp; CMO</p>
+        <p class="sm">Drives brand partnerships, co-branding projects, marketing collateral and franchise development. Handles distributor onboarding and promotional strategy.</p>
+        <div class="foot" style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn soft small" href="https://www.linkedin.com/in/aamin-ghachivahora-416985332" target="_blank" rel="noopener">LinkedIn <i>&rarr;</i></a><a class="btn soft small" href="https://wa.me/919898582650?text=Hello%20Aamin%2C%20I%20am%20interested%20in%20brand%20partnership%20with%20Ascovita.">WhatsApp</a><a class="btn soft small" href="mailto:ascovitahealthcare@gmail.com">Email</a></div>
+      </article>
+      <article class="card dvc rv s2" data-tilt style="--dot:#C9A227">
+        <span class="chip">Exports</span>
+        <h3 class="t-2" style="margin-top:16px">Jaydeep Parmar</h3>
+        <p class="where">Co-Founder &amp; Export Director</p>
+        <p class="sm">Oversees export-import operations, pricing strategy, payment terms and international partnerships. Leads Jayraf Export, our dedicated global trade arm.</p>
+        <div class="foot" style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn soft small" href="https://jayrafexport.in" target="_blank" rel="noopener">Jayraf Export <i>&rarr;</i></a><a class="btn soft small" href="https://wa.me/919898582650?text=Hello%20Jaydeep%2C%20I%20am%20interested%20in%20export%20partnership%20with%20Ascovita%20%2F%20Jayraf%20Export.">WhatsApp</a></div>
       </article>
     </div>
   </div>
 </section>
 
 </div>
-<div class="page" id="pg-brands" data-route="/brands" data-title="Our brands — Ascovita, Ascofizz & Ozylix | Ascovita Healthcare" data-desc="The brands built and manufactured by Ascovita Healthcare: Ascovita for offline retail and distribution, Ascofizz as our online D2C reference brand, and Ozylix, a live production brand." hidden>
+<div class="page" id="pg-brands" data-route="/brands" data-title="Our brands — Ascovita, Ascofizz & Jayraf Export | Ascovita Healthcare" data-desc="Three divisions under Ascovita Healthcare: Ascovita for offline retail and distribution, Ascofizz for online D2C, and Jayraf Export serving 30+ countries with full trade documentation." hidden>
 
 <section class="phero">
   <div class="wrap">
     <p class="eyebrow rv">Our brands</p>
-    <h1 class="t-hero rv s1" style="margin-top:18px">The brands<br><span class="grad">we build</span>.</h1>
-    <p class="lede rv s2">Ascovita Healthcare is the manufacturer. Everything we make reaches a customer through one of our brands &mdash; each built for a channel that behaves differently.</p>
+    <h1 class="t-hero rv s1" style="margin-top:18px">Three routes<br><span class="grad">to market</span>.</h1>
+    <p class="lede rv s2">Ascovita Healthcare is the manufacturer. Everything we make reaches a customer through one of three brands, each built for a channel that behaves differently.</p>
   </div>
 </section>
 
@@ -760,7 +767,6 @@ blockquote{margin:0}
           <div class="foot"><a class="btn" href="#/contact" data-magnetic>Become a distributor <i>&rarr;</i></a></div>
         </div>
         <ul class="dvc" style="display:grid;gap:9px;list-style:none">
-
           <li class="sm">Distributor and stockist network</li>
           <li class="sm">Chemist and modern-trade retail</li>
           <li class="sm">MRP-led, margin protected for the trade</li>
@@ -768,8 +774,6 @@ blockquote{margin:0}
           <li class="sm">Territory-based appointment</li>
           <li class="sm">Franchise programme with marketing support</li>
         </ul>
-        <p class="xs" style="margin-top:16px">Ascovita is the original trade brand, and also the umbrella under which new private-label brands are launched.</p>
-
       </div>
     </div>
   </div>
@@ -798,23 +802,50 @@ blockquote{margin:0}
   </div>
 </section>
 
-<section id="ozylix" style="padding-top:0">
+<section id="export" style="padding-top:0">
   <div class="wrap">
     <div class="card rv">
       <div class="split">
         <div class="dvc" style="--dot:#C9A227">
-          <span class="chip">Brand 03</span>
-          <h2 class="t-1" style="margin-top:18px">Ozylix</h2>
-          <p class="where">Live production brand &middot; ozylix.com</p>
-          <p class="lede" style="margin-top:18px">A live Ascovita manufacturing brand built on the same plant, formulations and quality systems. Ozylix is the most recent example of how quickly a brand can move from formulation to a working, customer-facing website with our end-to-end manufacturing and brand development support.</p>
-          <div class="foot"><a class="btn" href="https://www.ozylix.com/" target="_blank" rel="noopener" data-magnetic>Visit the brand <i>&rarr;</i></a></div>
+          <span class="chip">Division 03</span>
+          <h2 class="t-1" style="margin-top:18px">Jayraf Export</h2>
+          <p class="where">Export &amp; import division</p>
+          <p class="lede" style="margin-top:18px">Our dedicated export-import company handles international shipments of organic and inorganic chemicals, herbal products and nutraceuticals &mdash; trusted by global buyers across the vitamins, food and wellness industries.</p>
+          <div class="foot" style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="https://jayrafexport.in" target="_blank" rel="noopener" data-magnetic>Visit Jayraf Export <i>&rarr;</i></a><a class="btn soft" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20export%20trade%20enquiry">Trade enquiry</a></div>
         </div>
-        <ul class="dvc" style="display:grid;gap:9px;list-style:none">
-          <li class="sm">Live website, built and running</li>
-          <li class="sm">Manufactured and quality-tested in our Anand plant</li>
-          <li class="sm">Same WHO-GMP and FSSAI standards as every Ascovita product</li>
-          <li class="sm">A working example of our brand launch and development service</li>
-        </ul>
+        <div class="grid-2">
+          <div class="card sunk stat"><b data-count="30" data-suffix="+">0</b><span>Countries served</span></div>
+          <div class="card sunk stat"><b data-count="500" data-suffix="+ t">0</b><span>Tons exported</span></div>
+          <div class="card sunk stat"><b>ISO</b><span>Certified quality</span></div>
+          <div class="card sunk stat"><b data-count="24" data-suffix="h">0</b><span>Quote turnaround</span></div>
+        </div>
+      </div>
+
+      <div class="grid-3" style="margin-top:clamp(24px,3vw,36px)">
+        <div class="card sunk">
+          <h3 class="t-3">Product categories</h3>
+          <ul class="dvc" style="display:grid;gap:8px;list-style:none;margin-top:12px">
+            <li class="sm">Organic &amp; inorganic chemicals</li>
+            <li class="sm">Herbal extracts &amp; botanicals</li>
+            <li class="sm">Nutraceutical raw materials</li>
+            <li class="sm">Vitamin &amp; mineral premixes</li>
+            <li class="sm">Effervescent tablets (branded)</li>
+            <li class="sm">Private label finished goods</li>
+            <li class="sm">Spirulina &amp; moringa powder</li>
+            <li class="sm">Protein powders &amp; blends</li>
+          </ul>
+        </div>
+        <div class="card sunk">
+          <h3 class="t-3">Documentation</h3>
+          <p class="sm" style="margin-top:12px">Certificate of Analysis, MSDS, FSSAI, phytosanitary and customs documentation handled end to end.</p>
+          <h3 class="t-3" style="margin-top:20px">Logistics</h3>
+          <p class="sm" style="margin-top:10px">Sea freight, air freight, FCL and LCL, coordinated with verified logistics partners for compliant delivery.</p>
+        </div>
+        <div class="card sunk">
+          <h3 class="t-3">Led by Jaydeep Parmar</h3>
+          <p class="sm" style="margin-top:12px">Our Export Director manages all international trade personally &mdash; direct communication, no third-party intermediaries.</p>
+          <a class="btn soft small" style="margin-top:18px" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20export%20trade%20enquiry">WhatsApp trade desk <i>&rarr;</i></a>
+        </div>
       </div>
     </div>
   </div>
@@ -923,7 +954,7 @@ blockquote{margin:0}
     <p class="lede rv s2">Everything below is manufactured in-house at Anand. Any of it can be made under your own brand &mdash; same formulation, your label, from 500 units per SKU.</p>
     <div class="actions rv s3">
       <a class="btn" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20please%20send%20the%20product%20catalogue" data-magnetic>Request the full catalogue <i>&rarr;</i></a>
-      <a class="btn soft" href="#/services">Private label options</a>
+      <a class="btn soft" href="#/capabilities">Private label options</a>
     </div>
   </div>
 </section>
@@ -998,13 +1029,13 @@ blockquote{margin:0}
 </section>
 
 </div>
-<div class="page" id="pg-capabilities" data-route="/services" data-title="Services — private label, white label, contract manufacturing & brand launch | Ascovita Healthcare" data-desc="Nine services in one plant: private label, white label, contract manufacturing, product development, design & labelling, brand launch, distribution, franchise and global export. MOQ from 500 units per SKU, quotation within 48 hours." hidden>
+<div class="page" id="pg-capabilities" data-route="/capabilities" data-title="B2B, private label, third-party manufacturing & franchise | Ascovita Healthcare" data-desc="Private label, third-party manufacturing, specialised packaging, pan-India franchise, export partnerships and bulk wholesale. MOQ from 500 units per SKU, quotation within 48 hours." hidden>
 
 <section class="phero">
   <div class="wrap">
-    <p class="eyebrow rv">Services</p>
-    <h1 class="t-hero rv s1" style="margin-top:18px">Everything a brand needs,<br><span class="grad">under one roof</span>.</h1>
-    <p class="lede rv s2">Nine services in one plant &mdash; from the first formula to shelf-ready packaging, brand launch and distribution. FSSAI licensed, WHO-GMP compliant, made in Gujarat.</p>
+    <p class="eyebrow rv">B2B &amp; wholesale manufacturing</p>
+    <h1 class="t-hero rv s1" style="margin-top:18px">Your trusted<br><span class="grad">manufacturing partner</span>.</h1>
+    <p class="lede rv s2">End-to-end nutraceutical solutions &mdash; custom formulation, third-party manufacturing, private label, franchise and export partnerships. FSSAI licensed, WHO-GMP compliant, made in Gujarat.</p>
     <div class="badges rv s3" style="margin-top:22px;margin-bottom:22px">
       <div class="badge"><b>FSSAI</b><span>Licensed</span></div>
       <div class="badge"><b>WHO-GMP</b><span>Certified</span></div>
@@ -1031,21 +1062,18 @@ blockquote{margin:0}
 
 <section>
   <div class="wrap">
-      <div class="narrow center rv">
-      <p class="eyebrow">Services</p>
-      <h2 class="t-1" style="margin-top:14px">Nine services.<br>One plant.</h2>
-      <p class="lede" style="margin-top:20px;margin-inline:auto">From the first formula to shelf-ready packaging, brand launch and distribution &mdash; everything a nutraceutical brand needs under one roof.</p>
+    <div class="narrow center rv">
+      <p class="eyebrow">Solutions</p>
+      <h2 class="t-1" style="margin-top:14px">Six ways to work<br>with the plant</h2>
+      <p class="lede" style="margin-top:20px;margin-inline:auto">From a single SKU to an entire brand portfolio &mdash; formulation, manufacturing, packaging and logistics under one roof.</p>
     </div>
     <div class="grid-3" style="margin-top:clamp(30px,4vw,48px)">
-      <div class="card rv" data-tilt><span class="chip">01</span><h3 class="t-3" style="margin-top:16px">Private label manufacturing</h3><p class="sm" style="margin-top:10px">Launch your own nutraceutical brand on our ready-to-use formulations. We handle production, quality control, packaging and labelling &mdash; you add your brand name.</p><div class="pills" style="margin-top:16px"><span>Low MOQ</span><span>Custom branding</span></div></div>
-      <div class="card rv s1" data-tilt><span class="chip">02</span><h3 class="t-3" style="margin-top:16px">White label manufacturing</h3><p class="sm" style="margin-top:10px">Take an existing Ascovita product range as-is under your own name &mdash; fastest route to market when speed matters more than custom formulation.</p><div class="pills" style="margin-top:16px"><span>Ready formulations</span><span>Fastest launch</span></div></div>
-      <div class="card rv s2" data-tilt><span class="chip">03</span><h3 class="t-3" style="margin-top:16px">Contract manufacturing</h3><p class="sm" style="margin-top:10px">Already have a formulation? We manufacture to your exact specification in our GMP-certified facility. Effervescent, capsule, tablet, softgel, powder &mdash; all formats.</p><div class="pills" style="margin-top:16px"><span>All formats</span><span>GMP certified</span></div></div>
-      <div class="card rv" data-tilt><span class="chip">04</span><h3 class="t-3" style="margin-top:16px">Product development &amp; formulation</h3><p class="sm" style="margin-top:10px">Our certified nutritionists develop custom formulations around your brief &mdash; actives, flavours, delivery formats and regulatory compliance from day one.</p><div class="pills" style="margin-top:16px"><span>Formulation R&amp;D</span><span>Certified nutritionists</span></div></div>
-      <div class="card rv s1" data-tilt><span class="chip">05</span><h3 class="t-3" style="margin-top:16px">Product design &amp; labelling</h3><p class="sm" style="margin-top:10px">Full label design, FSSAI-compliant artwork, QR codes and barcodes &mdash; packaging that stands out on shelf and passes every regulation check.</p><div class="pills" style="margin-top:16px"><span>FSSAI compliant</span><span>Full artwork</span></div></div>
-      <div class="card rv s2" data-tilt><span class="chip">06</span><h3 class="t-3" style="margin-top:16px">Brand launch &amp; development</h3><p class="sm" style="margin-top:10px">From formulation to a working brand &mdash; identity, packaging, e-commerce presence and go-to-market support. Ozylix is a live example of this service.</p><div class="pills" style="margin-top:16px"><span>End-to-end</span><span>Live example</span></div></div>
-      <div class="card rv" data-tilt><span class="chip">07</span><h3 class="t-3" style="margin-top:16px">Distribution &amp; bulk wholesale</h3><p class="sm" style="margin-top:10px">Pharmacies, clinics, hospital chains and online retailers source at wholesale pricing with priority dispatch and dedicated account management.</p><div class="pills" style="margin-top:16px"><span>Wholesale pricing</span><span>Priority dispatch</span></div></div>
-      <div class="card rv s1" data-tilt><span class="chip">08</span><h3 class="t-3" style="margin-top:16px">Franchise programme</h3><p class="sm" style="margin-top:10px">A proven brand, an established supply chain and marketing support behind you. Built for pharma distributors and health stores. <a href="#franchise" style="border-bottom:1px solid var(--line)">Full model below</a>.</p><div class="pills" style="margin-top:16px"><span>Marketing support</span><span>Pan-India</span></div></div>
-      <div class="card rv s2" data-tilt><span class="chip">09</span><h3 class="t-3" style="margin-top:16px">Global / export services</h3><p class="sm" style="margin-top:10px">Export-ready manufacturing for international brands and buyers &mdash; export documentation, compliant packaging and coordinated logistics, handled by the founding team directly.</p><div class="pills" style="margin-top:16px"><span>Export compliant</span><span>Direct support</span></div></div>
+      <div class="card rv" data-tilt><span class="chip">PL</span><h3 class="t-3" style="margin-top:16px">Private label manufacturing</h3><p class="sm" style="margin-top:10px">Launch your own nutraceutical brand on our ready-to-use formulations. We handle production, quality control, packaging and labelling &mdash; you add your brand name.</p><div class="pills" style="margin-top:16px"><span>Low MOQ</span><span>Custom branding</span></div></div>
+      <div class="card rv s1" data-tilt><span class="chip">3P</span><h3 class="t-3" style="margin-top:16px">Third-party manufacturing</h3><p class="sm" style="margin-top:10px">Already have a formulation? We manufacture to your exact specification in our GMP-certified facility. Effervescent, capsule, tablet, softgel, powder &mdash; all formats.</p><div class="pills" style="margin-top:16px"><span>All formats</span><span>GMP certified</span></div></div>
+      <div class="card rv s2" data-tilt><span class="chip">PKG</span><h3 class="t-3" style="margin-top:16px">Specialised packaging</h3><p class="sm" style="margin-top:10px">Alu-Alu, blister packs, strip packaging and effervescent tubes, with custom packaging design to make your product stand out on shelf.</p><div class="pills" style="margin-top:16px"><span>Alu-Alu</span><span>Blister</span><span>Strip</span></div></div>
+      <div class="card rv" data-tilt><span class="chip">FR</span><h3 class="t-3" style="margin-top:16px">Franchise programme</h3><p class="sm" style="margin-top:10px">A proven brand, an established supply chain and marketing support behind you. Built for pharma distributors and health stores. <a href="#franchise" style="border-bottom:1px solid var(--line)">Full model below</a>.</p><div class="pills" style="margin-top:16px"><span>Marketing support</span><span>Pan-India</span></div></div>
+      <div class="card rv s1" data-tilt><span class="chip">EX</span><h3 class="t-3" style="margin-top:16px">Export &amp; international</h3><p class="sm" style="margin-top:10px">Export partnerships for brands distributing Ascovita products or manufacturing under their own label internationally. FSSAI and export compliance handled.</p><div class="pills" style="margin-top:16px"><span>Global reach</span><span>Export compliant</span></div></div>
+      <div class="card rv s2" data-tilt><span class="chip">BULK</span><h3 class="t-3" style="margin-top:16px">Bulk &amp; wholesale orders</h3><p class="sm" style="margin-top:10px">Pharmacies, clinics, hospital chains and online retailers source at wholesale pricing with priority dispatch and dedicated account management.</p><div class="pills" style="margin-top:16px"><span>Wholesale pricing</span><span>Priority dispatch</span></div></div>
     </div>
   </div>
 </section>
@@ -1153,117 +1181,6 @@ blockquote{margin:0}
 </section>
 
 </div>
-<div class="page" id="pg-partners" data-route="/partners" data-title="Partners — products, categories, e-catalogues & gallery | Ascovita Healthcare" data-desc="Everything a partner needs: the products we manufacture, categories we cover, downloadable e-catalogues on request, and a gallery of SKUs in production. Distribution, franchise and global partnership enquiries welcome." hidden>
-
-<section class="phero">
-  <div class="wrap">
-    <p class="eyebrow rv">Partners</p>
-    <h1 class="t-hero rv s1" style="margin-top:18px">Partner with the<br><span class="grad">plant, not an agent</span>.</h1>
-    <p class="lede rv s2">Everything on this page is what we actually manufacture in Anand &mdash; the products, the categories, the catalogues and the SKUs. Distribution, franchise and global partnership enquiries go directly to the founders.</p>
-    <div class="actions rv s3">
-      <a class="btn" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20partnership%20enquiry" data-magnetic>Start a partnership <i>&rarr;</i></a>
-      <a class="btn soft" href="#/catalogue">Browse the catalogue</a>
-    </div>
-  </div>
-</section>
-
-<section class="tight" style="padding-top:0">
-  <div class="wrap">
-    <div class="grid-4">
-      <div class="card flat stat rv" data-tilt><b data-count="8" data-suffix="">0</b><span>Product categories</span></div>
-      <div class="card flat stat rv s1" data-tilt><b data-count="40" data-suffix="+">0</b><span>Product SKUs</span></div>
-      <div class="card flat stat rv s2" data-tilt><b data-count="6" data-suffix="">0</b><span>Dosage formats</span></div>
-      <div class="card flat stat rv s3" data-tilt><b>GMP</b><span>Certified plant</span></div>
-    </div>
-  </div>
-</section>
-
-<section style="padding-top:0">
-  <div class="wrap">
-    <div class="narrow center rv">
-      <p class="eyebrow">Products we manufacture</p>
-      <h2 class="t-1" style="margin-top:14px">The range,<br>at a glance</h2>
-      <p class="lede" style="margin-top:20px;margin-inline:auto">Eight categories manufactured in-house. Every one can be made under your brand, or supplied under ours for distribution and retail partnerships.</p>
-    </div>
-    <div class="grid-4" style="margin-top:clamp(30px,4vw,48px)">
-      <div class="card rv" data-tilt><span class="chip">EFF</span><h3 class="t-3" style="margin-top:16px">Effervescent tablets</h3><p class="sm" style="margin-top:10px">Vitamin C, Glutathione, Biotin, Multivitamins</p></div>
-      <div class="card rv" data-tilt><span class="chip">HRB</span><h3 class="t-3" style="margin-top:16px">Herbal capsules</h3><p class="sm" style="margin-top:10px">Spirulina, Moringa, Ashwagandha, Turmeric</p></div>
-      <div class="card rv" data-tilt><span class="chip">SFG</span><h3 class="t-3" style="margin-top:16px">Softgel capsules</h3><p class="sm" style="margin-top:10px">Omega-3, Vitamin D3, CoQ10, Fish Oil</p></div>
-      <div class="card rv" data-tilt><span class="chip">PRO</span><h3 class="t-3" style="margin-top:16px">Protein powders</h3><p class="sm" style="margin-top:10px">Whey, plant protein, mass gainer</p></div>
-      <div class="card rv" data-tilt><span class="chip">ACV</span><h3 class="t-3" style="margin-top:16px">ACV &amp; vinegar tablets</h3><p class="sm" style="margin-top:10px">Apple cider vinegar, digestive support</p></div>
-      <div class="card rv" data-tilt><span class="chip">BTY</span><h3 class="t-3" style="margin-top:16px">Beauty supplements</h3><p class="sm" style="margin-top:10px">Biotin, collagen, glutathione, hair-skin-nail</p></div>
-      <div class="card rv" data-tilt><span class="chip">IMM</span><h3 class="t-3" style="margin-top:16px">Immunity boosters</h3><p class="sm" style="margin-top:10px">Zinc, Vitamin C, elderberry, turmeric blends</p></div>
-      <div class="card rv" data-tilt><span class="chip">COG</span><h3 class="t-3" style="margin-top:16px">Cognitive health</h3><p class="sm" style="margin-top:10px">B-complex, brahmi, ginkgo, multivitamins</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="ecatalog" style="padding-top:0">
-  <div class="wrap">
-    <div class="narrow center rv">
-      <p class="eyebrow">E-catalogues</p>
-      <h2 class="t-1" style="margin-top:14px">Catalogues for your<br><span class="grad">procurement team</span></h2>
-      <p class="lede" style="margin-top:20px;margin-inline:auto">PDF catalogues with specifications, wholesale pricing, MOQ and certification details &mdash; sent on WhatsApp or email, usually within the hour.</p>
-    </div>
-    <div class="grid-3" style="margin-top:clamp(30px,4vw,48px)">
-      <article class="card dl rv" data-tilt>
-        <span class="tagline">Company catalogue</span>
-        <h3 class="t-3">B2B distributor catalogue</h3>
-        <p class="sm">The complete Ascovita range &mdash; Spirulina, Glutathione, Vitamin C, Biotin and more &mdash; with partnership models, certifications and wholesale pricing. Written for distributors and retail chains.</p>
-        <div class="foot"><a class="btn small" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20please%20send%20the%20B2B%20distributor%20catalogue">Request on WhatsApp <i>&rarr;</i></a></div>
-      </article>
-      <article class="card dl rv s1" data-tilt>
-        <span class="tagline">Product catalogue</span>
-        <h3 class="t-3">Category-wise product catalogues</h3>
-        <p class="sm">One catalogue per category &mdash; effervescent, herbal, softgel, protein and more &mdash; with nutritional profiles, packaging options and partner pricing.</p>
-        <div class="foot"><a class="btn small" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20please%20send%20the%20category-wise%20product%20catalogues">Request on WhatsApp <i>&rarr;</i></a></div>
-      </article>
-      <article class="card dl rv s2" data-tilt>
-        <span class="tagline">Custom request</span>
-        <h3 class="t-3">Any SKU, any category</h3>
-        <p class="sm">Need a specification sheet for a single product or a full category? Tell us which one and we send the relevant sheet &mdash; including COA format, shelf life, pack sizes and carton dimensions.</p>
-        <div class="foot"><a class="btn small soft" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20please%20send%20a%20catalogue%20for%20my%20required%20products">Ask for a catalogue <i>&rarr;</i></a></div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="gallery" style="padding-top:0">
-  <div class="wrap">
-    <div class="narrow center rv">
-      <p class="eyebrow">Gallery</p>
-      <h2 class="t-1" style="margin-top:14px">In production<br>right now</h2>
-      <p class="lede" style="margin-top:20px;margin-inline:auto">A selection of SKUs currently running on the line at our Anand plant.</p>
-    </div>
-    <div class="grid-4" style="margin-top:clamp(30px,4vw,48px)">
-      <article class="card pcard rv" data-tilt><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_0632dc96f8db425a9211154fc0a7ab6f~mv2.jpg/v1/fill/w_600,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_0632dc96f8db425a9211154fc0a7ab6f~mv2.jpg" alt="L-Glutathione Effervescent" loading="lazy" decoding="async" width="600" height="600"></div><h3 class="t-3">L-Glutathione Effervescent</h3><p class="meta">Orange flavour &middot; Skin &amp; antioxidant</p></article>
-      <article class="card pcard rv" data-tilt><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_1d97e722692a46cbb7e6701d688bdcda~mv2.jpg/v1/fill/w_600,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_1d97e722692a46cbb7e6701d688bdcda~mv2.jpg" alt="Apple Cider Vinegar + Moringa" loading="lazy" decoding="async" width="600" height="600"></div><h3 class="t-3">Apple Cider Vinegar + Moringa</h3><p class="meta">Green apple &middot; Metabolism</p></article>
-      <article class="card pcard rv" data-tilt><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_f75bd00063ef46e58a1efdea01d18789~mv2.png/v1/fill/w_1100,h_1100,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_f75bd00063ef46e58a1efdea01d18789~mv2.png" alt="L-Carnitine Effervescent" loading="lazy" decoding="async" width="600" height="600"></div><h3 class="t-3">L-Carnitine Effervescent</h3><p class="meta">Orange flavour &middot; Energy</p></article>
-      <article class="card pcard rv" data-tilt><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_ff7808219dc64cfab2102ea067910a6a~mv2.png/v1/fill/w_1100,h_1100,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_ff7808219dc64cfab2102ea067910a6a~mv2.png" alt="B12 + Biotin Effervescent" loading="lazy" decoding="async" width="600" height="600"></div><h3 class="t-3">B12 + Biotin Effervescent</h3><p class="meta">Guava flavour &middot; Hair &amp; nerves</p></article>
-      <article class="card pcard rv" data-tilt><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_adf1de2910e24be895072712f8965914~mv2.png/v1/fill/w_1100,h_1100,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_adf1de2910e24be895072712f8965914~mv2.png" alt="Vitamin C Effervescent" loading="lazy" decoding="async" width="600" height="600"></div><h3 class="t-3">Vitamin C Effervescent</h3><p class="meta">Orange flavour &middot; Immunity</p></article>
-      <article class="card pcard rv" data-tilt><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_389d6b29ad5446bb81ad305de9756f17~mv2.jpg/v1/fill/w_600,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_389d6b29ad5446bb81ad305de9756f17~mv2.jpg" alt="Multidiata Multivitamin" loading="lazy" decoding="async" width="600" height="600"></div><h3 class="t-3">Multidiata Multivitamin</h3><p class="meta">Premium daily multivitamin</p></article>
-      <article class="card pcard rv" data-tilt><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_110567acf3b045e0a0998a68f50e4aae~mv2.jpg/v1/fill/w_1100,h_1100,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_110567acf3b045e0a0998a68f50e4aae~mv2.jpg" alt="MG+++ Magnesium" loading="lazy" decoding="async" width="600" height="600"></div><h3 class="t-3">MG+++ Magnesium</h3><p class="meta">B12 + D3 with magnesium</p></article>
-      <article class="card pcard rv" data-tilt><div class="shot"><img src="https://static.wixstatic.com/media/f0adaf_fb4f54451eb94ce38d361b1e0186522d~mv2.png/v1/fill/w_1100,h_1100,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/f0adaf_fb4f54451eb94ce38d361b1e0186522d~mv2.png" alt="CS++ + Iron++" loading="lazy" decoding="async" width="600" height="600"></div><h3 class="t-3">CS++ + Iron++</h3><p class="meta">Calcium + iron with B12 &amp; D3</p></article>
-    </div>
-  </div>
-</section>
-
-<section style="padding-top:0">
-  <div class="wrap">
-    <div class="narrow center rv">
-      <p class="eyebrow">Ways to partner</p>
-      <h2 class="t-1" style="margin-top:14px">Choose how you<br>want to grow</h2>
-      <p class="lede" style="margin-top:20px;margin-inline:auto">Distribution, franchise and global partnership terms are set in writing, directly with the founders &mdash; no intermediaries.</p>
-    </div>
-    <div class="grid-3" style="margin-top:clamp(30px,4vw,48px)">
-      <div class="card rv" data-tilt><span class="chip">01</span><h3 class="t-3" style="margin-top:16px">Distribution</h3><p class="sm" style="margin-top:10px">Carry the Ascovita range in your market at distributor pricing, with margin protection, marketing collateral and priority stock allocation.</p><div class="foot" style="margin-top:18px"><a class="btn small" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20distribution%20enquiry">Enquire <i>&rarr;</i></a></div></div>
-      <div class="card rv s1" data-tilt><span class="chip">02</span><h3 class="t-3" style="margin-top:16px">Franchise</h3><p class="sm" style="margin-top:10px">An appointed territory, a recognised brand and a supply chain that already works. Full model on the <a href="#/services#franchise" style="border-bottom:1px solid var(--line)">services page</a>.</p><div class="foot" style="margin-top:18px"><a class="btn small" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20franchise%20enquiry">Check territory <i>&rarr;</i></a></div></div>
-      <div class="card rv s2" data-tilt><span class="chip">03</span><h3 class="t-3" style="margin-top:16px">Global / export</h3><p class="sm" style="margin-top:10px">International brands and buyers source with export documentation, compliant packaging and coordinated logistics, handled by the founding team.</p><div class="foot" style="margin-top:18px"><a class="btn small" href="https://wa.me/919898582650?text=Hello%20Ascovita%20Healthcare%20-%20global%20%2F%20export%20enquiry">Enquire <i>&rarr;</i></a></div></div>
-    </div>
-  </div>
-</section>
-
-</div>
 <div class="page" id="pg-faq" data-route="/faq" data-title="Frequently asked questions — MOQ, lead time, certifications | Ascovita Healthcare" data-desc="MOQ, lead times, certifications, artwork, export documentation and the franchise model — answers for distributors, private-label clients and export buyers." hidden>
 
 <section class="phero">
@@ -1283,7 +1200,7 @@ blockquote{margin:0}
       <details class="row rv"><summary><h3 class="t-3">What certifications do you hold?</h3></summary><p class="sm">The plant is FSSAI licensed and WHO-GMP compliant, with regular government audits. Every batch is independently third-party lab tested for purity, potency and safety, with results on file for every SKU.</p></details>
       <details class="row rv"><summary><h3 class="t-3">Can you handle label design and artwork?</h3></summary><p class="sm">Yes. We provide FSSAI-compliant label printing, full custom artwork support, QR code and barcode integration, and dispatch-ready carton packing.</p></details>
       <details class="row rv"><summary><h3 class="t-3">Which packaging formats do you offer?</h3></summary><p class="sm">Alu-Alu, blister packs, strip packaging, effervescent tubes in 10s and 20s, bottles, jars, standup pouches and single-serve sachets.</p></details>
-      <details class="row rv"><summary><h3 class="t-3">Do you export?</h3></summary><p class="sm">Yes. Ascovita offers global and export services &mdash; export documentation support such as certificates of analysis and FSSAI paperwork, export-compliant packaging, and coordination with verified logistics partners for sea and air freight. Exact country coverage and terms are confirmed on enquiry.</p></details>
+      <details class="row rv"><summary><h3 class="t-3">Do you export?</h3></summary><p class="sm">Yes, through Jayraf Export, our dedicated export-import division led by our Export Director. We have served 30+ countries and handle Certificate of Analysis, MSDS, FSSAI, phytosanitary and customs documentation end to end, plus sea and air freight, FCL and LCL.</p></details>
       <details class="row rv"><summary><h3 class="t-3">How does the franchise programme work?</h3></summary><p class="sm">You are appointed to a territory, carry the full Ascovita range at franchise pricing, and receive marketing collateral, POS material and priority stock allocation. It suits pharma distributors, chemist chains and health store owners. Territory availability and terms are confirmed on enquiry.</p></details>
       <details class="row rv"><summary><h3 class="t-3">Why are Ascovita and Ascofizz priced differently?</h3></summary><p class="sm">They are separate brands for separate channels. Ascovita is made for the retail trade and priced to protect distributor and retailer margin. Ascofizz is our online-only brand with its own SKUs and pack sizes, so e-commerce pricing never undercuts a retailer's shelf.</p></details>
       <details class="row rv"><summary><h3 class="t-3">Can I get a product brochure or catalogue?</h3></summary><p class="sm">Yes. Message us on WhatsApp and tell us the product or category. We send the relevant specification sheet, including COA format, shelf life, pack sizes and carton dimensions, usually within the hour during business hours.</p></details>
@@ -1336,17 +1253,7 @@ blockquote{margin:0}
       </div>
 
       <div style="display:grid;gap:clamp(14px,2vw,22px)">
-        <div class="card rv" data-tilt>
-          <p class="eyebrow">Talk to Ascovita</p>
-          <h3 class="t-2" style="margin-top:10px">Choose who answers you</h3>
-          <p class="sm" style="margin-top:10px">Every message goes straight to a founder on WhatsApp. Choose your contact and your message is pre-filled for you.</p>
-          <div style="display:grid;gap:12px;margin-top:20px">
-            <a class="btn" href="https://wa.me/919898582650?text=Hello%20Amit%2C%20I%20am%20interested%20in%20a%20partnership%20with%20Ascovita." data-magnetic>WhatsApp the Founder &mdash; Amit Dantani <i>&rarr;</i></a>
-            <a class="btn soft" href="https://wa.me/919898582650?text=Hello%20Aamin%2C%20I%20am%20interested%20in%20a%20partnership%20with%20Ascovita." data-magnetic>WhatsApp the Co-Founder &amp; CEO &mdash; Aamin Vahora <i>&rarr;</i></a>
-          </div>
-          <p class="xs" style="margin-top:12px">Or fill the enquiry form on the left &mdash; it also opens WhatsApp with your details filled in.</p>
-        </div>
-        <div class="card flat rv s1" data-tilt>
+        <div class="card flat rv" data-tilt>
           <h3 class="t-3">Phone &amp; WhatsApp</h3>
           <p class="lede" style="margin-top:8px"><a href="https://wa.me/919898582650">+91 98985 82650</a></p>
           <p class="xs" style="margin-top:8px">Mon&ndash;Sat, 9:30 AM &ndash; 6:30 PM IST. WhatsApp replies typically within the hour during business hours.</p>
@@ -1423,10 +1330,10 @@ blockquote{margin:0}
   <div class="wrap narrow center">
     <p class="eyebrow">Error 404</p>
     <h1 class="t-1" style="margin-top:16px">This page has <span class="grad">dissolved</span>.</h1>
-    <p class="lede" style="margin-top:18px;margin-inline:auto">The link you followed does not match any of our pages. Everything we do &mdash; services, partners, brands and manufacturing &mdash; is reachable from home.</p>
+    <p class="lede" style="margin-top:18px;margin-inline:auto">It may have moved when we separated our brands. Products now live on Ascofizz; manufacturing and distribution stay here.</p>
     <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:30px">
       <a class="btn" href="#/">Ascovita home <i>&rarr;</i></a>
-      <a class="btn soft" href="#/services">Our services</a>
+      <a class="btn soft" href="https://www.ascofizz.com/">Shop Ascofizz</a>
     </div>
   </div>
 </section>
@@ -1446,33 +1353,19 @@ blockquote{margin:0}
           <h4>Company</h4>
           <a href="#/">Home</a>
           <a href="#/about">About &amp; founders</a>
-          <a href="#/services">Services</a>
-          <a href="#/partners">Partners</a>
-          <a href="#/brands">Our brands</a>
+          <a href="#/manufacturing">Manufacturing</a>
+          <a href="#/capabilities">B2B &amp; private label</a>
           <a href="#/faq">FAQ</a>
-        </div>
-        <div class="fcol">
-          <h4>Manufacturing</h4>
-          <a href="#/services">Private label</a>
-          <a href="#/services">White label</a>
-          <a href="#/services">Contract manufacturing</a>
-          <a href="#/services">Product development</a>
-          <a href="#/manufacturing">Manufacturing facility</a>
-          <a href="#/catalogue">Catalogue &amp; brochures</a>
-        </div>
-        <div class="fcol">
-          <h4>Business</h4>
-          <a href="#/services">Distribution</a>
-          <a href="#/services">Franchise</a>
-          <a href="#/services">Brand launch</a>
-          <a href="#/services">Global / export</a>
           <a href="#/contact">Contact</a>
         </div>
         <div class="fcol">
-          <h4>WhatsApp</h4>
-          <a href="https://wa.me/919898582650?text=Hello%20Amit%2C%20I%20am%20interested%20in%20a%20partnership%20with%20Ascovita.">Founder &mdash; Amit Dantani</a>
-          <a href="https://wa.me/919898582650?text=Hello%20Aamin%2C%20I%20am%20interested%20in%20a%20partnership%20with%20Ascovita.">Co-Founder &amp; CEO &mdash; Aamin Vahora</a>
-          <h4 style="margin-top:16px">Reach us</h4>
+          <h4>Brands</h4>
+          <a href="#/brands/retail">Ascovita &mdash; retail</a>
+          <a href="https://www.ascofizz.com/">Ascofizz &mdash; online</a>
+          <a href="#/brands/export">Jayraf Export</a>
+        </div>
+        <div class="fcol">
+          <h4>Reach us</h4>
           <a href="https://wa.me/919898582650">+91 98985 82650</a>
           <a href="mailto:info@ascovita.com">info@ascovita.com</a>
           <a href="#/contact">Anand, Gujarat 388001</a>
@@ -1486,25 +1379,6 @@ blockquote{margin:0}
   </div>
 </footer>
 
-<div id="wa-fab" role="region" aria-label="Talk to Ascovita on WhatsApp" style="position:fixed;bottom:18px;right:18px;z-index:99;display:flex;flex-direction:column;align-items:flex-end;gap:10px">
-  <div id="wa-menu" aria-hidden="true" style="display:none;flex-direction:column;gap:8px;margin-bottom:4px">
-    <a href="https://wa.me/919898582650?text=Hello%20Amit%2C%20I%20am%20interested%20in%20a%20partnership%20with%20Ascovita." style="background:var(--green,#2E7D32);color:#E8EDE6;padding:10px 16px;border-radius:14px;font-size:13px;font-weight:600;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.18)">Founder &mdash; Amit Dantani</a>
-    <a href="https://wa.me/919898582650?text=Hello%20Aamin%2C%20I%20am%20interested%20in%20a%20partnership%20with%20Ascovita." style="background:var(--green,#2E7D32);color:#E8EDE6;padding:10px 16px;border-radius:14px;font-size:13px;font-weight:600;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.18)">Co-Founder &amp; CEO &mdash; Aamin Vahora</a>
-  </div>
-  <button type="button" id="wa-toggle" aria-label="Talk to Ascovita" aria-expanded="false" aria-controls="wa-menu" style="background:var(--green,#2E7D32);color:#E8EDE6;border:0;border-radius:50%;width:56px;height:56px;font-size:24px;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.22);display:flex;align-items:center;justify-content:center;transition:transform .15s ease">&#128172;</button>
-</div>
-<script>
-(function(){
-  var fab = document.getElementById('wa-fab');
-  if (!fab) return;
-  var menu = document.getElementById('wa-menu');
-  var btn = document.getElementById('wa-toggle');
-  var open = function(){ menu.style.display='flex'; btn.setAttribute('aria-expanded','true'); };
-  var close = function(){ menu.style.display='none'; btn.setAttribute('aria-expanded','false'); };
-  btn.addEventListener('click', function(){ menu.style.display==='flex' ? close() : open(); });
-  document.addEventListener('click', function(e){ if (!fab.contains(e.target)) close(); });
-})();
-</script>
 <script>
 /* ══════════════════════════════════════════════════════════════════
    fluid.js — Ascovita Healthcare
@@ -2321,7 +2195,13 @@ function initArt(canvas){
           var cap = host.querySelector('.art-cap'); if (cap) cap.remove();
         }
       };
-      if ('IntersectionObserver' in window) {
+      window.__ascovitaFluid = function(){
+    if (started) return;
+    if (shell.offsetParent === null) return;  // Home not on screen yet
+    boot();
+  };
+
+  if ('IntersectionObserver' in window) {
         var io3 = new IntersectionObserver(function(en){
           if (en[0].isIntersecting) { io3.disconnect(); start(); }
         }, { rootMargin: '250px' });
@@ -2522,10 +2402,7 @@ function initArt(canvas){
     if (h.indexOf('//') === 0) return { route:'/', frag:h.slice(2) };  // #//anchor on home
     var parts = h.split('/').filter(Boolean);
     if (!parts.length) return { route:'/', frag:'' };
-    var route = '/' + parts[0];
-    // retired route redirects — keep bookmarks working
-    if (route === '/capabilities') { route = '/services'; location.hash = '#/services'; }
-    return { route: route, frag: parts[1] || '' };
+    return { route:'/' + parts[0], frag: parts[1] || '' };
   }
 
   function show(){
@@ -2545,7 +2422,7 @@ function initArt(canvas){
 
       document.title = target.getAttribute('data-title') || document.title;
       if (metaDesc) metaDesc.setAttribute('content', target.getAttribute('data-desc') || '');
-      if (canonical) canonical.setAttribute('href', 'https://www.ascovita.com/');
+      if (canonical) canonical.setAttribute('href', 'https://www.ascovita.com/' + (location.hash || ''));
 
       links.forEach(function(a){
         var isHere = a.getAttribute('data-route') === '#' + r.route ||
