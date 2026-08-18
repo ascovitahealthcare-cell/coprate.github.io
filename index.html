@@ -135,6 +135,20 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .nav-links a[aria-current="page"]{color:var(--ink);box-shadow:var(--nm-in-sm)}
 .nav-cta{margin-right:4px}
 .nav-ascofizz{margin-left:4px}
+/* ── Brand Launch highlight pill (unique colour) ───────────────── */
+.nav-links a.nav-studio{
+  background:linear-gradient(120deg,var(--green-d) 0%,var(--green) 55%,var(--gold) 100%);
+  color:#EAF3E6;font-weight:700;box-shadow:0 6px 16px rgba(46,125,50,.32);
+}
+.nav-links a.nav-studio:hover{box-shadow:0 8px 20px rgba(46,125,50,.42);transform:translateY(-1px)}
+.nav-links a.nav-studio[aria-current="page"]{box-shadow:var(--nm-in-sm),0 6px 16px rgba(46,125,50,.32)}
+@media (max-width:940px){ .nav-links a.nav-studio{text-align:left} }
+/* ── Shop Now pill ───────────────────────────────────────────────── */
+.nav-links a.nav-shop{
+  border:1.5px solid var(--gold);color:var(--gold-dark,var(--ink));font-weight:700;
+}
+.nav-links a.nav-shop:hover{background:var(--gold);color:#fff}
+@media (max-width:1240px){ .nav-links a.nav-shop{display:none} }
 .nav-toggle{display:none;width:40px;height:40px;border-radius:50%;box-shadow:var(--nm-xs);
             align-items:center;justify-content:center;flex:0 0 auto}
 .nav-in .nav-cta{margin-right:0}
@@ -552,10 +566,11 @@ blockquote{margin:0}
       <a href="#/" data-route="#/">Home</a>
       <a href="#/about" data-route="#/about">About</a>
       <a href="#/services" data-route="#/services">Services</a>
-      <a href="#/brand-launch" data-route="#/brand-launch">Brand Launch</a>
+      <a href="#/studio" data-route="#/studio" class="nav-studio">Brand Launch</a>
       <a href="#/b2b" data-route="#/b2b">B2B</a>
       <a href="#/global-export" data-route="#/global-export">Global Export</a>
       <a href="#/contact" data-route="#/contact">Contact</a>
+      <a class="nav-shop" href="https://www.ozylix.com/" target="_blank" rel="noopener" aria-label="Shop Now — Ozylix, the Ascovita brand store">Shop Now <i>&rarr;</i></a>
       </nav>
       <a class="nav-cta" href="#/contact" data-magnetic>Start Your Brand <i>&rarr;</i></a>
       <a class="btn small soft nav-ascofizz" href="https://www.ascofizz.com/" target="_blank" rel="noopener" title="Demo website: marketing &amp; web development services" aria-label="View Ascofizz demo website">Ascofizz (demo) <i>&rarr;</i></a>
@@ -727,7 +742,7 @@ blockquote{margin:0}
       <div class="jstep"><span class="jnum">09</span><h4 class="t-3" style="font-size:15px">Distribution</h4><p class="xs">Scale across channels.</p></div>
     </div>
     <p class="xs center rv" style="margin-top:26px">Ozylix.com is <strong>Ascovita’s own brand</strong> &mdash; built, manufactured and launched with Ascovita. Ascofizz.com is a <strong>demo website</strong> we show to clients interested in our marketing &amp; web development services. See every step on our dedicated brand launch page.</p>
-    <div class="center rv" style="margin-top:24px"><a class="btn" href="#/brand-launch">See the full launch plan <i>&rarr;</i></a></div>
+    <div class="center rv" style="margin-top:24px"><a class="btn" href="#/studio">See the full launch plan <i>&rarr;</i></a></div>
   </div>
 </section>
 
@@ -824,6 +839,19 @@ blockquote{margin:0}
           <p class="lede" style="font-style:italic">&ldquo;From formulation to manufacturing of nutraceutical products &mdash; one standard, no shortcuts.&rdquo;</p>
           <p class="xs" style="margin-top:16px">&mdash; The Ascovita Healthcare promise</p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-dark">
+  <div class="wrap">
+    <div class="card sunk rv">
+      <p class="eyebrow" style="color:#C9A227">Vision</p>
+      <h2 class="t-1" style="margin-top:14px">Making India&rsquo;s nutraceutical &amp;<br><span style="color:#C9A227">pharmaceutical market better.</span></h2>
+      <p class="lede" style="margin-top:18px;max-width:76ch">Our vision is to raise the Indian nutraceutical and pharmaceutical market &mdash; better options and better output for every Indian family. We take that promise further with every formulation: products built on new research, validated by certified nutritionists and food scientists, and manufactured in our own plant so the standard never depends on anyone else&rsquo;s decision. Premium quality, fair prices, made in India.</p>
+      <div class="chipline" style="margin-top:28px;max-width:76ch">
+        <span>Better options</span><span>Better output</span><span>New research</span><span>Made in India</span>
       </div>
     </div>
   </div>
@@ -1054,7 +1082,28 @@ blockquote{margin:0}
         <div class="jstep"><span class="jnum">09</span><h4 class="t-3" style="font-size:15px">Distribution</h4><p class="xs">Scale across channels.</p></div>
       </div>
       <p class="xs center rv" style="margin-top:26px">Ozylix.com is <strong>Ascovita’s own brand</strong>. Ascofizz.com is a <strong>demo website</strong> we show to clients interested in our marketing &amp; web development services. See every step on our dedicated brand launch page.</p>
-      <div class="center rv" style="margin-top:24px"><a class="btn" href="#/brand-launch">See the full launch plan <i>&rarr;</i></a></div>
+      <div class="center rv" style="margin-top:24px"><a class="btn" href="#/studio">See the full launch plan <i>&rarr;</i></a></div>
+    </div>
+  </div>
+</section>
+
+<section id="svc-packaging" style="padding-top:0">
+  <div class="wrap">
+    <div class="narrow center rv">
+      <p class="eyebrow">Packaging</p>
+      <h2 class="t-1" style="margin-top:14px">Every format<br>a brand <span class="grad">needs</span></h2>
+      <p class="lede" style="margin-top:18px;margin-inline:auto">Shelf-ready formats for nutraceuticals and pharmaceuticals &mdash; produced, filled and sealed in our own plant with FSSAI-compliant artwork support. Not sure which format fits your product? Our Consultation Studio team recommends the best pack for your category.</p>
+    </div>
+    <div class="steps rv" style="margin-top:clamp(34px,5vw,56px)">
+      <div class="stepc card flat dvc"><span class="blnum">01</span><h4 class="t-3" style="margin-top:12px">Tablets &middot; Alu-Alu blister</h4><p class="sm" style="margin-top:10px">High-barrier Alu-Alu (aluminium/ALU) blister packs &mdash; the standard for moisture-sensitive nutraceutical and pharmaceutical tablets.</p></div>
+      <div class="stepc card flat dvc"><span class="blnum">02</span><h4 class="t-3" style="margin-top:12px">Tablets &middot; strip packaging</h4><p class="sm" style="margin-top:10px">Cost-efficient strip packs for standard tablets &mdash; secure, lightweight and retail-ready.</p></div>
+      <div class="stepc card flat dvc"><span class="blnum">03</span><h4 class="t-3" style="margin-top:12px">Capsules</h4><p class="sm" style="margin-top:10px">Capsule blisters and bottles with tamper-evident sealing &mdash; all capsule sizes from our in-house lines.</p></div>
+      <div class="stepc card flat dvc"><span class="blnum">04</span><h4 class="t-3" style="margin-top:12px">Sachets</h4><p class="sm" style="margin-top:10px">Single-dose sachets for powders and granules &mdash; on-the-go formats with precise dosing.</p></div>
+      <div class="stepc card flat dvc"><span class="blnum">05</span><h4 class="t-3" style="margin-top:12px">Effervescent tubes</h4><p class="sm" style="margin-top:10px">Our flagship format &mdash; branded, moisture-barrier tubes for effervescent tablets, our plant&rsquo;s speciality.</p></div>
+      <div class="stepc card flat dvc"><span class="blnum">06</span><h4 class="t-3" style="margin-top:12px">Bottle packs</h4><p class="sm" style="margin-top:10px">HDPE / PET bottles with induction seals and child-resistant caps &mdash; full labelling support.</p></div>
+      <div class="stepc card flat dvc"><span class="blnum">07</span><h4 class="t-3" style="margin-top:12px">Look packs</h4><p class="sm" style="margin-top:10px">Premium gifting and gift-ready look packs &mdash; custom outer cartons and presentation boxes.</p></div>
+      <div class="stepc card flat dvc"><span class="blnum">08</span><h4 class="t-3" style="margin-top:12px">Syrups</h4><p class="sm" style="margin-top:10px">Bottled liquid formats with accurate filling and sealing lines.</p></div>
+      <div class="stepc card flat dvc"><span class="blnum">09</span><h4 class="t-3" style="margin-top:12px">Dedicated packaging</h4><p class="sm" style="margin-top:10px">Custom and dedicated packaging options for your brand &mdash; ask our team what&rsquo;s possible for your format.</p></div>
     </div>
   </div>
 </section>
@@ -1180,10 +1229,10 @@ blockquote{margin:0}
   </div>
 </section>
 </div>
-<div class="page" id="pg-brandlaunch" data-route="/brand-launch" data-title="Brand Launch by Ascovita — your brand, our dedicated team | everything handled end-to-end" data-desc="Ascovita launches your nutraceutical brand end-to-end: market research, product selection, brand identity and design, legal and FSSAI process, manufacturing, packaging, website and e-commerce with integrations, and a dedicated marketing team — all under one roof." hidden>
+<div class="page" id="pg-brandlaunch" data-route="/studio" data-title="Ascovita Consultation Studio — your brand, our dedicated team | everything handled end-to-end" data-desc="Ascovita Consultation Studio launches your nutraceutical brand end-to-end: market research, product selection, brand identity and design, legal and FSSAI process, manufacturing, packaging, website and e-commerce with integrations, and a dedicated marketing team — all under one roof." hidden>
 <section class="phero">
   <div class="wrap">
-    <p class="eyebrow rv">Brand launch by Ascovita</p>
+    <p class="eyebrow rv">Ascovita Consultation Studio</p>
     <h1 class="t-hero rv s1" style="margin-top:18px">Your brand launched<br>by a <span class="grad">dedicated team</span>.</h1>
     <p class="lede rv s2" style="max-width:60ch">Most manufacturers stop at the tube. Ascovita does not. From the first market research to the first sale &mdash; identity, design, legal, manufacturing, website, e-commerce, marketing and distribution &mdash; your experienced team handles every step, in one plant, in one partnership.</p>
     <div class="actions rv s3">
@@ -1229,6 +1278,21 @@ blockquote{margin:0}
       <div class="stepc card flat dvc"><span class="blnum">06</span><h4 class="t-3" style="margin-top:12px">Website &amp; e-commerce</h4><p class="sm" style="margin-top:10px">A full e-commerce website for your brand &mdash; storefront, payments, delivery integrations and marketplace onboarding, built by our web team.</p></div>
       <div class="stepc card flat dvc"><span class="blnum">07</span><h4 class="t-3" style="margin-top:12px">Dedicated marketing team</h4><p class="sm" style="margin-top:10px">A dedicated team plans your launch and growth &mdash; campaigns, content, social and performance marketing that keeps selling after launch.</p></div>
       <div class="stepc card flat dvc"><span class="blnum">08</span><h4 class="t-3" style="margin-top:12px">Launch &amp; distribution</h4><p class="sm" style="margin-top:10px">Retail, wholesale, franchise or D2C &mdash; we scale your brand across channels with priority stock and ongoing supply.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="padding-top:0">
+  <div class="wrap">
+    <div class="narrow center rv">
+      <p class="eyebrow">Design we make for you</p>
+      <h2 class="t-1" style="margin-top:14px">Identity, labels &amp;<br><span class="grad">a brand that speaks</span></h2>
+      <p class="lede" style="margin-top:18px;margin-inline:auto">Beyond manufacturing, our in-house design team builds your brand&rsquo;s entire visual and verbal identity &mdash; so the product on the shelf sounds, looks and sells like one brand.</p>
+    </div>
+    <div class="steps rv" style="margin-top:clamp(34px,5vw,56px)">
+      <div class="stepc card flat dvc"><span class="blnum">A</span><h4 class="t-3" style="margin-top:12px">Product label design</h4><p class="sm" style="margin-top:10px">Shelf-ready label artwork for every format &mdash; FSSAI-compliant layouts, nutrition panels and multilingual text, made for blister, tube, bottle and sachet.</p></div>
+      <div class="stepc card flat dvc"><span class="blnum">B</span><h4 class="t-3" style="margin-top:12px">Logo &amp; full brand kit</h4><p class="sm" style="margin-top:10px">A logo system with colour palette, typography, packaging templates, social media assets and stationery &mdash; one consistent identity everywhere your brand appears.</p></div>
+      <div class="stepc card flat dvc"><span class="blnum">C</span><h4 class="t-3" style="margin-top:12px">Brand voice</h4><p class="sm" style="margin-top:10px">Your brand story, taglines, tone of voice and product copy for every channel &mdash; website, packaging, ads and social &mdash; so the brand speaks with one confident voice.</p></div>
     </div>
   </div>
 </section>
@@ -1644,7 +1708,7 @@ blockquote{margin:0}
           <a href="#/services#svc-contract">Contract manufacturing</a>
           <a href="#/services#svc-development">Product development</a>
           <a href="#/services#svc-design">Design &amp; labelling</a>
-          <a href="#/brand-launch">Brand launch by Ascovita</a>
+          <a href="#/studio">Brand launch by Ascovita</a>
           <a href="#/services#svc-brandlaunch">Brand launch service</a>
           <a href="#/services#svc-franchise">Franchise programme</a>
         </div>
@@ -2747,7 +2811,8 @@ function initArt(canvas){
     if (route === '/catalogue') { route = '/b2b'; location.hash = '#/b2b'; }
     if (route === '/brands') { route = '/b2b'; location.hash = '#/b2b'; }
     if (route === '/faq') { route = '/'; location.hash = '#/'; }
-    if (route === '/launch') { route = '/brand-launch'; location.hash = '#/brand-launch'; }
+    if (route === '/launch') { route = '/studio'; location.hash = '#/studio'; }
+    if (route === '/brand-launch') { route = '/studio'; location.hash = '#/studio'; }
     return { route: route, frag: parts[1] || '' };
   }
 
