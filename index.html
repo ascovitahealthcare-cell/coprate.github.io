@@ -238,6 +238,11 @@ section{padding-block:clamp(64px,9vw,124px)}
 
 .card{background:var(--bg);border-radius:var(--r);padding:clamp(24px,3.2vw,40px);box-shadow:var(--nm)}
 .card.flat{box-shadow:var(--nm-sm)}
+/* ── service-card image frame: fixed 4:3 window, cover-fit. Previously unstyled
+   so images rendered at full natural height and left an empty card below. ── */
+.svc-img{width:100%;aspect-ratio:4/3;border-radius:var(--r-sm);overflow:hidden;box-shadow:var(--nm-in-sm)}
+.svc-img img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+@media (max-width:660px){.svc-img{aspect-ratio:16/10}}
 .card.sunk{box-shadow:var(--nm-in)}
 
 .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(16px,2.4vw,28px)}
