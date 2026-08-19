@@ -134,8 +134,12 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 }
 .nav-links a:hover{color:var(--ink)}
 .nav-links a[aria-current="page"]{color:var(--ink);box-shadow:var(--nm-in-sm)}
-.nav-cta{margin-right:6px;margin-left:4px}
 .nav-ascofizz{margin-left:4px}
+/* mobile menu Start Your Brand CTA: hidden on desktop */
+.menu-cta{display:none !important}
+@media (max-width:940px){
+  .menu-cta{display:flex !important;justify-content:center;margin-top:10px}
+}
 /* ── Brand Launch highlight pill (unique colour) ───────────────── */
 .nav-links a.nav-studio{
   background:linear-gradient(120deg,var(--green-d) 0%,var(--green) 55%,var(--gold) 100%);
@@ -153,12 +157,11 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 @media (max-width:1240px){ .nav-links a.nav-shop{display:none !important} }
 .nav-toggle{display:none;width:40px;height:40px;border-radius:50%;box-shadow:var(--nm-xs);
             align-items:center;justify-content:center;flex:0 0 auto}
-.nav-in .nav-cta{margin-right:0}
 .nav-toggle span{display:block;width:16px;height:1.5px;background:var(--ink);position:relative}
 .nav-toggle span::before,.nav-toggle span::after{content:"";position:absolute;left:0;width:16px;height:1.5px;background:var(--ink)}
 .nav-toggle span::before{top:-5px}.nav-toggle span::after{top:5px}
-/* ── medium screens: 7 links + 2 CTAs no longer fit in one pill ────── */
-/* Desktop row must never wrap: 7 links + 2 CTAs + hamburger toggle always fit.
+/* ── medium screens: 7 links + 1 CTA no longer fit in one pill ────── */
+/* Desktop row must never wrap: 7 links + 1 CTA + hamburger toggle always fit.
    The logo shrinks and links tighten as width decreases until the hamburger
    takes over at 940px. Order: 1300 → 1240 → 1180 → 1060 → 980 → 940. */
 @media (max-width:1300px){
@@ -172,13 +175,11 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 @media (max-width:1060px){
   .nav-links a{padding:8px 9px;font-size:13px}
   .brand img{height:36px}
-  .nav-cta{padding:10px 15px;font-size:13px;margin-right:0}
 }
 @media (max-width:980px){
   .nav-links a{padding:8px 8px;font-size:12.5px}
   .brand img{height:32px}
   .nav-in{gap:5px;padding-inline:12px 14px}
-  .nav-cta{padding:9px 13px;font-size:12.5px}
 }
 @media (max-width:940px){
   .nav-in{flex-wrap:nowrap;height:58px;justify-content:space-between}
@@ -554,9 +555,6 @@ blockquote{margin:0}
 
 .blref .link{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:600;color:var(--green);margin-top:12px}.blref .link i{font-style:normal;transition:transform .15s ease}.blref .link:hover i{transform:translateX(3px)}
 
-.nav-cta{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:14px;font-size:14px;font-weight:600;text-decoration:none;color:#E8EDE6;background:linear-gradient(135deg,var(--green,#2E7D32),#4C6B2A);box-shadow:var(--shadow-flat)}
-.nav-cta i{font-style:normal;transition:transform .15s ease}.nav-cta:hover i{transform:translateX(3px)}
-@media (max-width:860px){.nav-cta{display:none}}
 
 /* ── welcome modal ──────────────────────────────────────────────── */
 .welcome{position:fixed;inset:0;z-index:9000;display:flex;align-items:center;justify-content:center;
@@ -605,7 +603,6 @@ blockquote{margin:0}
       <a href="#/contact" data-route="#/contact">Contact</a>
       <a class="nav-shop" href="https://www.ozylix.com/" target="_blank" rel="noopener" aria-label="Shop Now — Ozylix, the Ascovita brand store">Shop Now <i>&rarr;</i></a>
       </nav>
-      <a class="nav-cta" href="#/contact" data-magnetic>Start Your Brand <i>&rarr;</i></a>
       <a class="btn small soft nav-ascofizz" href="https://www.ascofizz.com/" target="_blank" rel="noopener" title="Demo website: marketing &amp; web development services" aria-label="View Ascofizz demo website">Ascofizz (demo) <i>&rarr;</i></a>
       <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navlinks"><span></span></button><div class="menu-brand" style="display:none"><img src="./assets/ascovita_logo.png" alt="Ascovita Healthcare"><span>Ascovita Healthcare</span></div>
     </div>
@@ -2491,13 +2488,19 @@ function initArt(canvas){
         toggle.setAttribute('aria-expanded', 'false');
       }
     });
-    var brandSrc = document.querySelector('.menu-brand');
+      var brandSrc = document.querySelector('.menu-brand');
     if (brandSrc) {
       var mb = document.createElement('div');
       mb.className = 'menu-brand-mobile';
       mb.innerHTML = brandSrc.innerHTML;
       links.insertBefore(mb, links.firstChild);
     }
+    /* prominent CTA inside mobile menu (header button removed; Brand Launch nav covers the same page) */
+    var mobCta = document.createElement('a');
+    mobCta.className = 'btn menu-cta';
+    mobCta.href = '#/contact';
+    mobCta.textContent = 'Start Your Brand \u2192';
+    links.appendChild(mobCta);
     document.addEventListener('click', function(e){
       if (!links.contains(e.target) && !toggle.contains(e.target)) {
         links.classList.remove('open');
