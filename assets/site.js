@@ -3,7 +3,7 @@
   'use strict';
   var aliases={capabilities:'services',manufacturing:'services',partners:'b2b',catalogue:'b2b',launch:'studio','brand-launch':'studio',faq:'',brands:'brands'};
   if(location.hash.indexOf('#/')===0){
-    var parts=location.hash.slice(2).split('/');
+    var parts=location.hash.slice(2).replace(/%23/gi,'#').replace('#','/').split('/');
     var route=Object.prototype.hasOwnProperty.call(aliases,parts[0])?aliases[parts[0]]:parts[0];
     if(['','about','services','b2b','studio','brands','global-export','contact','404'].indexOf(route)>=0){
       location.replace('/'+(route?route+'/':'')+location.search+(parts[1]?'#'+encodeURIComponent(parts[1]):''));return;

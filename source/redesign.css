@@ -20,3 +20,4 @@ main:not([data-page="/"]) .img-hz:has(img[src*="-new.webp"])::after{content:'Ill
 main:not([data-page="/"]) .card{background:var(--bg)}
 main[data-page="/contact"] .btn{overflow-wrap:anywhere}
 @media(max-width:680px){main:not([data-page="/"])>.phero{padding-top:28px;padding-bottom:36px}.field input,.field select,.field textarea{font-size:16px}.hero-visual{transition:transform .2s}}
+.contact-float{color:var(--ink)}.contact-float:hover{color:var(--green-d)}
