@@ -23,3 +23,13 @@ Image briefs: premium photorealistic sage/ivory wellness product hero with origi
 ## SEO and enquiry measurement
 
 Eight indexable pages, individual metadata and canonicals, linked Organization/WebSite/WebPage schema, homepage FAQ schema, robots.txt and sitemap.xml. Contact CTA events record only channel and page path. Form details are sent only through the customer's WhatsApp action and never included in analytics. These changes address technical SEO and conversion clarity; enquiry recovery requires comparing Search Console and Analytics data.
+
+## Manufacturing-first revision
+
+The comparison with the pre-restructure and previous redesigned site identified weaker prominence for manufacturing, formats, effervescent expertise, quality documentation and international supply. The homepage now surfaces those subjects before the brand-launch proposition. A dedicated `/quality/` page provides procurement documentation guidance without fabricating certificates or client testimonials. The hero is a generated process illustration; replace it with actual facility photography when available.
+
+Contact mapping: Amit Dantani — +91 98985 82650 (manufacturing); Aamin Vahora — +91 72658 84137 (brand and business). The floating chooser and enquiry recipient select use these separate numbers. The Organization schema reflects both contacts.
+
+For future products, add the verified product name, image and display color to `source/products.json`; the B2B gallery builds from this list. Keep real label artwork and pack images intact. Homepage featured cards can be curated separately in `source/home.html`.
+
+New image: `assets/hero-manufacturing.webp`, generated with the built-in image tool. Brief: realistic stainless rotary tablet press in a bright controlled supplement production environment, white tablets in steel tray, ivory/sage light, no people, retail packs, text or fake credentials. It is labelled as illustrative on the page.

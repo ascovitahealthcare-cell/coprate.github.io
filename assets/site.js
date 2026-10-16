@@ -22,7 +22,12 @@
   var name=document.getElementById('f-name'),message=document.getElementById('f-msg'),quantity=document.getElementById('f-qty');
   if(name)name.required=true;
   if(message){message.required=true;message.maxLength=2000;message.setAttribute('aria-required','true');}
-  if(quantity){var product=new URLSearchParams(location.search).get('product');if(product)quantity.value=product.slice(0,150);}
+  var params=new URLSearchParams(location.search),recipient=document.getElementById('f-recipient');
+  if(quantity){var product=params.get('product')||params.get('format');if(product)quantity.value=product.slice(0,250);}
+  if(recipient&&['amit','aamin'].indexOf(params.get('recipient'))>=0)recipient.value=params.get('recipient');
+  var contactWidget=document.querySelector('.contact-widget');
+  document.addEventListener('click',function(e){if(contactWidget&&!contactWidget.contains(e.target))contactWidget.open=false;});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&contactWidget&&contactWidget.open){contactWidget.open=false;contactWidget.querySelector('summary').focus();}});
   if(form){form.addEventListener('submit',function(e){
     e.preventDefault();
     var value=function(id){var el=document.getElementById(id);return el?el.value.trim():'';};
@@ -30,11 +35,13 @@
     if(value('f-hp'))return;
     if(!value('f-name')||!value('f-msg')){if(err){err.style.display='block';err.setAttribute('role','alert');}return;}
     if(err)err.style.display='none';
-    var text='Hello Ascovita Healthcare.\n\nName: '+value('f-name');
+    var to=value('f-recipient')==='aamin'?'aamin':'amit';
+    var number=to==='aamin'?'917265884137':'919898582650';
+    var text='Hello '+(to==='aamin'?'Aamin':'Amit')+' at Ascovita Healthcare.\n\nName: '+value('f-name');
     [['Company','f-co'],['Phone','f-phone'],['Country','f-country'],['Enquiry type','f-type'],['Product / category & quantity','f-qty']].forEach(function(pair){if(value(pair[1]))text+='\n'+pair[0]+': '+value(pair[1]);});
     text+='\n\n'+value('f-msg');
     // A normal same-tab navigation remains reliable with popup blockers enabled.
-    location.href='https://wa.me/919898582650?text='+encodeURIComponent(text);
+    location.href='https://wa.me/'+number+'?text='+encodeURIComponent(text);
   });}
   // Record CTA intent only. Personal enquiry details never enter analytics.
   document.addEventListener('click',function(e){

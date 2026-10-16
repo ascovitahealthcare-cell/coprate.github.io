@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Glutathione",
+    "image": "prod_glutathione.webp",
+    "color": "orange"
+  },
+  {
+    "name": "Vitamin C + Amla",
+    "image": "prod_vitc.webp",
+    "color": "amber"
+  },
+  {
+    "name": "ACV + Moringa",
+    "image": "prod_acv.webp",
+    "color": "lime"
+  },
+  {
+    "name": "Multidiata",
+    "image": "prod_multidata.webp",
+    "color": "blue"
+  },
+  {
+    "name": "B12 + Biotin",
+    "image": "prod_b12_biotin.webp",
+    "color": "orange"
+  },
+  {
+    "name": "L-Carnitine",
+    "image": "prod_lcarnitine.webp",
+    "color": "lime"
+  },
+  {
+    "name": "Magnesium",
+    "image": "prod_b12_magnesium.webp",
+    "color": "blue"
+  },
+  {
+    "name": "Iron + Calcium",
+    "image": "prod_iron_calcium.webp",
+    "color": "amber"
+  }
+]
