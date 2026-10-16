@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /source/
+Disallow: /scripts/
+Sitemap: https://www.ascovita.com/sitemap.xml
